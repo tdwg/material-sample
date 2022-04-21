@@ -18,7 +18,7 @@ Proposed attributes of the new term version (Please put actual changes to be imp
 * Examples (not normative): ~A body fossil. A coprolite. A gastrolith. An ichnofossil. A piece of a petrified tree.~
 * Refines (identifier of the broader term this term refines; normative): 
 * Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative): 
-* ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative):
+* ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative):~RecordBasisEnum/FossileSpecimen~
 
 # Currently Published Version
 <table>
