@@ -1,5 +1,8 @@
-# Working Revision
-## Term change
+# FossilSpecimen
+## Associated Github Issues
+[FossilSpecimen definition](https://github.com/tdwg/material-sample/issues/5)
+## Working Revision
+### Term change
 
 * Submitter: TDWG MaterialSample Task Group
 * Efficacy Justification (why is this change necessary?): Deprecate this term for consolidation of physical objects into the class MaterialSample rather than including specific classes for different kinds of physical objects which can be covered under materialSamplType
@@ -20,7 +23,7 @@ Proposed attributes of the new term version (Please put actual changes to be imp
 * Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative): 
 * ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative):~RecordBasisEnum/FossileSpecimen~
 
-# Currently Published Version
+## Currently Published Version
 <table>
 	<thead>
 		<tr>
