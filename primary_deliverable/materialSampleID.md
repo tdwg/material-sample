@@ -1,5 +1,8 @@
-# Working Revision
-## Term Change
+# materialSampleID
+## Associated Github Issues
+[materialSampleID](https://github.com/tdwg/material-sample/issues/20)
+## Working Revision
+### Term Change
 * Submitter: TDWG MaterialSample Task Group
 * Efficacy Justification (why is this change necessary?): The current definition includes information that belongs in usage comments or examples and also relies upon an action (sampling) which the Task Group feels is unnecessary. We wanted to provide a simple definition that could be used by many disciplines.
 * Demand Justification (if the change is semantic in nature, name at least two organizations that independently need this term): 
@@ -18,7 +21,7 @@ Proposed attributes of the new term version (Please put actual changes to be imp
 * Refines (identifier of the broader term this term refines; normative): 
 * Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative): 
 * ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative): not in ABCD
-# Currently Published Version
+## Currently Published Version
 <table>
 	<thead>
 		<tr>
