@@ -1,5 +1,8 @@
-# Working Revision
-## Term change
+# PreservedSpecimen
+## Associated Github Issues
+[PreservedSpecimen definition](https://github.com/tdwg/material-sample/issues/3)
+## Working Revision
+### Term change
 
 * Submitter: TDWG MaterialSample Task Group
 * Efficacy Justification (why is this change necessary?): Deprecate this term for consolidation of physical objects into the class MaterialSample rather than including specific classes for different kinds of physical objects which can be covered under materialSamplType
@@ -19,7 +22,7 @@ Proposed attributes of the new term version (Please put actual changes to be imp
 * Refines (identifier of the broader term this term refines; normative): 
 * Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative): 
 * ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative):~RecordBasisEnum/PreservedSpecimen~
-# Currently Published Version
+## Currently Published Version
 <table>
 	<thead>
 		<tr>
