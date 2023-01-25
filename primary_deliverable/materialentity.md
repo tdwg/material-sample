@@ -24,6 +24,6 @@ The local name, label, and definition of the proposed top level term intentional
 * **ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative):** None ([Specimen Unit](https://abcd.tdwg.org/terms/#group-SpecimenUnit) when used to denote a class of things appears to be a broadly construed subclass.)
 
 ## See also
-[main discussion thread in Material Sample TG repo](https://github.com/tdwg/material-sample/issues/31)
-[dcterms:PhysicalResource NTR](https://github.com/tdwg/dwc/issues/421#)
-[bfo:MaterialEntity](http://purl.obolibrary.org/obo/BFO_0000040)
+* [main discussion thread in Material Sample TG repo](https://github.com/tdwg/material-sample/issues/31)
+* [dcterms:PhysicalResource NTR](https://github.com/tdwg/dwc/issues/421#)
+* [bfo:MaterialEntity](http://purl.obolibrary.org/obo/BFO_0000040)
