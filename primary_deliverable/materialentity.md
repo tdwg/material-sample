@@ -14,7 +14,7 @@ The local name, label, and definition of the proposed top level term intentional
 
 ## Proposed attributes of the new term
 * **Term name (in lowerCamelCase for properties, UpperCamelCase for classes):** dwc:MaterialEntity
-* **Term label (English, not normative):++ Material Entity
+* **Term label (English, not normative):** Material Entity
 * **Organized in Class (e.g., Occurrence, Event, Location, Taxon):** N/A, it is a class itself
 * **Definition of the term (normative):** A `dwc:MaterialEntity` is an identifiable entity that persists, maintaining its identity, through some period of time and consists in part or whole of some portion of matter at any given time of its existence.
 * **Usage comments (recommendations regarding content, etc., not normative):** The term is expected to be used to refer to material entities, i.e. entities that consist in part or whole of physical matter. The term is defined at the most general level to admit descriptions of any subtype of material entity within scope of Darwin Core. In particular, samples, preserved specimen, and exemplars from living collections of any kind are intended to be subsumed by this term.
