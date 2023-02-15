@@ -1,7 +1,7 @@
 # materialEntityID
 ## Associated Github Issues
 [materialEntityID](https://github.com/tdwg/material-sample/issues/35)
-## Working Revision
+## Working Request
 ### New Term
 * **Submitter:** TDWG MaterialSample Task Group
 * **Efficacy Justification (why is this term necessary?):** The addition of the MaterialEntity class benefits from having a means to identifiy individual instances of MaterialEntities.
