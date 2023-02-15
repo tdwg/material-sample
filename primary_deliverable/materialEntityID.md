@@ -1,6 +1,6 @@
 # materialEntityID
 ## Associated Github Issues
-[materialEntityID](https://github.com/tdwg/material-sample/issues/24)
+[materialEntityID](https://github.com/tdwg/material-sample/issues/35)
 ## Working Revision
 ### New Term
 * Submitter: TDWG MaterialSample Task Group
