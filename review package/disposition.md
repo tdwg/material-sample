@@ -11,8 +11,8 @@ Current Term definition: https://dwc.tdwg.org/list/#dwc_[term name here]
 Proposed attributes of the new term version (Please put actual changes to be implemented in **bold** and ~strikethrough~):
 
 * Term name (in lowerCamelCase for properties, UpperCamelCase for classes): disposition
-* Term label (English, not normative): disposition
-* Organized in Class (e.g., Occurrence, Event, Location, Taxon): MaterialEntity
+* Term label (English, not normative): Disposition
+* Organized in Class (e.g., Occurrence, Event, Location, Taxon): **MaterialEntity** ~~Occurrence~~
 * Definition of the term (normative): **The current state of a MaterialEntity with respect to a collection.** ~~The current state of a specimen with respect to the collection identified in collectionCode or collectionID.~~
 * Usage comments (recommendations regarding content, etc., not normative): Recommended best practice is to use a controlled vocabulary.
 * Examples (not normative): **in collection, missing, on loan, used up, destroyed, deaccessioned** ~~in collection, missing, voucher elsewhere, duplicates elsewhere~~
