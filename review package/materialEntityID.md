@@ -1,7 +1,5 @@
 # materialEntityID
-## Associated Github Issues
-[materialEntityID](https://github.com/tdwg/material-sample/issues/35)
-## Working Request
+
 ### New Term
 * **Submitter:** TDWG MaterialSample Task Group
 * **Efficacy Justification (why is this term necessary?):** The addition of the MaterialEntity class benefits from having a means to identifiy individual instances of MaterialEntities.
@@ -19,3 +17,7 @@ Proposed attributes of the new term
 * **Refines (identifier of the broader term this term refines; normative):** None
 * **Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative):** None
 * **ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative):** Unit/UnitGUID or Unit/UnitID
+
+## See also
+* [main discussion thread in Material Sample TG repo](https://github.com/tdwg/material-sample/issues/35)
+* [dwc:MaterialEntity new term proposal](https://github.com/tdwg/material-sample/blob/main/review%20package/MaterialEntity.md)
