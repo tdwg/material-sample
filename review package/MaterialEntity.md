@@ -20,7 +20,7 @@ The local name, label, and definition of the proposed top level term intentional
 * **Usage comments (recommendations regarding content, etc., not normative):** The term is defined at the most general level to admit descriptions of any subtype of material entity within scope of Darwin Core. In particular, any kind of material sample, preserved specimen, fossil, or exemplar from living collections is intended to be subsumed by this term.
 * **Examples (not normative):** an instance of a fossil, an instance of a herbarium sheet with its attached plant specimen, a particular part of the plant-derived material affixed to a herbarium sheet, an instance of a frozen tissue sample, a specific water sample, an instance of a meteorite fragment, a particular wolf in a zoo, a particular pack of wolves in the wild, an isolated molecule of DNA, a specific deep-frozen DNA sample, a particular field notebook, a particular paper page from a field notebook, an instance of a printed photograph
 * **Refines (identifier of the broader term this term refines; normative):** None
-* **Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative):**
+* **Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative):** None
 * **ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative):** None ([Specimen Unit](https://abcd.tdwg.org/terms/#group-SpecimenUnit) when used to denote a class of things appears to be a broadly construed subclass.)
 
 ## See also
