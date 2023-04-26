@@ -1,3 +1,5 @@
+Issue - https://github.com/tdwg/material-sample/issues/31
+
 # New Term Request
 
 * **Submitter:** [Material Sample Task Group](https://www.tdwg.org/community/osr/material-sample/)
