@@ -1,3 +1,5 @@
+Issue - https://github.com/tdwg/material-sample/issues/8
+
 ## Term change
 
 * Submitter: [Material Sample Task Group](https://www.tdwg.org/community/osr/material-sample/)
