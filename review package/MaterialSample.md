@@ -18,6 +18,6 @@ Proposed attributes of the new term version (Please put actual changes to be imp
 * Definition of the term (normative): **A material entity that represents an entity of interest in whole or in part.** ~~A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.~~
 * Usage comments (recommendations regarding content, etc., not normative): 
 * Examples (not normative): A whole organism preserved in a collection. A part of an organism isolated for some purpose. A soil sample. A marine microbial sample.
-* Refines (identifier of the broader term this term refines; normative): dwc:MaterialEntity
+* Refines (identifier of the broader term this term refines; normative): **dwc:MaterialEntity**
 * Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative): None
 * ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative): DataSets/DataSet/Units/Unit
