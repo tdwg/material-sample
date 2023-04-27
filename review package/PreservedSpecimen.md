@@ -18,6 +18,6 @@ Proposed attributes of the new term version (Please put actual changes to be imp
 * Definition of the term (normative): **A material entity that represents an entity of interest in whole or in part that is the preserved remains, impression, or trace of any once-living thing from the current geological age.**
 ** ~~A specimen that has been preserved. content, etc., not normative): 
 * Examples (not normative): A plant on an herbarium sheet. A cataloged lot of fish in a jar.
-* Refines (identifier of the broader term this term refines; normative): dwc:MaterialEntity
+* Refines (identifier of the broader term this term refines; normative): **dwc:MaterialEntity**
 * Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative): None
 * ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative): RecordBasisEnum/PreservedSpecimen
