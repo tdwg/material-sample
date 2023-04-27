@@ -16,7 +16,8 @@ Proposed attributes of the new term version (Please put actual changes to be imp
 * Term label (English, not normative): Preserved Specimen
 * Organized in Class (e.g., Occurrence, Event, Location, Taxon): N/A
 * Definition of the term (normative): **A material entity that represents an entity of interest in whole or in part that is the preserved remains, impression, or trace of any once-living thing from the current geological age.**
-** ~~A specimen that has been preserved. content, etc., not normative): 
+** ~~A specimen that has been preserved.~~
+* * Usage comments (recommendations regarding content, etc., not normative):
 * Examples (not normative): A plant on an herbarium sheet. A cataloged lot of fish in a jar.
 * Refines (identifier of the broader term this term refines; normative): **dwc:MaterialEntity**
 * Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative): None
