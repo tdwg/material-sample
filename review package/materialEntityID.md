@@ -15,8 +15,8 @@ Proposed attributes of the new term
 
 * **Term name (in lowerCamelCase for properties, UpperCamelCase for classes):** materialEntityID
 * **Organized in Class (e.g., Occurrence, Event, Location, Taxon):** MaterialEntity
-* **Definition of the term (normative):** An identifier for a particular instance of dwc:MaterialEntity.
-* **Usage comments (recommendations regarding content, etc., not normative):** Values of dwc:materialEntityID are intended to uniquely and persistently identify a particular material entity (instance of dwc:MaterialEntity) within some context. Examples of context include a particular sample collection, an organization, or the worldwide scale. Recommended best practice is to use a persistent, globally unique identifier. The identifier is bound to a physical object (the material entity) as opposed to a particular digital record (representations) of that physical object.
+* **Definition of the term (normative):** An identifier for a particular instance of a MaterialEntity.
+* **Usage comments (recommendations regarding content, etc., not normative):** Values of materialEntityID are intended to uniquely and persistently identify a particular MaterialEntity within some context. Examples of context include a particular sample collection, an organization, or the worldwide scale. Recommended best practice is to use a persistent, globally unique identifier. The identifier is bound to a physical object (the MaterialEntity) as opposed to a particular digital record (representation) of that physical object.
 * **Examples (not normative):** `06809dc5-f143-459a-be1a-6f03e63fc083`
 * **Refines (identifier of the broader term this term refines; normative):** None
 * **Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative):** None
