@@ -1,4 +1,4 @@
-Added per recommendation from John W.
+Issue https://github.com/tdwg/material-sample/issues/43
 
 # New Term Request
 
