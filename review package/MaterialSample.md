@@ -8,7 +8,7 @@ Issue - https://github.com/tdwg/material-sample/issues/2
 * Stability Justification (what concerns are there that this might affect existing implementations?): 
 * Implications for dwciri: namespace (does this change affect a dwciri term version)?: No
 
-Current Term definition: https://dwc.tdwg.org/list/#dwc_[term name here]
+Current Term definition: https://dwc.tdwg.org/list/#dwc_MaterialSample
 
 Proposed attributes of the new term version (Please put actual changes to be implemented in **bold** and ~strikethrough~):
 
