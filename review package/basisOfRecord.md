@@ -8,7 +8,7 @@ Issue - https://github.com/tdwg/material-sample/issues/39
 * Stability Justification (what concerns are there that this might affect existing implementations?): The addition of MaterialEntity as an example for will facilitate usaged by Global Biodiversity Information Facility (GBIF) Darwin Core Archives.
 * Implications for dwciri: namespace (does this change affect a dwciri term version)?: No
 
-Current Term definition: https://dwc.tdwg.org/list/#dwc_[term name here]
+Current Term definition: https://dwc.tdwg.org/list/#dwc_basisOfRecord
 
 Proposed attributes of the new term version (Please put actual changes to be implemented in **bold** and ~strikethrough~):
 
