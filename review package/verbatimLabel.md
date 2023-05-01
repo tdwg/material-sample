@@ -8,7 +8,7 @@ Issue - https://github.com/tdwg/material-sample/issues/40
 * Stability Justification (what concerns are there that this might affect existing implementations?): Usage as currently occurs in Global Biodiversity Information Facility (GBIF) Darwin Core Archives would not be affected by this change. Darwin Core does not include formal class hierarchies, but if we ignore that formality and imagine what the hierarchy would look like for the classes, we have MaterialEntity as the highest for material things. All of the other material-based classes in Darwin Core (dwc:MaterialSample, dwc:PreservedSpecimen, dwc:LivingSpecimen, dwc:FossilSpecimen) might be expected to have verbatim labels. As there are no other classes in between MaterialEntity and those subtypes, verbatimLabel is best organized with MaterialEntity.
 * Implications for dwciri: namespace (does this change affect a dwciri term version)?: No
 
-Current Term definition: https://dwc.tdwg.org/list/#dwc_[term name here]
+Current Term definition: https://dwc.tdwg.org/list/#dwc_verbatimLabel (note term is in review - https://github.com/tdwg/dwc/issues/32
 
 Proposed attributes of the new term version (Please put actual changes to be implemented in **bold** and ~strikethrough~):
 
