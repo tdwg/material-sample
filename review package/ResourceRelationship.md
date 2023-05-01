@@ -1,4 +1,4 @@
-Issue - https://github.com/tdwg/material-sample/issues/41
+Issue - https://github.com/tdwg/material-sample/issues/42
 
 ## Term change
 
