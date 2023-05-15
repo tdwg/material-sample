@@ -8,7 +8,7 @@ Issue - https://github.com/tdwg/material-sample/issues/48
 * Stability Justification (what concerns are there that this might affect existing implementations?): None
 * Implications for dwciri: namespace (does this change affect a dwciri term version)?: No
 
-Current Term definition: https://dwc.tdwg.org/list/#dwc_lithostratigraphicTerms
+Current Term definition: https://dwc.tdwg.org/list/#dwc_earliestEpochOrLowestSeries
 
 Proposed attributes of the new term version (Please put actual changes to be implemented in **bold** and ~strikethrough~):
 
