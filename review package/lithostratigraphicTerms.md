@@ -14,7 +14,7 @@ Proposed attributes of the new term version (Please put actual changes to be imp
 
 * Term name (in lowerCamelCase for properties, UpperCamelCase for classes): lithostratigraphicTerms
 * Term label (English, not normative): Lithostratigraphic Terms
-* Organized in Class (e.g., Occurrence, Event, Location, Taxon): N/A
+* Organized in Class (e.g., Occurrence, Event, Location, Taxon): Geological Context
 * Definition of the term (normative): The combination of all litho-stratigraphic names for the rock from which the ~~cataloged item~~**MaterialEntity** was collected.
 * Usage comments (recommendations regarding content, etc., not normative): 
 * Examples (not normative): Pleistocene-Weichselien
