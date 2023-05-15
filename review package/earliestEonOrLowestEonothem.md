@@ -17,8 +17,7 @@ Proposed attributes of the new term version (Please put actual changes to be imp
 * * Organized in Class (e.g., Occurrence, Event, Location, Taxon): Geological Context
 * Definition of the term (normative): The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the ~~cataloged item~~**MaterialEntity** was collected.
 * Usage comments (recommendations regarding content, etc., not normative): 
-* Examples (not normative): 
-Examples 	
+* Examples (not normative): Phanerozoic, Proterozoic	
 * Refines (identifier of the broader term this term refines; normative): None
 * Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative): None
 * ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative): not in ABCD
