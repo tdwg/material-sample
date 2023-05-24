@@ -7,7 +7,7 @@ Issue - https://github.com/tdwg/material-sample/issues/35
 ## Justifications
 
 * **Efficacy Justification (why is this term necessary?):** The addition of the MaterialEntity class benefits from having a means to identifiy individual instances of MaterialEntities.
-* **Demand Justification (name at least two organizations that independently need this term):** Material Sample Task Group, which includes representatives of over 10 organizations and the [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/) because this would be a standardized term for describing individual instances of material things "MaterialEntity" in its developing "[Grand Unified Model](https://www.gbif.org/composition/HjlTr705BctcnaZkcjRJq/data-model-principal-composition)"
+* **Demand Justification (name at least two organizations that independently need this term):** [Material Sample Task Group](https://www.tdwg.org/community/osr/material-sample/), which includes representatives of over 10 organizations.
 * **Stability Justification (what concerns are there that this might affect existing implementations?):** This would not prevent the use of any existing identifiers of material things within Darwin Core. However, it would be understood that it would be prefereable to use this term in place of dwc:materialSampleID. This proposal does not commit to a definition of the relationship of this term to dwc:materialSampleID, which is expected to be the subject of future discussion.
 * **Implications for dwciri: namespace (does this change affect a dwciri term version)?:** None
 
