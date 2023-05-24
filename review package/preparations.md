@@ -4,7 +4,7 @@ Issue - https://github.com/tdwg/material-sample/issues/7
 
 * Submitter: [Material Sample Task Group](https://www.tdwg.org/community/osr/material-sample/)
 * Efficacy Justification (why is this change necessary?): The MaterialSample Task Group concluded that `dwc:preparations` should be organized under MaterialEntity rather than Occurrence, and that developing a MaterialEntity extension -- to rigorously address the things (parts), treatment (preparations), and storage regimes (preservations) -- would be a timely (and overdue) project, but it is out of scope for the MaterialSample project. In the short-term, some clarification of the syntax and examples would be useful.
-* Demand Justification (if the change is semantic in nature, name at least two organizations that independently need this term): Material Sample Task Group, which includes representatives of over 10 organizations and the Global Biodiversity Information Facility (GBIF) because this would be a standardized term for the highest level classification in its developing "Grand Unified Model": "MaterialEntity"
+* Demand Justification (if the change is semantic in nature, name at least two organizations that independently need this term): [Material Sample Task Group](https://www.tdwg.org/community/osr/material-sample/), which includes representatives of over 10 organizations.
 * Stability Justification (what concerns are there that this might affect existing implementations?): 
 * Implications for dwciri: namespace (does this change affect a dwciri term version)?: No
 
