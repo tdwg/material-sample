@@ -3,8 +3,8 @@ Issue - https://github.com/tdwg/material-sample/issues/9
 ## Term change
 
 * Submitter: [Material Sample Task Group](https://www.tdwg.org/community/osr/material-sample/)
-* Efficacy Justification (why is this change necessary?): 
-* Demand Justification (if the change is semantic in nature, name at least two organizations that independently need this term): Material Sample Task Group, which includes representatives of over 10 organizations and the Global Biodiversity Information Facility (GBIF) because this would be a standardized term for the highest level classification in its developing "Grand Unified Model": "MaterialEntity"
+* Efficacy Justification (why is this change necessary?): Sequences are not associated with occurrences, but with physical material.
+* Demand Justification (if the change is semantic in nature, name at least two organizations that independently need this term): [Material Sample Task Group](https://www.tdwg.org/community/osr/material-sample/), which includes representatives of over 10 organizations.
 * Stability Justification (what concerns are there that this might affect existing implementations?): 
 * Implications for dwciri: namespace (does this change affect a dwciri term version)?: No
 
