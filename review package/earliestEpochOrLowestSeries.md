@@ -4,7 +4,7 @@ Issue - https://github.com/tdwg/material-sample/issues/48
 
 * Submitter: [Material Sample Task Group](https://www.tdwg.org/community/osr/material-sample/)
 * Efficacy Justification (why is this change necessary?): Create consistency of terms for material in Darwin Core.
-* Demand Justification (if the change is semantic in nature, name at least two organizations that independently need this term): Material Sample Task Group, which includes representatives of over 10 organizations and the Global Biodiversity Information Facility (GBIF).
+* Demand Justification (if the change is semantic in nature, name at least two organizations that independently need this term): [Material Sample Task Group](https://www.tdwg.org/community/osr/material-sample/), which includes representatives of over 10 organizations.
 * Stability Justification (what concerns are there that this might affect existing implementations?): None
 * Implications for dwciri: namespace (does this change affect a dwciri term version)?: No
 
