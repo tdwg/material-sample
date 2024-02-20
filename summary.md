@@ -24,23 +24,18 @@ Although we continued to have lengthy discussions about MaterialSample vs. Organ
 
 # Goals
 
-
 ### Charter
 
-
-   Our main goal is to enable physical object data sharing as part of the TDWG corpus of standards. The primary deliverable will be revised formal definitions of the terms below with appropriate use case examples following the Darwin Core format, adapted from the original definitions currently provided in Darwin Core. This does not depend upon any other tasks/goals of the Task Group.
-
-
+Our main goal is to enable physical object data sharing as part of the TDWG corpus of standards. The primary deliverable will be revised formal definitions of the terms below with appropriate use case examples following the Darwin Core format, adapted from the original definitions currently provided in Darwin Core. This does not depend upon any other tasks/goals of the Task Group.
 
 * [MaterialSample](https://dwc.tdwg.org/terms/#materialsample) 
 * [PreservedSpecimen](https://dwc.tdwg.org/terms/#preservedspecimen) 
 * [LivingSpecimen](https://dwc.tdwg.org/terms/#livingspecimen) 
 * [FossilSpecimen](https://dwc.tdwg.org/terms/#fossilspecimen) 
 
-    **Other deliverables.**
+**Other deliverables.**
 
-
-    The primary deliverable will be accompanied by a review of the following properties that fall under [Occurrence](https://dwc.tdwg.org/terms/#occurrence), but seem to be properties of one of the above. The task group will make a recommendation for each of these terms as to which class in the Darwin Core standard these properties belong which may also include recommendations for terms being revised, added, disambiguated, or deprecated. Depends upon definitions provided above.
+The primary deliverable will be accompanied by a review of the following properties that fall under [Occurrence](https://dwc.tdwg.org/terms/#occurrence), but seem to be properties of one of the above. The task group will make a recommendation for each of these terms as to which class in the Darwin Core standard these properties belong which may also include recommendations for terms being revised, added, disambiguated, or deprecated. Depends upon definitions provided above.
 
 * [catalogNumber](https://dwc.tdwg.org/terms/#dwc:catalogNumber) 
 * [Preparations](https://dwc.tdwg.org/terms/#dwc:preparations) 
