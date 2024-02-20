@@ -48,9 +48,10 @@ Although we continued to have lengthy discussions about MaterialSample vs. Organ
 * [associatedSequences](https://dwc.tdwg.org/terms/#dwc:associatedSequences) 
 * [otherCatalogNumbers](https://dwc.tdwg.org/terms/#dwc:otherCatalogNumbers) 
 * [BasisOfRecord](https://dwc.tdwg.org/terms/#dwc:basisOfRecord). 
-* Recommendations will be provided for a revised formal definition as it pertains to materialSample but will not consider other data types.
 
-Other documentation
+Recommendations will be provided for a revised formal definition as it pertains to materialSample but will not consider other data types.
+
+**Other documentation**
 
 We intend to document the rationale for creating revised definitions, particularly as these revisions promote physical object data sharing. This documentation should enable the relevant communities of practice (e.g., natural history collections managers) to understand the fundamental concepts, avoiding technical jargon wherever possible. Documentation and recommendations may include:
 
@@ -69,8 +70,6 @@ We intend to document the rationale for creating revised definitions, particular
 
 
 #### There was discussion about when a MaterialSample is also an Organism, whether a MaterialSample is also a “specimen” or is specimen a better term, and how MaterialSample should relate to the “specimen” terms in DWC. We discussed some aspects of the definition of materialSample. 
-
-
 
 1. Physical object - yes, but it doesn’t need to remain in existence for there to be data about it
 2. Represents something larger of interest - 
