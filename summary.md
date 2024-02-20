@@ -63,8 +63,7 @@ We intend to document the rationale for creating revised definitions, particular
 
 ##### [MaterialSample](https://dwc.tdwg.org/terms/#materialsample)
 
-
-#### There was discussion about when a MaterialSample is also an Organism, whether a MaterialSample is also a “specimen” or is specimen a better term, and how MaterialSample should relate to the “specimen” terms in DWC. We discussed some aspects of the definition of materialSample. 
+There was discussion about when a MaterialSample is also an Organism, whether a MaterialSample is also a “specimen” or is specimen a better term, and how MaterialSample should relate to the “specimen” terms in DWC. We discussed some aspects of the definition of materialSample. 
 
 1. Physical object - yes, but it doesn’t need to remain in existence for there to be data about it
 2. Represents something larger of interest - 
