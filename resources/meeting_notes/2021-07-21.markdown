@@ -7,53 +7,53 @@ Teresa Mayfield-Meyer, Roger Burkhalter, Steve Baskauf, Abby Benson, Richard Pyl
 ## Draft Charter
 Review and edit the draft charter.
 1. Need to determine which Interest Group supports us
-    a. Observations and Specimens suggested - Quentin is the lead of that Interest Group and has pre-approval for this task team
-        i. Interest Group follows up to make sure work is happening
+    a. Observations and Specimens suggested - Quentin is the lead of that Interest Group and has pre-approval for this task team  
+        i. Interest Group follows up to make sure work is happening  
 2. Need to determine Core Members (contribution expected!) vs. Members (watching and reporting to other groups, contribution a bonus)
-    a. No commitments from folks yet
-    b. Core members should participate and contribute though - if you just want to watch what’s happening maybe change your status
-    c. For the charter - the core members are there as folks to contact to make sure work is continuing for the task team
-    d. Decision: keep everyone as core member for now but chose if you would like to change your status
+    a. No commitments from folks yet  
+    b. Core members should participate and contribute though - if you just want to watch what’s happening maybe change your status  
+    c. For the charter - the core members are there as folks to contact to make sure work is continuing for the task team  
+    d. Decision: keep everyone as core member for now but chose if you would like to change your status  
 3. A Co-Convenor would be nice
-    a. Need a backup and team effort is better
-    b. If you would like to take this on- move your name up to that section in the Draft Charter
+    a. Need a backup and team effort is better  
+    b. If you would like to take this on- move your name up to that section in the Draft Charter  
 4. Regular meeting time
-    a. Teresa suggests one meeting per month, always the third Wednesday, alternating months with MDT morning and evening times.
-    b. Suggestion to have working meetings sometimes to get things accomplished
+    a. Teresa suggests one meeting per month, always the third Wednesday, alternating months with MDT morning and evening times.  
+    b. Suggestion to have working meetings sometimes to get things accomplished  
 5. Mailing list - A Google group OK with everyone?
 6. Is the scope of the primary deliverable achievable?
-    a. Issue is that it may not be possible to tackle MaterialSample without addressing basisOfRecord.
-    b. The flatness of how we have organized things is an impediment to using the standard and we need to address Evidence
-    c. If we are the MaterialSample task team maybe it isn’t our job to solve the problem but instead define the problem.
-    d. Do we need to define MaterialSample so it does not apply to archaeological or other types of samples 
+    a. Issue is that it may not be possible to tackle MaterialSample without addressing basisOfRecord.  
+    b. The flatness of how we have organized things is an impediment to using the standard and we need to address Evidence  
+    c. If we are the MaterialSample task team maybe it isn’t our job to solve the problem but instead define the problem.  
+    d. Do we need to define MaterialSample so it does not apply to archaeological or other types of samples  
 7. Should we add a Scope section to the document?
-    a. Decision: yes
-8. While Darwin Core is described as a bag of terms, people do apply semantics to it and this needs to be addressed. Is this within scope for this task team?
-    a. It was intended for models to be built on top of the bag of terms but this has not been done.
-    b. Suggestion: Developing a model would be an ideal outcome of this group.
-        i. Suggestion: modeling within the limited scope of the role of MaterialSample, without trying to do it all.
-        ii. maybe the scope of modelling includes the classes: MaterialSample, PreservedSpecimen, FossilSpecimen, LivingSpecimen(?), Identification(?), Occurrence(?), Organism(?), MeasurementOrFact(?)
-    c. Any model needs to be usable by everyone- not just technically minded folks.
-9. Recommended to setup our own repo in Github for this given the possible scope. Tim Robertson or possibly Quentin can setup.
-10. Alignment with related ontologies/vocabularies?
-    a. OGC, ISO, and W3C - definitions of samples and sampling - added to the Resources section of the Charter
-11. Where do we put the data when we try to exchange it since we have artificial buckets - is herbarium specimen a preserved specimen or a material sample? Practical use of our decisions is important.
-12. How to prevent scope creep- keep it to just material sample and any of the classes that it touches directly but without dealing with those directly.
-    a. Do we want to make sure to link with geology data, etc?
-13. Should we start from the point of view of use cases and determine if they work or not
-    a. eDNA
-    b. Herbarium sheet
-    c. Soil sample
-    d. Come up with a best practice for how the terms should be used
-14. Changes can be made to the normative definitions of the terms, non-normative usage comments and examples
-15. Examples of alignments between ontologies
-    a. https://www.w3.org/TR/vocab-ssn-ext/#oboe
-    b. https://www.w3.org/TR/vocab-ssn/#PROV_Alignment
+    a. Decision: yes  
+8. While Darwin Core is described as a bag of terms, people do apply semantics to it and this needs to be addressed. Is this within scope for this task team?  
+    a. It was intended for models to be built on top of the bag of terms but this has not been done.  
+    b. Suggestion: Developing a model would be an ideal outcome of this group.  
+        i. Suggestion: modeling within the limited scope of the role of MaterialSample, without trying to do it all.  
+        ii. maybe the scope of modelling includes the classes: MaterialSample, PreservedSpecimen, FossilSpecimen, LivingSpecimen(?), Identification(?), Occurrence(?), Organism(?), MeasurementOrFact(?)  
+       c. Any model needs to be usable by everyone- not just technically minded folks.  
+10. Recommended to setup our own repo in Github for this given the possible scope. Tim Robertson or possibly Quentin can setup.  
+11. Alignment with related ontologies/vocabularies?  
+    a. OGC, ISO, and W3C - definitions of samples and sampling - added to the Resources section of the Charter  
+12. Where do we put the data when we try to exchange it since we have artificial buckets - is herbarium specimen a preserved specimen or a material sample? Practical use of our decisions is important.  
+13. How to prevent scope creep- keep it to just material sample and any of the classes that it touches directly but without dealing with those directly.  
+    a. Do we want to make sure to link with geology data, etc?  
+14. Should we start from the point of view of use cases and determine if they work or not  
+    a. eDNA  
+    b. Herbarium sheet  
+    c. Soil sample  
+    d. Come up with a best practice for how the terms should be used  
+15. Changes can be made to the normative definitions of the terms, non-normative usage comments and examples  
+16. Examples of alignments between ontologies  
+    a. https://www.w3.org/TR/vocab-ssn-ext/#oboe  
+    b. https://www.w3.org/TR/vocab-ssn/#PROV_Alignment  
 ## Next steps and assignments
-1. Finalize charter before next months meeting
-2. Setup our own repo in the TDWG Github
-3. Create mailing list (TDWG (http://lists.tdwg.org/mailman/listinfo)  or Google Group)
-4. Sharon will schedule zoom events for the next meeting(s)
+1. Finalize charter before next months meeting  
+2. Setup our own repo in the TDWG Github  
+3. Create mailing list (TDWG (http://lists.tdwg.org/mailman/listinfo)  or Google Group)  
+4. Sharon will schedule zoom events for the next meeting(s)  
 
 ## Google Chat
 You10:00 AM  
