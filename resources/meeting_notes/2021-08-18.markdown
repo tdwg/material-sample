@@ -10,9 +10,9 @@ Teresa Mayfield-Meyer, Anne Fuchs, Abby Benson, Rich Pyle, Simon Cox, Stan Blum,
  - Volunteers, move your name up to that section in the Draft Charter
 ### Tasks from last meeting
 #### Github Repo - https://github.com/tdwg/material-sample
- - Should it be open to write access to everyone? Yes
- - Stan would need to invite everyone to the TDWG Github and make the team all writable
-  - Stan has created a “team” for Material-Sample and invited everyone on the TG charter to be a member. Done.  If you are not a member of the TDWG organization on GitHub, you have been invited to be a team member and will need to accept.  Let me know if you don’t find your invitation, and if you would also like to be a member of the TDWG organization on GitHub. 
+* Should it be open to write access to everyone? Yes
+* Stan would need to invite everyone to the TDWG Github and make the team all writable
+    * Stan has created a “team” for Material-Sample and invited everyone on the TG charter to be a member. Done.  If you are not a member of the TDWG organization on GitHub, you have been invited to be a team member and will need to accept.  Let me know if you don’t find your invitation, and if you would also like to be a member of the TDWG organization on GitHub. 
  - Using pull requests for updating documentation has worked well for other groups - also means there needs to be an Admin to manage the pull requests
  - If it’s fully writable without a pull request then no one is notified that something has been changed
 #### Create mailing list (TDWG or Google Group)
