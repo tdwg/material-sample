@@ -7,13 +7,13 @@ Roger Burkhalter, Abby Benson, Teresa Mayfield-Meyer, Stan Blum, Mariel Campbell
 ## Agenda Items
 ### Tasks from last meeting
 #### Finalize charter 
-    * Charter accepted: https://www.tdwg.org/community/osr/material-sample/ 
+   * Charter accepted: https://www.tdwg.org/community/osr/material-sample/ 
 #### Create mailing list
-    * Created: dwc-material-sample@lists.tdwg.org
+   * Created: dwc-material-sample@lists.tdwg.org
 #### Participate in GitHub Repo discussions
-    * definitions for the terms indicated in the Primary Deliverable
+   * definitions for the terms indicated in the Primary Deliverable
 #### Recorded Meetings
-    * There is a [folder in Google Drive](https://drive.google.com/drive/folders/13YpbdUiPhDtYXkT5SZ8bw4OPIX00a9hb?usp=sharing) where I will post meeting recordings
+   * There is a [folder in Google Drive](https://drive.google.com/drive/folders/13YpbdUiPhDtYXkT5SZ8bw4OPIX00a9hb?usp=sharing) where I will post meeting recordings
 ### Items for discussion
 1. [BasisOfRecord](https://github.com/tdwg/material-sample/issues/11)  
     a. REQUIRED for IPT  
