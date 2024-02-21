@@ -1,0 +1,157 @@
+# 2021-07-21 Material Sample Task Group Meeting
+## Attendees
+### 10AM MDT
+Teresa Mayfield-Meyer, Quentin Groom, Jutta Buschbom, Richard Pyle, Dave Vieglais, Steve Baskauf, Matt Woodburn, Gabi Droege, Abby Benson, Christian Bölling, Sharon Grant, John Wieczorek, Dag Endresen
+### 4PM MDT
+Teresa Mayfield-Meyer, Roger Burkhalter, Steve Baskauf, Abby Benson, Richard Pyle, Stephen Richard, Michael Hope, Simon Cox, Greg Whitbread, John Wieczorek, Anne Fuchs, Sharon Grant
+## Draft Charter
+Review and edit the draft charter.
+1. Need to determine which Interest Group supports us
+    a. Observations and Specimens suggested - Quentin is the lead of that Interest Group and has pre-approval for this task team
+        i. Interest Group follows up to make sure work is happening
+2. Need to determine Core Members (contribution expected!) vs. Members (watching and reporting to other groups, contribution a bonus)
+    a. No commitments from folks yet
+    b. Core members should participate and contribute though - if you just want to watch what’s happening maybe change your status
+    c. For the charter - the core members are there as folks to contact to make sure work is continuing for the task team
+    d. Decision: keep everyone as core member for now but chose if you would like to change your status
+3. A Co-Convenor would be nice
+    a. Need a backup and team effort is better
+    b. If you would like to take this on- move your name up to that section in the Draft Charter
+4. Regular meeting time
+    a. Teresa suggests one meeting per month, always the third Wednesday, alternating months with MDT morning and evening times.
+    b. Suggestion to have working meetings sometimes to get things accomplished
+5. Mailing list - A Google group OK with everyone?
+6. Is the scope of the primary deliverable achievable?
+    a. Issue is that it may not be possible to tackle MaterialSample without addressing basisOfRecord.
+    b. The flatness of how we have organized things is an impediment to using the standard and we need to address Evidence
+    c. If we are the MaterialSample task team maybe it isn’t our job to solve the problem but instead define the problem.
+    d. Do we need to define MaterialSample so it does not apply to archaeological or other types of samples 
+7. Should we add a Scope section to the document?
+    a. Decision: yes
+8. While Darwin Core is described as a bag of terms, people do apply semantics to it and this needs to be addressed. Is this within scope for this task team?
+    a. It was intended for models to be built on top of the bag of terms but this has not been done.
+    b. Suggestion: Developing a model would be an ideal outcome of this group.
+        i. Suggestion: modeling within the limited scope of the role of MaterialSample, without trying to do it all.
+        ii. maybe the scope of modelling includes the classes: MaterialSample, PreservedSpecimen, FossilSpecimen, LivingSpecimen(?), Identification(?), Occurrence(?), Organism(?), MeasurementOrFact(?)
+    c. Any model needs to be usable by everyone- not just technically minded folks.
+9. Recommended to setup our own repo in Github for this given the possible scope. Tim Robertson or possibly Quentin can setup.
+10. Alignment with related ontologies/vocabularies?
+    a. OGC, ISO, and W3C - definitions of samples and sampling - added to the Resources section of the Charter
+11. Where do we put the data when we try to exchange it since we have artificial buckets - is herbarium specimen a preserved specimen or a material sample? Practical use of our decisions is important.
+12. How to prevent scope creep- keep it to just material sample and any of the classes that it touches directly but without dealing with those directly.
+    a. Do we want to make sure to link with geology data, etc?
+13. Should we start from the point of view of use cases and determine if they work or not
+    a. eDNA
+    b. Herbarium sheet
+    c. Soil sample
+    d. Come up with a best practice for how the terms should be used
+14. Changes can be made to the normative definitions of the terms, non-normative usage comments and examples
+15. Examples of alignments between ontologies
+    a. https://www.w3.org/TR/vocab-ssn-ext/#oboe
+    b. https://www.w3.org/TR/vocab-ssn/#PROV_Alignment
+## Next steps and assignments
+1. Finalize charter before next months meeting
+2. Setup our own repo in the TDWG Github
+3. Create mailing list (TDWG (http://lists.tdwg.org/mailman/listinfo)  or Google Group)
+4. Sharon will schedule zoom events for the next meeting(s)
+
+## Google Chat
+You10:00 AM  
+https://docs.google.com/document/d/1zj-diRvKiFHFtx2xxsixD3HKEMLfsspzbF9Bk6wrxbA/edit#  
+https://docs.google.com/document/d/1y4xUOhfLZz6Vac-hBiXHJ2dI-k6O2ChqToCG7MkiWsQ/edit#heading=h.ukgoq0qho5f5  
+J. Buschbom10:02 AM  
+j.buschbom@web.de  
+You10:03 AM  
+https://docs.google.com/document/d/1zj-diRvKiFHFtx2xxsixD3HKEMLfsspzbF9Bk6wrxbA/edit#  
+Sharon Grant10:08 AM  
+Hey Theresa https://github.com/tdwg/cd  
+John Wieczorek10:26 AM  
+Done. Comments added.  
+Sharon Grant10:32 AM  
+agreed  
+Christian Bölling10:34 AM  
+trying to fix it, go ahead!  
+Abigail Benson10:39 AM  
+If the bigger issue is the one we're actually trying to address then is this really a task team for that instead?  
+John Wieczorek10:40 AM  
+Good question Abby. I was going to ask if we could take a poll of people who expressed interest to see what their expectations were about what to solve here.  
+John Wieczorek10:42 AM  
+I think that is a sane approach, Rich.  
+Richard Pyle10:43 AM  
+PreservedSpecimen: "A specimen that has been preserved."  It doesn't get more circular than that!  
+Gabi Droege10:45 AM  
+we have no "Scope" chapter yet. Do we need it?  
+Sharon Grant10:49 AM  
+I think we do need a scope section  
+Richard Pyle10:54 AM  
+I fully agree,  I added a comment related to this (bag of terms --> proto-ontology) in the document.  
+Quentin Groom10:55 AM  
+do we need to move platform to continue? I can make a zoom  
+You10:55 AM  
+I extended the meeting (hopefully)!  
+Quentin Groom10:55 AM  
+ok, great!  
+John Wieczorek10:57 AM  
+Well said, Steve. That is exactly right.  
+And there have been attempts to do the modeling, such as BCO.  
+Richard Pyle10:58 AM  
+Maybe a different Task Group is needed to start talking about evolving from a BoT to a model.  I suggest that Darwin-SW serve as the starting point for that discussion.  
+(Though I admit I haven't been following BCO, so I could be convinced that would be a better starting point)  
+John Wieczorek10:59 AM  
+Would it be reasonable to do the modeling within the limited scope of the role of MaterialSample, without trying to do it all?  
+You10:59 AM  
+I think we could do that.  
+John Wieczorek11:00 AM  
+Exactly, just a piece is a good scope.  
+Dave Vieglais11:00 AM  
+Yep  
+Richard Pyle11:00 AM  
+Yes!  
+Christian Bölling11:00 AM  
+A (not the) model for the issues that can be extracted structurally from #314 (and possibly related sources.  
+Richard Pyle11:01 AM  
+But.... which classes in DwC would be out of this "limited" scope?  
+John Wieczorek11:01 AM  
+Taxon Concepts  
+Richard Pyle11:01 AM  
+So taxonomic identity of a MS instance is not a core aspect of the MS scope?  
+John Wieczorek11:05 AM  
+An example of things to not try to solve here, what is the nature of the dwc:Orgnism - dwc:Taxon continuum.  
+Christian Bölling11:06 AM  
++1  
+Sharon Grant11:06 AM  
+One continuum to rule them all  
+Dag Endresen11:06 AM  
+Model the relation to eg. Taxon but note that Taxon and Taxon Concept itself are modelled elsewhere (for now)  
+Richard Pyle11:07 AM  
+So... maybe the scope of modelling includes the classes: MaterialSample, PreservedSpecimen, FossilSpecimen, LivingSpecimen(?), Identification(?), Occurrence(?), Organism(?), MeasurmentOrFact(?)  
+Gabi Droege11:08 AM  
+that's a good start Richard.  
+Steve Baskauf11:09 AM  
++1 Rich  
+Richard Pyle11:09 AM  
+These are things I would imagine would be directly associated with a MS instance.  The other DwC classes would (presumably) be inherited by one of these relationships.  
+Christian Bölling11:10 AM  
+I love the interfacing of resources and conversations possible on GitHub.  
+Richard Pyle11:10 AM  
+Oh, and I guess if MeasurementOrFact is included, then so should be ResourceRelationship.  
+Gabi Droege11:11 AM  
+so you can't have a subrepo in a repo?  
+Steve Baskauf11:12 AM  
+I think there is only one issue tracker per repo  
+You can tag the messages, but if you follow the repo, you get everything  
+Gabi Droege11:12 AM  
+ok, than rather let's go for a separate repo :)  
+Gabi Droege11:14 AM  
+http://lists.tdwg.org/mailman/listinfo  
+You3:58 PM  
+https://docs.google.com/document/d/1zj-diRvKiFHFtx2xxsixD3HKEMLfsspzbF9Bk6wrxbA/edit#  
+You4:03 PM  
+https://docs.google.com/document/d/1zj-diRvKiFHFtx2xxsixD3HKEMLfsspzbF9Bk6wrxbA/edit#  
+Richard Pyle4:06 PM  
+I am willing to help on co-convening as well, but will have inconsistent availability (so don'[t rely on me).  But when I am available, I'm willing to put in extra work to move things along.  
+John Wieczorek4:14 PM  
+We talked about alignments, or resource that inform, such as the BCO. O&M seems a perfect additional example.  
+Simon Cox4:40 PM  
+https://www.w3.org/TR/vocab-ssn-ext/#oboe  
+https://www.w3.org/TR/vocab-ssn/#PROV_Alignment  
