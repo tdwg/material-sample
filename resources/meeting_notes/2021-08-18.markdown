@@ -55,27 +55,27 @@ Is one aim of this TG to review / adapt the list of upper level categories? Also
 Agenda 
 Task Group Draft Charter 
 Agenda 
-From John Wieczorek to Everyone:  04:09 PM
-I would say that it is very useful to make the comparison with other existing standards.
-From Anne Fuchs to Everyone:  04:09 PM
-definitely have similar requirements
-From John Wieczorek to Everyone:  04:13 PM
-Don’t go to preparations with great expectations - it is basically a comments field about the handling history of the specimen.
-From John Wieczorek to Everyone:  04:30 PM
-https://www.w3.org/TR/csvw-ucr/
-From Me to Everyone:  04:40 PM
-https://github.com/tdwg/material-sample
-From John Wieczorek to Everyone:  04:40 PM
-Organism and MaterialSample were minted at the same time in 2014.
-From Richard Pyle to Everyone:  04:42 PM
-Yes, and both seem to be reaching a point a maturity that led to this task group.  It's worth noting that the discussions behind the lead-up to minting both new classes included a fair bit of discussion about "how are these two classes not the same thing?
-From John Wieczorek to Everyone:  04:42 PM
-@Simon I would be interested in your short list of relevant standards for us to consider.
-From Sharon Grant to Everyone:  04:42 PM
-https://github.com/tdwg/material-sample
-From Simon Cox to Everyone:  04:43 PM
-I just found and accepted the GitHub invitation - thanks
-From Anne Fuchs to Everyone:  04:45 PM
-thank you everyone
+From John Wieczorek to Everyone:  04:09 PM  
+I would say that it is very useful to make the comparison with other existing standards.  
+From Anne Fuchs to Everyone:  04:09 PM  
+definitely have similar requirements  
+From John Wieczorek to Everyone:  04:13 PM  
+Don’t go to preparations with great expectations - it is basically a comments field about the handling history of the specimen.  
+From John Wieczorek to Everyone:  04:30 PM  
+https://www.w3.org/TR/csvw-ucr/  
+From Me to Everyone:  04:40 PM  
+https://github.com/tdwg/material-sample  
+From John Wieczorek to Everyone:  04:40 PM  
+Organism and MaterialSample were minted at the same time in 2014.  
+From Richard Pyle to Everyone:  04:42 PM  
+Yes, and both seem to be reaching a point a maturity that led to this task group.  It's worth noting that the discussions behind the lead-up to minting both new classes included a fair bit of discussion about "how are these two classes not the same thing?  
+From John Wieczorek to Everyone:  04:42 PM  
+@Simon I would be interested in your short list of relevant standards for us to consider.  
+From Sharon Grant to Everyone:  04:42 PM  
+https://github.com/tdwg/material-sample  
+From Simon Cox to Everyone:  04:43 PM  
+I just found and accepted the GitHub invitation - thanks  
+From Anne Fuchs to Everyone:  04:45 PM  
+thank you everyone  
 
 please take a look at https://www.w3.org/TR/vocab-ssn/ and https://www.w3.org/TR/vocab-ssn-ext/ (maybe you already are). https://www.w3.org/TR/vocab-ssn-ext/#oboe might be a good entry point
