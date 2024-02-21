@@ -6,49 +6,49 @@ Teresa Mayfield-Meyer, Roger Burkhalter, Stan Blum, Gabi Droege, Jutta Buschbom,
 Teresa Mayfield-Meyer, Anne Fuchs, Abby Benson, Rich Pyle, Simon Cox, Stan Blum, John Wieczorek, Sharon Grant
 ## Agenda Items
 ### Call for Co-Convenor
- - Need a backup and team effort is better
- - Volunteers, move your name up to that section in the Draft Charter
+* Need a backup and team effort is better
+* Volunteers, move your name up to that section in the Draft Charter
 ### Tasks from last meeting
 #### Github Repo - https://github.com/tdwg/material-sample
 * Should it be open to write access to everyone? Yes
 * Stan would need to invite everyone to the TDWG Github and make the team all writable
     * Stan has created a “team” for Material-Sample and invited everyone on the TG charter to be a member. Done.  If you are not a member of the TDWG organization on GitHub, you have been invited to be a team member and will need to accept.  Let me know if you don’t find your invitation, and if you would also like to be a member of the TDWG organization on GitHub. 
- - Using pull requests for updating documentation has worked well for other groups - also means there needs to be an Admin to manage the pull requests
- - If it’s fully writable without a pull request then no one is notified that something has been changed
+* Using pull requests for updating documentation has worked well for other groups - also means there needs to be an Admin to manage the pull requests
+    * If it’s fully writable without a pull request then no one is notified that something has been changed
 #### Create mailing list (TDWG or Google Group)
- - Tim R. can create an official TDWG mailing list - http://lists.tdwg.org/mailman/listinfo
- - Prefer that all conversations happen in the Github repo
+* Tim R. can create an official TDWG mailing list - http://lists.tdwg.org/mailman/listinfo
+* Prefer that all conversations happen in the Github repo
 ## Finalize charter before next months meeting
 ### Open Task Force Draft Charter comments
 Is one aim of this TG to review / adapt the list of upper level categories? Also, in the context of these issues the "star" structure has been called into question. Is an inquiry into the adequacy of this structure in scope of the TG?
- - Might want to include additional documentation that includes what is possible by changing definitions alone and what would be possible with a model that connects the terms - proposal for a semantic connection between terms
- - Issue with this because a model does not exist yet so we can’t communicate it. Some concern about promising a model as a deliverable. But hard to have recommendations without considering the model.
- - John recommends that a model will be useful to inform what we are discussing but complicates our scope by including as a deliverable.
- - John is currently working with GBIF to expand the Darwin Core Archive beyond the star schema with end of year deadline.
- - Further discussion and explanation of this work. This work will allow for lots of different relationships. Similar to a relational database. Will use W3C on the web https://www.w3.org/TR/csvw-ucr/. Not frictionless data packages.
- - Looking for this task team to critically review this work and vet it.
- - Outcome of other task teams are relying on this work
- - Biological Collections Ontology is a place to look for a model that already exists
- - Connection between the processes and the events that come from them will be one area that will need careful consideration
- - Anne is concerned about the distinction between organism and taxon and how we are using that in the draft charter
- - Taxon issues are out of scope. There is an identification step between a material sample and a taxa.
- - Where does an organism end and a material sample begin
+* Might want to include additional documentation that includes what is possible by changing definitions alone and what would be possible with a model that connects the terms - proposal for a semantic connection between terms
+* Issue with this because a model does not exist yet so we can’t communicate it. Some concern about promising a model as a deliverable. But hard to have recommendations without considering the model.
+* John recommends that a model will be useful to inform what we are discussing but complicates our scope by including as a deliverable.
+* John is currently working with GBIF to expand the Darwin Core Archive beyond the star schema with end of year deadline.
+    * Further discussion and explanation of this work. This work will allow for lots of different relationships. Similar to a relational database. Will use W3C on the web https://www.w3.org/TR/csvw-ucr/. Not frictionless data packages.
+    *  Looking for this task team to critically review this work and vet it.
+* Outcome of other task teams are relying on this work
+* Biological Collections Ontology is a place to look for a model that already exists
+* Connection between the processes and the events that come from them will be one area that will need careful consideration
+* Anne is concerned about the distinction between organism and taxon and how we are using that in the draft charter
+    * Taxon issues are out of scope. There is an identification step between a material sample and a taxa.
+    * Where does an organism end and a material sample begin
 ### No dependencies
- - Changed to longer sentence
+* Changed to longer sentence
 ### Are we going to look at definitions for MachineObservation, HumanObservation? Those are part of basisOfRecord. I'm trying to figure out how this task team defines the scope relative to this thread on Github https://github.com/tdwg/dwc/issues/302
- - Decision is to keep the scope to materialSample and move the revised definition of basisOfRecord to the other deliverables
- - This task group will need to have really good communication with the basisOfRecord/evidence class task team if and when that one kicks off
+* Decision is to keep the scope to materialSample and move the revised definition of basisOfRecord to the other deliverables
+* This task group will need to have really good communication with the basisOfRecord/evidence class task team if and when that one kicks off
 ### Addition of Other Deliverables
- - Application schemes for DarwinCore (Core vs. extension)
- - Suggest new terms if needed (e.g. preservationType)
- - Develop a MaterialSample model that is usable by everyone, not just technically minded folks.
- - Alignments/mappings to related standards, ontologies and vocabularies when possible and desirable
- - Simon brought the idea, from work with other groups such as geologic contexts, of needing to link samples with other samples and specimens with other specimens - adding an associated class- is derived from, is related to
- - Stan- maybe `preparations` could serve this need - John is dubious
- - The number of relationships between those entities could be quite large and have the potential to increase over time so having a generalized way of handling interactions between things.
+* Application schemes for DarwinCore (Core vs. extension)
+* Suggest new terms if needed (e.g. preservationType)
+* Develop a MaterialSample model that is usable by everyone, not just technically minded folks.
+* Alignments/mappings to related standards, ontologies and vocabularies when possible and desirable
+* Simon brought the idea, from work with other groups such as geologic contexts, of needing to link samples with other samples and specimens with other specimens - adding an associated class- is derived from, is related to
+    * Stan- maybe `preparations` could serve this need - John is dubious
+    * The number of relationships between those entities could be quite large and have the potential to increase over time so having a generalized way of handling interactions between things.
 ## Next steps and assignments
 1. Finalize charter before next months meeting
- - Once final send to secretary@tdwg.org
+    * Once final send to secretary@tdwg.org
 2. Create mailing list (TDWG (http://lists.tdwg.org/mailman/listinfo)  or Google Group) - requested today via email
 3. Participate in GitHub Repo discussions - definitions for the terms indicated in the Primary Deliverable
 ## Meeting Chat
