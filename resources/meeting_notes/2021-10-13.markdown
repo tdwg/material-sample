@@ -7,9 +7,9 @@ Teresa Mayfield-Meyer, Stan Blum, Simon Cox, Abby Benson, Wai-Yin, Seth Kaufman,
 ## Agenda Items
 ### Tasks from last meeting
 #### Participate in [GitHub Repo discussions](https://github.com/tdwg/material-sample/issues)
-    * definitions for the terms indicated in the Primary Deliverable 
+   * definitions for the terms indicated in the Primary Deliverable 
 #### Recorded Meetings
-    * There is a [folder in Google Drive](https://drive.google.com/drive/folders/13YpbdUiPhDtYXkT5SZ8bw4OPIX00a9hb?usp=sharing) where I will post meeting recordings
+   * There is a [folder in Google Drive](https://drive.google.com/drive/folders/13YpbdUiPhDtYXkT5SZ8bw4OPIX00a9hb?usp=sharing) where I will post meeting recordings
 ### Items for discussion  
 1. Close BasisOfRecord issue and focus on “material” plus hierarchy (Suggested by participants at earlier meeting)  
 2. Diagrams  
