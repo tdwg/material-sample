@@ -19,7 +19,7 @@ Roger Burkhalter, Abby Benson, Teresa Mayfield-Meyer, Stan Blum, Mariel Campbell
     a. REQUIRED for IPT  
     b. Focused discussion - https://github.com/tdwg/material-sample/issues/11#issuecomment-920362964 
     c. Radical transformation? - probably out of scope, but keep this in our minds  
-         i. Steve brought up that there are separate issues - one is that we need to define what basisOfRecord means and the second is breaking the star schema and the second one seems out of scope for this task team 
+          i. Steve brought up that there are separate issues - one is that we need to define what basisOfRecord means and the second is breaking the star schema and the second one seems out of scope for this task team 
          ii. Tim: Material Sample as a core was never moved forward by GBIF because there was never a good justification for creating it that would be different from the occurrences. Darwin Core Archives were not part of Darwin Core.  
          iii. Steve: rdf:type, rdf guide is officially adopted by the Darwin Core standard, need to review what’s in the guide. https://dwc.tdwg.org/rdf/ 2.3.1.4 A term that we have for describing a type of a thing.  
          iv. Rich: if it was in occurrence it would make sense as the “type” of occurrence, but we are also using it for other “types”  
