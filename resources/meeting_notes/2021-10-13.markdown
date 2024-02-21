@@ -1,0 +1,141 @@
+# 2021-10-13 Material Sample Task Group Meeting
+## Attendees
+### 10AM MDT
+Roger Burkhalter, Abby Benson, Teresa Mayfield-Meyer, Dag Endresen, Gabi Droege, Steve Baskauf, Dave Vieglais, Jutta Buschbom, Stan Blum, Richard Pyle, Christian Bölling, John Wieczorek
+### 4PM MDT
+Teresa Mayfield-Meyer, Stan Blum, Simon Cox, Abby Benson, Wai-Yin, Seth Kaufman, Greg Whitbread, Richard Pyle
+## Agenda Items
+### Tasks from last meeting
+#### Participate in [GitHub Repo discussions](https://github.com/tdwg/material-sample/issues)
+    * definitions for the terms indicated in the Primary Deliverable 
+#### Recorded Meetings
+    * There is a [folder in Google Drive](https://drive.google.com/drive/folders/13YpbdUiPhDtYXkT5SZ8bw4OPIX00a9hb?usp=sharing) where I will post meeting recordings
+### Items for discussion  
+1. Close BasisOfRecord issue and focus on “material” plus hierarchy (Suggested by participants at earlier meeting)  
+2. Diagrams  
+3. Use Cases  
+4. Discussion about how to proceed  
+    a. Github discussions are becoming overwhelming and expanding beyond the task group remit  
+    b. Need to interface with https://www.tdwg.org/community/gbwg/enviro/ and glad Gabi was here this morning to make sure we’re all on the same page  
+    c. Can basisOfRecord be replaced with rdf:type is the main question Steve sees  
+    d. Tension between how the data should be modeled and how the aggregators are making use of the model to provide search and discovery mechanisms  
+    e. John Wieczorek and Tim Robertson working on six different use cases for updating the model - event based model seems to be the one that works for all these use cases https://gbif.app.box.com/s/7cr98uozrgrs88lz2r0lgt8w5z4yanyw   
+        i. People who are publishing a simple version could continue on publishing that way but those who need more complexity will be able to provide their data that way  
+    f. Want to be able to provide a clear succinct label for what the “thing” is (e.g. image)  
+    g. Need a clear definition of what we mean by material sample - does it have to be taken from something else or would a whole specimen count?  
+    h. Jutta suggests focusing on the types,  hierarchies, and definitions  
+    i. Problem is that basisOfRecord = occurrence- if we can set this aside then we can move forward - material sample is not an occurrence  
+    j. Christian advocates for not using “sample” or “specimen” at all in the top level category because they have specific and variable definitions per community or individual  
+5. Discussion from the afternoon
+    a. Find using rdf:PhysicalObject to be encompassing what we’re talking about  
+        i. Simon: the act of sampling provides us a subset of a larger picture we’re interested in  
+    b. Bird population observation sampling using a protocol might be similar to social sciences and we might consider some of the language there
+
+## Next steps and assignments
+
+
+## Meeting Chat 10AM MDT
+https://docs.google.com/document/d  
+From Steve Baskauf to Everyone:  10:06 AM  
+I just lost my Internet and had to hotspot on my phone  
+From Dag Endresen to Everyone:  10:10 AM  
+This link? https://www.tdwg.org/community/gbwg/enviro/  
+From Christian Bölling to Everyone:  10:10 AM  
+Did you mean this: https://github.com/tdwg/dwc/issues/302  
+From Gabi Droege to Everyone:  10:10 AM  
+Yes!  
+From Me to Everyone:  10:11 AM  
+https://github.com/tdwg/dwc/issues/302  
+From Stan Blum to Everyone:  10:15 AM  
++1 for what Steve has just said  
+From Dag Endresen to Everyone:  10:19 AM  
+I am interesting in MaterialSamples that are not “evidence” or derived from a (in situ) species occurrence, such as genetic resources specimens with a breeding origin  
+From Steve Baskauf to Everyone:  10:21 AM  
+I think that we could look at MaterialSample in isolation from whether it is derived from an organism or not. The original definition included things like air samples that are not necessarily connected to one or more organisms.  
+From Dag Endresen to Everyone:  10:22 AM  
++1  
+From Steve Baskauf to Everyone:  10:23 AM  
+The connecting of MaterialSample instances to other things like organisms and occurrences is a separate issue.  
+But isn’t eDNA a type of material sample?  
+From Dag Endresen to Everyone:  10:24 AM  
+A big problem with basisOfRecord in my mind is that eg. PreservedSpecimen is not a type of Occurrence (as is how basisOfRecord is used in GBIF)  
+From Jutta Buschbom to Everyone:  10:24 AM  
+@Dag: in my understanding genetic resources with an origin in breeding are evidence in their own way, since they provide empirical data and thus evidence, maybe not for eg. occurrences, but for eg. ancestry, kinship etc.  
+From Gabi Droege to Everyone:  10:25 AM  
+in GGBN eDNA is used with basisOfRecord=MaterialSample, materialSampleType=DNA and preparationType=eDNA  
+I hope this group will come up with a similar hierarchy  
+From John Wieczorek to Everyone:  10:26 AM  
+@Gabi Why is eDNA a preparationType and not a materialSampleType directly?  
+From Gabi Droege to Everyone:  10:28 AM  
+because we wanted a hierarchy, materialSampleType is recommended/controlled vocabulary such as "DNA", "tissue", "specimen" or "environmental sample", while preparationType is freetext such as "eDNA, "gDNA" "liver", "leave" "water sample"  
+leaf not leave :)  
+From John Wieczorek to Everyone:  10:28 AM  
+@Gabi, could those not all be part of a single hierarchy?  
+From Dag Endresen to Everyone:  10:28 AM  
+With a new MaterialSample core —> in IPT, the PreservedSpecimens would be published using this new core and not the Occurrence core? But then there are legacy… :-(  
+From Gabi Droege to Everyone:  10:28 AM  
+@John: sure, depends on the model I guess  
+From Christian Bölling to Everyone:  10:30 AM  
+I would very much support the idea of competency tests for the model based on the requirements derived from use cases like Teresa's.  
+From Dag Endresen to Everyone:  10:36 AM  
+@John, would the Event need to be in situ? Need to be a collecting/sampling event — or could a breeding event be such an Event?  
+… and could an Experiment (MoF) event be such an Event?  
+From Dag Endresen to Everyone:  10:48 AM  
+For information the link to the video of the presentation of the new data model work by JohnW and TimR is: https://tinyurl.com/gb28-model  
+MaterialSample “Discussions”: https://github.com/tdwg/material-sample/discussions  
+From Richard Pyle to Everyone:  10:48 AM  
+So... this group should focus on: 1) Defining what a MS is (e.g., what properties and relationships apply to MS vs. Organism); 2) Defining a hierarchy of types of MS; 3) fleshing out additional properties (and relationships) missing from DwC that are needed to support MS instances robustly; 4) Other specific issues to harmonize best with (but not be redundant to) what John and Tim are working on?  
+From Roger Burkhalter to Everyone:  10:49 AM  
++1 Richard Pyle  
+From Steve Baskauf to Everyone:  10:51 AM  
+Well, I think we can document some of what we’ve discussed and just pass it off to the next group that works on that particular problem. Getting it “frozen” somewhere in GitHub at least keeps it from getting lost.  
+From Richard Pyle to Everyone:  10:52 AM  
++1 @steve  
+From Me to Everyone:  10:53 AM  
+These GitHub issues aren't going anywhere! Other groups can certainly access them.  
+From Steve Baskauf to Everyone:  10:56 AM  
++1 @christian  
+One of my issues with MaterialSample was the “sample” part. Sampling was a specific concern of the people who proposed the term. I think it is appropriate for us to go higher and more inclusive (material thing)  
++1000 Christian  
+From John Wieczorek to Everyone:  10:56 AM  
++1 In our modeling the “Thing” you are talking about at the higher level is a MaterialEntity  
+From Dag Endresen to Everyone:  10:56 AM  
+“MaterialSample” —> “Material”  
+From Stan Blum to Everyone:  10:56 AM  
+Definitions of “sample” include a reference to purpose: something of interest is being sampled in order to characterize it.  
+From Richard Pyle to Everyone:  10:57 AM  
+But I don't think we want to expand the scope of this class to "all things that have mass".  I think the "Sample" part is important, because it represents the subset of all things that have mass that we take the time to document and maintain in some way  
+From Steve Baskauf to Everyone:  10:57 AM  
+@rich MaterialSamplable?  
+From Christian Bölling to Everyone:  10:58 AM  
+@Richard: but what's the harm in having such a generic conceot at the top of the pyramid?  
+From John Wieczorek to Everyone:  10:58 AM  
+Can I have one minute to follow up?  
+From Abby Benson to Everyone:  10:58 AM  
+I want to suggest we close the issue for basisOfRecord so that we don't continue that conversation further and to indicate to those who aren't here today that we are putting that on hold for now. We can always open it back up if we want to discuss it again.  
+From Richard Pyle to Everyone:  10:58 AM  
+No harm at all, but I don't think that top-level thing is MS; I think MS is down that hierarchy.  
+From Me to Everyone:  10:58 AM  
++1 Abby  
+From Steve Baskauf to Everyone:  10:59 AM  
+Sorry I have to go to another meeting.  
+From Jutta Buschbom to Everyone:  11:00 AM  
+Same here.  
+From Abby Benson to Everyone:  11:00 AM  
+I have to run too.  
+## Meeting Chat 4PM MDT
+From Me to Everyone:  04:00 PM  
+https://docs.google.com/document/d  
+From Richard Pyle to Everyone:  04:13 PM  
+Apologies -- I had a phone call just now, so had to mute.  So if anyone asked me anything, I wasn't intentionally ignoring.  Plugged back in to the discussion now.  
+One of the biggest struggles I have with MS is understanding the boundary between an "Organism" and a MS.  The DwC Organism class includes populations, so maybe the best way to characterize the relationship between MS and Organism is that the former is a "sample" of the latter.  It's a little weird with whole-organism specimens, but not too weird.  
+From Me to Everyone:  04:14 PM  
+https://github.com/tdwg/material-sample/issues/2#issuecomment-937790555  
+From John Wieczorek to Everyone:  04:36 PMWe can sub-type in two ways, distinguishing for all practical purposes with a property (the materialSampleType example) or with classes, depending on whether there are special properties that need to be separated between classes.  
+From Richard Pyle to Everyone:  04:39 PM  
++1 @John  
+From Simon Cox to Everyone:  04:43 PM  
+yes - rdf:type vs dcterms:type is a 'standard' way to realize that  
+'soft' or 'weak' typing vs hard or strong typing; annotation vs 'axiomatization'  
+If things can have more than one 'type' then everything is easier.  
+set-intersection  
