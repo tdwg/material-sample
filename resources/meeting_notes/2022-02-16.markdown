@@ -5,271 +5,106 @@ Steve Baskaufs, Jutta Buschbaum, Dag Endresen, Steven Richard, Teresa Mayfield-M
 ### 4PM MST
 Teresa Mayfield-Meyer, Roger Burkhalter, Stan Blum, John W
 ## Agenda Items
-Google Sheet with terms for review - MaterialSample and its properties
-Items for discussion
-Do we need a new identifier for the digital record of the material? (in addition to materialSampleID) - beyond scope for now?
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+## Items for discussion
+1. Do we need a new identifier for the digital record of the material? (in addition to materialSampleID) - beyond scope for now?  
 
+2. materialSampleType
+    a. =What do you have?  
+    b. There seems to be a hierarchy, but can we (do we want to) handle that?  
+    c. Look at what people actually use then mine it for a starting point.  
+    d. Need to point to the vocabulary you are using. Request iri  
+    e. Do we allow for comma separated lists here or add a new term materialSampleTypeKeywords or some other thing for more detailed info and make materialSampleType a very limited list of terms for broad categorization?  
+3. Terms to deprecate as they are part of potential materialSampleType controlled vocabulary  
+     a. PreservedSpecimen  
+     b. LivingSpecimen  
+     c. FossilSpecimen  
+4. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.  
+5. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.?  
+6. OBI MaterialSample -- Did we finish the discussion on pros and cons of aligning the dwc MaterialSample term with the OBI ontology term? OBI_0100051 - see Audubon Core revision and addition of new column.  
 
-materialSampleType
-=What do you have?
-There seems to be a hierarchy, but can we (do we want to) handle that?
-Look at what people actually use then mine it for a starting point.
-Need to point to the vocabulary you are using. Request iri
-Do we allow for comma separated lists here or add a new term materialSampleTypeKeywords or some other thing for more detailed info and make materialSampleType a very limited list of terms for broad categorization?
-Terms to deprecate as they are part of potential materialSampleType controlled vocabulary
-PreservedSpecimen
-LivingSpecimen
-FossilSpecimen
-Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.
-What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.?
-OBI MaterialSample -- Did we finish the discussion on pros and cons of aligning the dwc MaterialSample term with the OBI ontology term? OBI_0100051 - see Audubon Core revision and addition of new column.
+## Next steps and assignments
+1. Narrow the group of terms for first pass at MaterialSample bag of terms  
+2. Create a controlled vocabulary for materialSampleType  
+3. We should document our process and decision making for handoff to the next steps see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+4. John W. says not to require GUID in materialSampleID Woo Hoo makes everything simpler! Reasoning - we need a materialSample primary key and it should be materialSampleID whether it is globally unique or not. Separating the two will create issues.  
+5. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision.  
+## Meeting Chat 10AM MDT
+10:01:34 From  Teresa Mayfield-Meyer  to  Everyone:  
+	https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit#gid=0  
+10:01:52 From  Teresa Mayfield-Meyer  to  Everyone:  
+	https://docs.google.com/document/d/1tAiK5-SPgC1UOF76mAp6sR0TjUOWbTLDrb-YWIZMpys/edit  
+10:02:48 From  Steve Baskauf  to  Everyone:  
+	So sorry to hear that  
+10:06:30 From  Steve Baskauf  to  Everyone:  
+	https://github.com/tdwg/ac/issues/220  
+10:09:49 From  Dag Endresen  to  Everyone:  
+	sawsdlrdf:modelReference  
+10:11:03 From  Stephen Richard  to  Everyone:  
+	documentation for sawsdlref:modelReference says "<xs:documentation>This element is for use in WSDL 1.1 only. It does not apply to WSDL 2.0 documents. Use in WSDL 2.0 documents is invalid.</xs:documentation>"  
+10:14:20 From  Dag Endresen  to  Everyone:  
+	Can we simply use catalogNumber for the non-PIDs  
+10:20:41 From  Dag Endresen  to  Everyone:  
+	http://rs.tdwg.org/dwc/terms/associatedMedia  
+10:21:59 From  Dag Endresen  to  Everyone:  
+	Move associatedMedia to Record-level?  
+10:23:41 From  Dag Endresen  to  Everyone:  
+	In GBIF there is also https://rs.gbif.org/extension/gbif/1.0/multimedia.xml  
+10:28:29 From  Jutta Buschbom  to  Everyone:  
+	Terms of interest? from TDWG-CD:  
+10:29:22 From  Jutta Buschbom  to  Everyone:  
+	objectType, preparationType, preservationMethod, preservationMode  
+10:30:34 From  Jutta Buschbom  to  Everyone:  
+	material, typeOfCollection  
+10:37:55 From  Dag Endresen  to  Everyone:  
+	dwc:preservation = A list (concatenated and separated) of preparations and preservation methods for a specimen.  
+10:38:42 From  Jutta Buschbom  to  Everyone:  
+	preparationType: https://github.com/tdwg/cd/issues/64  
+10:39:00 From  Jutta Buschbom  to  Everyone:  
+	preservationMethod: https://github.com/tdwg/cd/issues/65  
+10:43:49 From  Dag Endresen  to  Everyone:  
+	Will we see the Digital Extended Specimen as this type of Information Artefact?  
+10:45:03 From  Stan Blum  to  Everyone:  
+	Do we reference BCO? for the broader class hierarchy?  (I think that’s where “information artifact” and “material sample” came into DwC discussions.)  
+10:45:48 From  Dag Endresen  to  Everyone:  
+	+1 @Stan using sawsdlrdf:modelReference ?  
+10:47:58 From  Stan Blum  to  Everyone:  
+	Maybe not as formally as using SAWSDL, but in explanatory (non-normative) documentation; i.e., introduction to our output.  
+10:48:58 From  Dag Endresen  to  Everyone:  
+	Dwc:MStype vs dwciri:MStype ??  
+10:49:06 From  Jutta Buschbom  to  Everyone:  
+	@Dag: I think that a DES is something else entirely, ie. neither informationArtefact nor materialSample.  
+10:57:32 From  Stephen Richard  to  Everyone:  
+	+1 for proposing a draft vocabulary for specimen type  
+10:59:36 From  Dag Endresen  to  Everyone:  
+	Could an environment sample also become a preserved “specimen” ??  
+10:59:49 From  Stan Blum  to  Everyone:  
+	I think elaborating the vocal for Material Sample Type will involve a broader community than TDWG.  So we (next group) should post notifications in groups like RDA, DataOne, etc., and elaborate those that matter to TDWG (Biodiversity).  
+11:00:10 From  Stan Blum  to  Everyone:  
+	vocal => vocabulary  
+11:00:28 From  Dag Endresen  to  Everyone:  
+	Destructively sampled material sample would be different from a preserved specimen.  
+11:01:59 From  Stan Blum  to  Everyone:  
+	“Destructively sampled material sample” begins to overlap with Disposition  
+11:03:38 From  Stan Blum  to  Everyone:  
+	Collection description would summarize (list of) item level types.  
+11:04:18 From  Dag Endresen  to  Everyone:  
+	Preservation history ??  
+11:04:53 From  Stan Blum  to  Everyone:  
+	That depends on the capabilities of the transport (serialization) scheme.  
+11:05:16 From  Dag Endresen  to  Everyone:  
+	parentMaterialSampleID  
 
-Next steps and assignments
-Narrow the group of terms for first pass at MaterialSample bag of terms
-Create a controlled vocabulary for materialSampleType
-We should document our process and decision making for handoff to the next steps see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements
-John W. says not to require GUID in materialSampleID Woo Hoo makes everything simpler! Reasoning - we need a materialSample primary key and it should be materialSampleID whether it is globally unique or not. Separating the two will create issues.
-catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision.
-Meeting Chat 10AM MDT
-
-10:01:34 From  Teresa Mayfield-Meyer  to  Everyone:
-	https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit#gid=0
-10:01:52 From  Teresa Mayfield-Meyer  to  Everyone:
-	https://docs.google.com/document/d/1tAiK5-SPgC1UOF76mAp6sR0TjUOWbTLDrb-YWIZMpys/edit
-10:02:48 From  Steve Baskauf  to  Everyone:
-	So sorry to hear that
-10:06:30 From  Steve Baskauf  to  Everyone:
-	https://github.com/tdwg/ac/issues/220
-10:09:49 From  Dag Endresen  to  Everyone:
-	sawsdlrdf:modelReference
-10:11:03 From  Stephen Richard  to  Everyone:
-	documentation for sawsdlref:modelReference says "<xs:documentation>This element is for use in WSDL 1.1 only. It does not apply to WSDL 2.0 documents. Use in WSDL 2.0 documents is invalid.</xs:documentation>"
-10:14:20 From  Dag Endresen  to  Everyone:
-	Can we simply use catalogNumber for the non-PIDs
-10:20:41 From  Dag Endresen  to  Everyone:
-	http://rs.tdwg.org/dwc/terms/associatedMedia
-10:21:59 From  Dag Endresen  to  Everyone:
-	Move associatedMedia to Record-level?
-10:23:41 From  Dag Endresen  to  Everyone:
-	In GBIF there is also https://rs.gbif.org/extension/gbif/1.0/multimedia.xml
-10:28:29 From  Jutta Buschbom  to  Everyone:
-	Terms of interest? from TDWG-CD:
-10:29:22 From  Jutta Buschbom  to  Everyone:
-	objectType, preparationType, preservationMethod, preservationMode
-10:30:34 From  Jutta Buschbom  to  Everyone:
-	material, typeOfCollection
-10:37:55 From  Dag Endresen  to  Everyone:
-	dwc:preservation = A list (concatenated and separated) of preparations and preservation methods for a specimen.
-10:38:42 From  Jutta Buschbom  to  Everyone:
-	preparationType: https://github.com/tdwg/cd/issues/64
-10:39:00 From  Jutta Buschbom  to  Everyone:
-	preservationMethod: https://github.com/tdwg/cd/issues/65
-10:43:49 From  Dag Endresen  to  Everyone:
-	Will we see the Digital Extended Specimen as this type of Information Artefact?
-10:45:03 From  Stan Blum  to  Everyone:
-	Do we reference BCO? for the broader class hierarchy?  (I think that’s where “information artifact” and “material sample” came into DwC discussions.)
-10:45:48 From  Dag Endresen  to  Everyone:
-	+1 @Stan using sawsdlrdf:modelReference ?
-10:47:58 From  Stan Blum  to  Everyone:
-	Maybe not as formally as using SAWSDL, but in explanatory (non-normative) documentation; i.e., introduction to our output.
-10:48:58 From  Dag Endresen  to  Everyone:
-	Dwc:MStype vs dwciri:MStype ??
-10:49:06 From  Jutta Buschbom  to  Everyone:
-	@Dag: I think that a DES is something else entirely, ie. neither informationArtefact nor materialSample.
-10:57:32 From  Stephen Richard  to  Everyone:
-	+1 for proposing a draft vocabulary for specimen type
-10:59:36 From  Dag Endresen  to  Everyone:
-	Could an environment sample also become a preserved “specimen” ??
-10:59:49 From  Stan Blum  to  Everyone:
-	I think elaborating the vocal for Material Sample Type will involve a broader community than TDWG.  So we (next group) should post notifications in groups like RDA, DataOne, etc., and elaborate those that matter to TDWG (Biodiversity).
-11:00:10 From  Stan Blum  to  Everyone:
-	vocal => vocabulary
-11:00:28 From  Dag Endresen  to  Everyone:
-	Destructively sampled material sample would be different from a preserved specimen.
-11:01:59 From  Stan Blum  to  Everyone:
-	“Destructively sampled material sample” begins to overlap with Disposition
-11:03:38 From  Stan Blum  to  Everyone:
-	Collection description would summarize (list of) item level types.
-11:04:18 From  Dag Endresen  to  Everyone:
-	Preservation history ??
-11:04:53 From  Stan Blum  to  Everyone:
-	That depends on the capabilities of the transport (serialization) scheme.
-11:05:16 From  Dag Endresen  to  Everyone:
-	parentMaterialSampleID
-
-Meeting Chat 4PM MDT
-
-
-2022-01-19
-Attendees
-10AM MST
-Teresa Mayfield-Meyer, John Wieczorek, Steve Baskauf, Richard Pyle (start), Stephen Richard, Stan Blum, Rob Gurlnick, Dag Endresen, Roger Burkhalter, Jutta Buschbom (end)
-4PM MST
-Stan, Rich, Sharon, John W. 
-Agenda Items
-Items for discussion
-Discuss issue #2 definition (and label) of MaterialSample
-
-Copying definition and label from another “standard” versus incorporating the term itself
-
-Current thinking is that we should align by copying definitions/labels if the other standard has ontological entailments that DwC does not, also if the other standard doesn’t have a change policy (process) that keeps it relatively stable. Alignment can be achieved by reference that is not part of the definition; that is instead supplementary documentation.
-
-DwC has Classes (how we type them?), Properties (describe an entity in the metadata) and Concepts (controlled vocab terms)
-
-ABCD has structural context (
-
-DwC has Classes, Properties
-Concepts (see above)  concept scheme are the controlled vocabulary for property
-
-Don’t confuse property, term-name, and label (see dwc:pathway, the concepts under pathway are identified and referenced by numbers rather than the english language names.
-
-materialSampleType with concepts being
-
-
-
-Aspects of definition of materialSample
-Physical object
-Represents something larger of interest
-Identifiable, described, curated?
-Manipulated so as to facilitate measurement, observation
-RobG: materialSample (Wikipedia) and obi:specimen are essentially synonyms
-
-Went over: organism versus materialSample/specimen.
-
-Consider the case of streaming sequencer (robot sequencer)
-Does this use case imply the existence of a material sample?
-Do multiple kinds of data need to be tied together through coexistence in space-time-(and collector-agent)
-Note: volume of the water sampled agues for robot making material sample even though they aren’t made part of a collection (persistent resource)
-Persistence of a materialSample can be from seconds to centuries.
-
-Next steps and assignments
-Review current definitions of terms we hope to assign as properties of dwc:MaterialSample class
-Set up Google Sheet with terms for review - MaterialSample and its properties
-Meeting Chat 10AM MDT
-09:00:37 From Steve Baskauf to Everyone:
-	I’m eating lunch, so I’m going to leave my camera off
-09:00:42 From Dag Endresen to Everyone:
-	https://drive.google.com/drive/folders/1iZDVzmA52lbwKFRdWwdQTtaP11I9awNH
-09:02:06 From Richard Pyle to Everyone:
-	I can only stay on for about 20 mins, but should be able to join the second session.
-09:02:50 From Teresa Mayfield-Meyer to Everyone:
-	https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing
-09:03:52 From Stan Blum to Everyone:
-	https://docs.google.com/document/d/1P_ZbUwnvZ3JtEFj-4Y3teJTV2N-2PB6Eq86v2X8Xlg4/edit?usp=sharing
-09:04:24 From Teresa Mayfield-Meyer to Everyone:
-	https://github.com/tdwg/material-sample/issues/2#issuecomment-1015851565
-09:19:36 From Richard Pyle to Everyone:
-	I need to jump off for another meeting.  This is a very helpful discussion, and I look forward to continuing it at the second session.
-09:25:54 From John Wieczorek to Everyone:
-	https://dwc.tdwg.org/pw/
-09:26:18 From John Wieczorek to Everyone:
-	That’s the term document for all of the pathway ConceptScheme.
-09:30:05 From Dag Endresen to Everyone:
-	Latest version of the DwC terms? http://rs.tdwg.org/dwc/version/terms/2021-07-15.htm
-09:30:41 From Steve Baskauf to Everyone:
-	Yes, but only terms in the dwc: namespace
-09:30:50 From Steve Baskauf to Everyone:
-	Not Dublin core terms or dwciri: terms
-09:34:28 From Dag Endresen to Everyone:
-	BCO PreservedSpecimen in BioPortal? https://bioportal.bioontology.org/ontologies/BCO/?p=classes&conceptid=http%3A%2F%2Frs.tdwg.org%2Fdwc%2Fterms%2FPreservedSpecimen
-09:45:00 From Dag Endresen to Everyone:
-	Does anyone of us argue against using class MaterialSample for the three “specimen”?
-09:46:19 From Steve Baskauf to Everyone:
-	@dag the three specimen classes as subclasses of material sample?
-09:47:38 From Dag Endresen to Everyone:
-	As things represented by MaterialSample (do we keep the three as subclasses?)
-09:47:44 From John Wieczorek to Everyone:
-	@dag If I were to model based on classes, the three Darwin Core “specimen” classes would be subclasses of MaterialSample.
-09:48:47 From Steve Baskauf to Everyone:
-	@dag it makes sense to me. There could then be a fourth category for non-living samples
-09:51:25 From Dag Endresen to Everyone:
-	dwc:MaterialSample disjunct from dwc:Organism?
-09:52:20 From John Wieczorek to Everyone:
-	@dag To me an Organism at a particular moment in time can be a MaterialSample.
-09:52:29 From Dag Endresen to Everyone:
-	A dead specimen can also loose e.g. a leg
-09:52:52 From Dag Endresen to Everyone:
-	For DNA sequencing
-09:53:29 From robgur to Everyone:
-	Please leave organisms out of this
-09:54:37 From robgur to Everyone:
-	if it goes to inaturalist, I think it is a digital surrogate that can have a record associated with it.  It is not managed
-09:54:45 From robgur to Everyone:
-	it is not a material sample or a specimen
-09:54:48 From Dag Endresen to Everyone:
-	(LivingSpecimen)
-09:55:03 From robgur to Everyone:
-	if it goes to inaturalist, I think it is a digital surrogate that can have a record associated with it.  It is _now_ managed
-09:55:44 From robgur to Everyone:
-	it being both is FINE, right?
-09:55:54 From Dag Endresen to Everyone:
-	Both sounds fine
-09:56:24 From Dag Endresen to Everyone:
-	Just checking it is not disjunct
-09:57:00 From John Wieczorek to Everyone:
-	@dag I would not say that Organism is disjunct from MaterialSample.
-09:57:11 From Dag Endresen to Everyone:
-	@John, agree
-09:57:32 From Steve Baskauf to Everyone:
-	@John @Dag also agree
-09:58:07 From Teresa Mayfield-Meyer to Everyone:
-	A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.
-09:58:32 From Steve Baskauf to Everyone:
-	@rob, is the object of interest the media item or the organism being depicted? The media item is managed. The organism isn’t
-10:00:09 From Dag Endresen to Everyone:
-	Does the event need to be in situ in wild nature… I would hope not
-10:00:45 From Teresa Mayfield-Meyer to Everyone:
-	An independent continuant that has some portion of matter as proper or improper continuant part.
-10:01:21 From Steve Baskauf to Everyone:
-	E O Wilson described a new species of ant that he noticed in a potted plant in an office
-10:02:11 From robgur to Everyone:
-	@Steve, agree re: the media is the managed artifact.
-10:03:59 From John Wieczorek to Everyone:
-	“A physical object that that represents an physical entity of interest in whole or in part.”
-10:04:14 From John Wieczorek to Everyone:
-	“a physical entity”
-10:04:56 From Steve Baskauf to Everyone:
-	I like it as a starting point. Let’s shoot arrows at it
-10:11:48 From John Wieczorek to Everyone:
-	“A physical object that that represents a physical entity of interest in whole or in part and was at some point curated in a physical collection.”
-10:11:59 From John Wieczorek to Everyone:
-	One that
-10:13:14 From John Wieczorek to Everyone:
-	“A physical object that represents a physical entity of interest in whole or in part and was at some point included in a physical collection.”
-10:13:31 From Dag Endresen to Everyone:
-	Are environmental samples destructively processed “before” curated in a collection NOT a material sample?
-10:13:48 From John Wieczorek to Everyone:
-	Good one @dag.
-10:14:40 From John Wieczorek to Everyone:
-	I guess the important thing is not that it was curated, but that it’s properties were recorded.
-10:15:54 From John Wieczorek to Everyone:
-	And that because it was a physical entity of interest.
-10:17:24 From Jutta Buschbom to Everyone:
-	Hi everybody, sorry to be late
-10:18:02 From Dag Endresen to Everyone:
-	Agree to leave the curation part out
-10:18:18 From John Wieczorek to Everyone:
-	I agree to leave the curation out.
-10:19:31 From robgur to Everyone:
-	YAY I agree I agree!!
-10:19:35 From Stephen Richard to Everyone:
-	+1
-10:19:50 From Steve Baskauf to Everyone:
-	Quick write that down!
-10:20:34 From robgur to Everyone:
-	I gotta run - late for the next.  So fun to see you guys!!
-
-Meeting Chat 4PM MDT
-
-15:01:41 From Stan Blum to Everyone:
-	https://docs.google.com/document/d/1P_ZbUwnvZ3JtEFj-4Y3teJTV2N-2PB6Eq86v2X8Xlg4/edit?usp=sharing
-15:30:08 From Stan Blum to Everyone:
-	A physical object that that represents a physical entity of interest in whole or in part.
-15:33:30 From Stan Blum to Everyone:
-	Physical object
-	Represents something larger of interest
-	Identifiable, described, curated?
-15:34:05 From Sharon Grant to Everyone:
-	"Some artificial action performed on the physical object to manipulate it"
-15:37:35 From John Wieczorek to Everyone:
-	“A physical object that represents a physical entity of interest in whole or in part and was at some point included in a physical collection.”
+## Meeting Chat 4PM MDT
+15:01:41 From Stan Blum to Everyone:  
+	https://docs.google.com/document/d/1P_ZbUwnvZ3JtEFj-4Y3teJTV2N-2PB6Eq86v2X8Xlg4/edit?usp=sharing  
+15:30:08 From Stan Blum to Everyone:  
+	A physical object that that represents a physical entity of interest in whole or in part.  
+15:33:30 From Stan Blum to Everyone:  
+	Physical object  
+	Represents something larger of interest  
+	Identifiable, described, curated?  
+15:34:05 From Sharon Grant to Everyone:  
+	"Some artificial action performed on the physical object to manipulate it"  
+15:37:35 From John Wieczorek to Everyone:  
+	“A physical object that represents a physical entity of interest in whole or in part and was at some point included in a physical collection.”  
