@@ -1,1 +1,230 @@
 # 2021-12-15 Material Sample Task Group Meeting
+## Attendees
+### 10AM MDT
+Teresa Mayfield-Meyer, John Wieczorek, Sharon Grant, Steve Baskauf, Roger Burkhalter, Christian Bolling, Jutta Buschbom, Richard Pyle, Stephen Richard, Stan Blum, Dave Vieglas, Tim Robertson
+### 4PM MDT
+Teresa Mayfield-Meyer, Stan Blum, Abby Benson, Richard Pyle 
+## Agenda Items
+### Tasks from last meeting
+### Items for discussion
+1. dwc:Organism - do we need clarification? [Issue #23](https://github.com/tdwg/material-sample/issues/23)  
+2. Organism /  MaterialSample Boundary [Issue #22](https://github.com/tdwg/material-sample/issues/22)  
+
+Birth of a data record creates the boundary - but then how would you ever have an “organism” record?
+
+Steve - organism is an organizational entity bringing together material samples
+
+Christian - Relations between “classes” can get arbitrarily complicated
+
+John W - stop the modeling?
+
+Things CAN be both a dwc:organism AND a dwc:MaterialSample at the same time.  
+## Next steps and assignments
+1. Review current definitions of terms we hope to assign as properties of dwc:MaterialSample class
+    a. Set up Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+## Meeting Chat 10AM MDT
+From Me to Everyone 10:04 AM  
+Agenda -   
+https://docs.google.com/docum  
+Google Sheet -   
+From Sharon Grant to Me (Direct Message) 10:05 AM  
+I can hit record  
+From Sharon Grant to Everyone 10:06 AM  
+Is everyone ok if I hit record?  
+From Stephen Richard to Everyone 10:14 AM  
+determination is a relationshtip between an observation and the observation result, e.g. between a material sample and an an organism categorization  
+From Steve Baskauf to Everyone 10:16 AM  
+https://raw.githubusercontent.com/darwin-sw/dsw/master/img/dsw-1-0-graph-model.png  
+From Stephen Richard to Everyone 10:16 AM  
+I think 'evidence' is a relatiohonship  
+From Richard Pyle to Everyone 10:17 AM  
+I agree!  Evidence is the relationship between (e.g.) a MaterialSample and an Occurrence, or between a MaterialSample and an Identification (Determination)  
+From Steve Baskauf to Everyone 10:17 AM  
+Stan’s diagram as it stands now is basically the Darwin-SW graph, with material sample and information artifact in the place of “token”  
+From Stephen Richard to Everyone 10:18 AM  
+one problem is using an ER diagram that is based on a relational model, when we need a conceptual diagram that differentiates relations (object properties) and entities.  
+From Christian Bölling to Everyone 10:20 AM  
+https://github.com/tdwg/material-sample/issues/11#issuecomment-942432110  
+From Sharon Grant to Everyone 10:20 AM  
+I agree with Jutta that whilst the determination is a function of the organism it is still only an opinion based on the material sample or information artifact. They are opinions and change.  
+From Jutta Buschbom to Everyone 10:23 AM  
+organisms as abstract concepts 🙂 https://github.com/tdwg/material-sample/issues/11#issuecomment-941974804  
+From Richard Pyle to Everyone 10:23 AM  
+To me, a Determination is the snapshot of an opinion in time.  Thus, if an opinion changes, a new determination instance is needed to capture a new snapshot.  But the Determination is between a Taxon (abstract) and Organism (abstract).  The MaterialSample (physical/real) is the evidentiary basis for that asserted relationship, but I still see the Determination as a relationship between an Organism and a Taxon.  
+From Stephen Richard to Everyone 10:24 AM  
+materialSample is an object intended to be rpresentative of some entities in the phyicalworld. Samplle is a role that can be played by an object w.r.t. to some feature of interest  
+perhaps a materialSample must be 'curated' in some sense  
+From Richard Pyle to Everyone 10:26 AM  
+The definition of dwc:Organism includes the term "taxonomically homogeneous", so the essence of an Organism is its Taxon  
+I agree that the word "curated" probably belongs in the formal definition of MaterialSample  
+From Me to Everyone 10:30 AM  
+So organism = something alive?  
+From Jutta Buschbom to Everyone 10:30 AM  
+@ Stephen & Richard: curated +1, I think  
+From Christian Bölling to Everyone 10:31 AM  
+fossils: we have an object that is related upstream to an organism 50 Mill years earlier through natural processes of fossilization and downstream to the material sample humans created through an excavation campaign -there is an example in my post linked earlier  
+From Richard Pyle to Everyone 10:32 AM  
+@John: Would "Organism" be a value for entityType?  
+that cut truncated... "for entityTpe"  
+entityType  
+From Stephen Richard to Everyone 10:36 AM  
+I'd suggest that using a concepeptual diagram syntax would be better for the 'conceptual modles', which here are still shown as relational implemetnatoin models  
+the track is evidence  
+From Sharon Grant to Everyone 10:37 AM  
+Impressions are the same use case as tracks  
+From Richard Pyle to Everyone 10:37 AM  
+Technically the physical substance of a fossil was never part of a living thing.  It's more like a physical image of an organism.  
+From Christian Bölling to Everyone 10:38 AM  
+@Richard: see my comment earlier  
+From Richard Pyle to Everyone 10:38 AM  
+So is a fossil more like an Organism, or a like a dinosaur track, or an image of an organism?  
+Thanks, @Cristian! I had missed that  
+From Sharon Grant to Everyone 10:38 AM  
+Is a fossil another case of an "observation"?  
+From Steve Baskauf to Everyone 10:39 AM  
+The Bicentennial Oak is a living specimen because it’s in a collection (Vanderbilt Arboretum). The beech tree in my front yard is not a living specimen because it isn’t in a collection. Both are organisms.  
+From Richard Pyle to Everyone 10:42 AM  
+An organism is an abstract thing that is an instance of a Taxon, which itself is an abstract class.  
+From Stephen Richard to Everyone 10:45 AM  
+isn't a "sample' always representative of some individual?  
+that individual is interpreted bot be a member of some class (taxson?)  
+From John Wieczorek to Everyone 10:46 AM  
+@stephenrichard wrt “I'd suggest that using a concepeptual diagram syntax would be better for the 'conceptual modles', which here are still shown as relational implemetnatoin models” We made a conscious choice to use ER diagrams for two reasons. The first is that more people will readily understand them. The second is that it is ultimately closer to the implementation models both in terms of data publishing and integration. We recognize that the a conceptual diagram using a different UML convention may be required to take us to the level of semantic representation.  
+From Stephen Richard to Everyone 10:47 AM  
+Thanks @john Wieczorek.  I understand, but maintain that it creates misunderstandings about what are entities and what are relationships.  
+From John Wieczorek to Everyone 10:50 AM  
+Understood, especially when we include entities in the diagram as aliases of the properties of that entity in the simplified publishing model.  
+@richpyle “@John: Would "Organism" be a value for entityType?”  Yes.  
+From Jutta Buschbom to Everyone 10:51 AM  
+“organism” = named entity. Organism seems to be a qualifier and/or relationship  
+From Richard Pyle to Everyone 10:53 AM  
+When we debated "Organism" as a dwc class, the alternate term was "Individual" (from the old dwc:individualID).  But this reinforces the point that an "Organism" is an "Individual"  
+From John Wieczorek to Everyone 10:53 AM  
+Organism is the Drain Core term, it is being defined by the english word “organism”. It is not circular.  
+Darwin, not drain.  
+From Richard Pyle to Everyone 10:53 AM  
+Agreed with @John that it's not circular  
+From John Wieczorek to Everyone 10:55 AM  
+We are relying on the common understanding of the english word “organism”. If that is insufficient, we can add more to claify.  
+clarify  
+From Sharon Grant to Everyone 10:55 AM  
+That would be a really good start  
+From Stephen Richard to Everyone 10:55 AM  
+which englis definition  
+From Christian Bölling to Everyone 10:55 AM  
++1  
+From Stephen Richard to Everyone 10:55 AM  
+an individual animal, plant, or single-celled life form.  
+"fish and other organisms have been destroyed over large areas of the creek"  
+  
+the material structure of an individual life form.  
+"the heart's contribution to the maintenance of the human organism"  
+a whole with interdependent parts, likened to a living being.  
+"the upper strata of the American social organism"  
+From Jutta Buschbom to Everyone 10:57 AM  
+Should dwc:organism be renamed to eg. dwc:named_individual, if it is so confusing?  
+From John Wieczorek to Everyone 10:58 AM  
+Opaque identifiers were proposed while Darwin Core was being developed into a standard, and was vehemently rejected.  
+From Me to Everyone 10:58 AM  
+A whole organism preserved in a collection. A part of an organism isolated for some purpose. A soil sample. A marine microbial sample.  
+From Steve Baskauf to Everyone 10:59 AM  
+We MUST NOT change “dwc:Organism” as a CURIE. It is an abbreviation for a persistent, globally unique identifier and we should not change it. We can change the definition if we want.  
+http://rs.tdwg.org/dwc/terms/Organism = dwc:Organism  
+From Christian Bölling to Everyone 11:01 AM  
++1 Stan  
+the corpse of the fish is derived from the live fish at an earlier moment in time and possible assumes a material sample role in the context of research.  
+From Richard Pyle to Everyone 11:02 AM  
+The key question is:  Does a MaterialSample come to exist when it is curated (in which case the fish in the aquarium is both an Organism and a MaterialSample)? Or does it only become a MaterialSample after it dies (and is no longer an Organism)?  
+From Me to Everyone 11:03 AM  
+MaterialSample = physical object with an identifier?  
+From Steve Baskauf to Everyone 11:03 AM  
+@rich I’m not sure why it would matter if it were dead  
+From Christian Bölling to Everyone 11:03 AM  
+@Richard: in which cases does this distinction matter?  
+From Steve Baskauf to Everyone 11:03 AM  
+You can sample things that are alive (e.g. cell cultures)  
+From Stan Blum to Everyone 11:03 AM  
+“Tag” the fish with an identifier and it’s both  
+From Stephen Richard to Everyone 11:04 AM  
+is the living fish an object?  is is curated? is it representeative of something hin the worl?  
+From Christian Bölling to Everyone 11:04 AM  
+yes they can overlap in this sense, I would say.  
+From Stan Blum to Everyone 11:05 AM  
+The physical thing can be both. IMHO  
+From Sharon Grant to Everyone 11:06 AM  
+the dictionary definition of organism requires life - but dwc:organism could be different I suppose, do we want it to be?  
+From Stan Blum to Everyone 11:10 AM  
+The collected fish in the aquarium (alive!) is both an organism and, if identified, also a materialSample.  
+From Sharon Grant to Everyone 11:10 AM  
+Stan, That's what I would do  
+From Stephen Richard to Everyone 11:10 AM  
+so is the identifier for the picture or for the thing that you photographed?  
+From Richard Pyle to Everyone 11:11 AM  
+I think I'm leaning that way too.  Physical material can represent both an Organism and a Material at the same time.  As I think @Steve is saying, the demarcation is "curated"  
+From Sharon Grant to Everyone 11:11 AM  
+there would be an identifier for the picture and an organismId  
+From Stephen Richard to Everyone 11:11 AM  
+an occurrence is not a sample. a sample can be evidence of an oocurence  
+From Stan Blum to Everyone 11:12 AM  
+Might not need to identify the organism, unless it has identifiability — thing whale tail (markings like a fingerprint)  
+Both the photograph and the whale need identifiers.  
+From Dave Vieglais to Everyone 11:12 AM  
+the value of an identifier is to enable multiple assertions about the same entity.  
+From Stan Blum to Everyone 11:12 AM  
+Dave +1  
+From Sharon Grant to Everyone 11:12 AM  
+intention ->curation  
+From Jutta Buschbom to Everyone 11:12 AM  
+Dave +1  
+From Sharon Grant to Everyone 11:12 AM  
+Identifiers for MS as recommended not required  
+From Richard Pyle to Everyone 11:13 AM  
+A related (and important) question is: Can a MaterialSample instance link directly to an Occurrence?  Or must the relationship between a MaterialSample instance and an Occurrence instance pass through an Organism instance?  
+From John Wieczorek to Everyone 11:14 AM  
++1 @sharon  
+From Steve Baskauf to Everyone 11:14 AM  
+http://bioimages.vanderbilt.edu/ind-baskauf/26515 = organism identifier. NOT a specimen. http://bioimages.vanderbilt.edu/baskauf/26515 = image identifier. My taking a picture of this didn’t make it a sample. Intention= research. But I still don’t think it’s a sample.  
+From Christian Bölling to Everyone 11:15 AM  
+@Rich based on the definition of dwc:Occurrence I would say the relation is indirect, mediated by instances of dwc:Organism  
+From Tim Robertson to Everyone 11:15 AM  
+The point about “Intent” was a nice one @Christian  
+From Jutta Buschbom to Everyone 11:16 AM  
+Richard: it depends on the relationship between identifier and organism. Identifiers might not always point to an organism  
+From Stephen Richard to Everyone 11:18 AM  
+wolf pack is a feature of interest  
+From Christian Bölling to Everyone 11:18 AM  
+It might be a bit of a challenge to put "intention" in a definition as intention is internal and external things in a definition are better for applying the definition. BUT in the context of DwC there might be a tangible idea of what intention means  
+From Jutta Buschbom to Everyone 11:19 AM  
+Teresa - Sharon: could you save the chat, please  
+From Christian Bölling to Everyone 11:20 AM  
+clump of plants = material sample derived from a number of organisms. That'S how it should be represented, I think.  
+From Stephen Richard to Everyone 11:20 AM  
++1 for semantic clarity and coherence  
+From Richard Pyle to Everyone 11:20 AM  
+Only if the clump is collected/curated?  
+From Christian Bölling to Everyone 11:21 AM  
+Well, that ambiguity is introduced by wishing for "sample" to denote someting curated...  
+From Steve Baskauf to Everyone 11:21 AM  
+I’ve seen plenty of herbarium sheets with multiple plants of the same species and a single label.  
+From Richard Pyle to Everyone 11:21 AM  
+But those are MaterialSample, not Organism  
+From Stephen Richard to Everyone 11:21 AM  
+the herbarium sheet is a collection of material samples  
+From Steve Baskauf to Everyone 11:22 AM  
+Yes, but the dwc:Identification is applied to a dwc:Organism  
+From Richard Pyle to Everyone 11:22 AM  
+And is itself an aggregate material sample (lot)  
+From Stephen Richard to Everyone 11:22 AM  
+a material sample is an individual.  
+From Tim Robertson to Everyone 11:22 AM  
+Perhaps have the definitions written as homework and presented in the session? Word smithing definitions might be a challenge  
+
+## Meeting Chat 4PM MDT
+From Sharon Grant to Everyone 04:13 PM  
+Just popping in to hand over the host to Teresa  
+From Me to Everyone 04:14 PM  
+Thanks!  
+From Abby Benson to Everyone 04:46 PM  
+https://registry.gbif.org/vocabulary/DegreeOfEstablishment/concepts  
+Looks like there are hierarchies actually.  
+  
