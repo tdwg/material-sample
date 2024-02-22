@@ -20,7 +20,7 @@ John W - stop the modeling?
 
 Things CAN be both a dwc:organism AND a dwc:MaterialSample at the same time.  
 ## Next steps and assignments
-1. Review current definitions of terms we hope to assign as properties of dwc:MaterialSample class
+1. Review current definitions of terms we hope to assign as properties of dwc:MaterialSample class  
     a. Set up Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
 ## Meeting Chat 10AM MDT
 From Me to Everyone 10:04 AM  
