@@ -1,0 +1,198 @@
+# 2021-11-17 Material Sample Task Group Meeting
+## Attendees
+### 10AM MDT
+Stan Blum, Steve Baskauf, Richard Pyle, Abby Benson, Roger Burkhalter, Teresa Mayfield-Meyer, Dave Vieglais, Stephen Richard, John Wieczorek, Sharon Grant
+### 4PM MDT
+Simon Cox, Stan Blum, Sharon Grant, Teresa Mayfield-Meyer, Richard Pyle
+## Agenda Items
+### Tasks from last meeting
+### Items for discussion
+1. dwc:Organism - do we need clarification? [Issue #23](https://github.com/tdwg/material-sample/issues/23)  
+2. Organism /  MaterialSample Boundary [Issue #22](https://github.com/tdwg/material-sample/issues/22)  
+3. [Organism/Occurrence/MaterialSample](https://docs.google.com/document/d/1xtGCHeXi4OBjx8jpP8FSVk4MeSXIRm5x9Av62m_OWec/edit#)  
+4. FOCUS on MatrialSample class and what properties it should have.  
+## Next steps and assignments
+1. Review current definitions of terms we hope to assign as properties of dwc:MaterialSample class
+    * Set up Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)
+## Meeting Chat 10AM MDT
+https://docs.google.com/document/d/  
+From Sharon Grant to Me:  (Direct Message) 10:09 AM  
+Sorry I was late - I had a trustee meeting.  
+From Me to Everyone:  10:09 AM  
+https://docs.google.com/document/d/1yaP6rxZYEXNiTRgMGv1Iu_XenIFwiExVkQ39IZZjg2o/edit  
+From Abby Benson to Everyone:  10:11 AM  
+If anyone feels up to recording notes today I'm feeling a bit under the weather and have to leave at 30 minutes for the How Did It Die Task Group working meeting.  
+From Sharon Grant to Me:  (Direct Message) 10:12 AM  
+Do you want me to record?  
+From Me to Sharon Grant:  (Direct Message) 10:12 AM  
+yes, please!  
+From John Wieczorek to Everyone:  10:12 AM  
+DwC went through a period of considering opaque identifiers and it was rejected.  
+From Sharon Grant to Everyone:  10:12 AM  
+Apologies for jumping in late - I'll start recording  
+From John Wieczorek to Everyone:  10:12 AM  
+This was when the standard was being developed.  
+From Sharon Grant to Me:  (Direct Message) 10:13 AM  
+I think you have to give me host back  
+From John Wieczorek to Everyone:  10:14 AM  
+We did not consider whether is was alive.  
+From Me to Sharon Grant:  (Direct Message) 10:16 AM  
+I am not the host! When I try to record I get the message to ask for permission....  
+I'm recording with a voice recorder.  
+From Sharon Grant to Me:  (Direct Message) 10:17 AM  
+got it  
+From Me to Sharon Grant:  (Direct Message) 10:17 AM  
+👍  
+From Steve Baskauf to Everyone:  10:19 AM  
+Discussing the boundary of “organism” is unrelated to doc:organism. Because they aren’t the same thing  
+An organism (small “o”) can die and that has no bearing on the dwc:Organism that links the occurrence to the taxon determination  
+From John Wieczorek to Everyone:  10:20 AM  
+Do we not actually record the evidence and infer the Occurrences? I  
+From Steve Baskauf to Everyone:  10:21 AM  
+The problem here is with definition of dwc:Occurrence, not dwc:Organism  
+From John Wieczorek to Everyone:  10:21 AM  
+To me the Occurrence is an aeration we make based on evidence based on Organisms during Events.  
+assertion, not aeration  
+From Stephen Richard to Everyone:  10:21 AM  
+the material sample has a collection event that has a date and time.  The lifetime of the organism indicated by the material sample is a differen thing.  
+From Steve Baskauf to Everyone:  10:22 AM  
++1 Stephen  
+From John Wieczorek to Everyone:  10:22 AM  
+Occurrences are really only one little thing we’re ultimately interested in, and we’re letting it rule our thinking.  
+From Steve Baskauf to Everyone:  10:22 AM  
+Aaaah! No, @rich  
+From Sharon Grant to Everyone:  10:23 AM  
+Stratigraphy is analogus to the taxonomy  
+From Steve Baskauf to Everyone:  10:24 AM  
+We have the GeologicalContext terms to describe the time aspect for fossils  
+I.e. when the organism was there  
+From Sharon Grant to Everyone:  10:24 AM  
+exactly  
+From John Wieczorek to Everyone:  10:27 AM  
+We also have the ChronometricAge extension for the Occurrence part.  
+Agreed, the problem is Occurrence as the central concept of interest.  
+From Stephen Richard to Everyone:  10:28 AM  
+occurrence: observation at a place and time of evidence of existance of organism  
+the nature of the evidence is interpreted to understand if the organism was at that particular observation location  
+From John Wieczorek to Everyone:  10:28 AM  
+Occurrence: “An assertion that an Organism existed at a place and time.”  
+From Richard Pyle to Everyone:  10:30 AM  
+@John: That's what I'm getting at.  We want to record the when/where/who of when a fossil was collected, and we want to use that to infer where an Organism was in the past.  So does that mean two Occurrence instances?  
+From John Wieczorek to Everyone:  10:31 AM  
+The collecting event is not the Occurrence, unless it happens to be that the thing collected was alive then.  
+From Stephen Richard to Everyone:  10:32 AM  
+the place in 'organism existed at a place and time' is not necessarily the same as the place where the observation was made  
+or that a photo was taken of the organism at that place and time  
+From John Wieczorek to Everyone:  10:32 AM  
+The collecting event is an Event, but not an Occurrence  
+From Stan Blum to Everyone:  10:33 AM  
+You can’t *record* when the Dinosaur walked.  
+From John Wieczorek to Everyone:  10:33 AM  
+We abandon Occurrence as the core of what we capture and build Everything on Events.  
+From Steve Baskauf to Everyone:  10:33 AM  
+I don’t think we need two occurrences. Have one occurrence with two terms for time (collection and when it was inferred to be alive, if different).  
+From Sharon Grant to Everyone:  10:34 AM  
+There is no human  
+From John Wieczorek to Everyone:  10:35 AM  
+I vehemently disagree that the collecting event is the Occurrence  
+From Stephen Richard to Everyone:  10:35 AM  
+yes, there is an observation event and an inferred occurrence event  
+From John Wieczorek to Everyone:  10:36 AM  
+You nailed it Teresa  
+From Richard Pyle to Everyone:  10:38 AM  
+I think we solve a lot by putting Event at the core, and having different things (Organisms, MaterialSamples) directly associated with those Events.  
+From John Wieczorek to Everyone:  10:38 AM  
++1 Rich  
+What we seriously lack is an eventType.  
+From Richard Pyle to Everyone:  10:38 AM  
+That was intended as a +1 John.... so back atcha...  
+From Steve Baskauf to Everyone:  10:39 AM  
+Having event at the top allows for material samples unrelated to organisms (air samples for example) to be fit into the picture  
+From John Wieczorek to Everyone:  10:41 AM  
+A lot can be a dwc:Organism  
+That share an organsmID  
+From Richard Pyle to Everyone:  10:42 AM  
+I think the problem we're wrestling with is that Occurrence has been the center, so we try to shoe-horn everything through the lens of Occurrence as it's defined.  
+I think a Lot *can* be the entirety of an Organism (1:1), but I think a Lot is an aggregate of MaterialSamples  
+From Sharon Grant to Everyone:  10:42 AM  
+We will have to be very clear about what data owners/holders/producers will need to do with their existing data (and its ids) to line it up with what we decide.  
+From Stephen Richard to Everyone:  10:42 AM  
+so the "lot'  
+is an aggregation. when individuals are identified and assigned a tazon, it becomes an occurrence  
+From John Wieczorek to Everyone:  10:43 AM  
+Then you are able to assert Occurrences. They aren’t Occurrences.  
+From Richard Pyle to Everyone:  10:46 AM  
+Agreed (Assert Occurrences)  
+From John Wieczorek to Everyone:  10:47 AM  
+Early in 2022, GBIF will start developing IPT to be able to overcome the star schema.  
+The modeling work will almost certainly abandon Occurrence as a class.  
+From Richard Pyle to Everyone:  10:47 AM  
+I'm very-much looking forward to what you & Tim have come up with!  
+From Me to Everyone:  10:47 AM  
+👍  
+From John Wieczorek to Everyone:  10:48 AM  
+The gran unified model to date finds no need (in fact lots of problems with) having an Occurrence to build around.  
+From Roger Burkhalter to Everyone:  10:48 AM  
+👍  
+From Steve Baskauf to Everyone:  10:48 AM  
+🎉  
+From Richard Pyle to Everyone:  10:49 AM  
+FYI, Dave Remsen, Nicolas Bailey and I are getting close to proposing the grand unified model for taxonomy as well.  
+From John Wieczorek to Everyone:  10:52 AM  
+@Rich That’s good, because our model has Taxon, and nothing deeper, relying on the more in depth work in that space.  
+From Sharon Grant to Everyone:  10:57 AM  
+👍🏽  
+stay practical  
+From John Wieczorek to Everyone:  10:58 AM  
+Duplicates, when resolved, can share and eventID and an organismID. Forget occurrenceID.  
+From Steve Baskauf to Everyone:  10:58 AM  
++1 John. Assign them two different materialSampleIDs  
+From John Wieczorek to Everyone:  10:59 AM  
+The occurrenceIDs are fine as assertions.  
+From Richard Pyle to Everyone:  11:00 AM  
++1 @John  
+From Sharon Grant to Everyone:  11:03 AM  
+👍🏽  
+From Steve Baskauf to Everyone:  11:06 AM  
+Thank you for your excellent cat herding, Teresa!  
+From Richard Pyle to Everyone:  11:07 AM  
+Yes!  I feel that was a very productive discussion!  
+From Stephen Richard to Everyone:  11:07 AM  
+OOPS  
+## Meeting Chat 4PM MDT  
+From Me to Everyone:  03:59 PM  
+https://docs.google.com/document/d/  
+From Stan Blum to Everyone:  04:01 PM  
+https://docs.google.com/document/d/1oGieC6AQhy4fWVZnr8qI1iH1Mk-VzjtvGJyZWvM8ITM/edit?usp=sharing  
+From Me to Everyone:  04:01 PM  
+https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing  
+From Richard Pyle to Everyone:  04:04 PM  
+@Stan: I would use this as a starting point: https://github.com/darwin-sw/dsw  
+Steve/Cam converged on almost exactly the same model as I/Rob did. MaterialSample corresponds to "Token" in this diagram (along with other lines of Evidence)  
+From Me to Everyone:  04:09 PM  
+From John Wieczorek to Everyone:  10:33 AM  
+We abandon Occurrence as the core of what we capture and build Everything on Events.  
+From Sharon Grant to Everyone:  04:27 PM  
+Darwin's cat in a box  
+From Richard Pyle to Everyone:  04:27 PM  
+👍  
+From Simon Cox to Everyone:  04:35 PM  
+https://www.w3.org/TR/vocab-ssn/#PROV_Alignment   
+'Result' of an Observation is _information_  
+I think John was happy with this view and it corroborates the work that GBIF is doing  
+Here I proposed that each transformed sample or fraction of a sample all exist as distinct samples  
+https://www.w3.org/TR/vocab-ssn-ext/#sample-chains  
+the 'isSampleOf' relationship joins them together.  
+'CollectionEvent' or 'ActOfCollecting' is a specialization of 'ActOfSampling` I think  
+From Simon Cox to Everyone:  04:42 PM  
+'ActOfAccession` is probably another interesting one ;-)  
+From Simon Cox to Everyone:  04:53 PM  
+Here are the 'relations' in OBO: http://www.ontobee.org/ontology/catalog/RO?iri=http://www.w3.org/2002/07/owl%23ObjectProperty  
+There are currently 606 of them - http://www.ontobee.org/ontology/catalog/RO?iri=http://www.w3.org/2002/07/owl%23ObjectProperty&max=610  
+From Sharon Grant to Everyone:  04:58 PM  
+related resource extension  
+https://tools.gbif.org/dwca-validator/extension.do?id=dwc:ResourceRelationship  
+https://github.com/globalbioticinteractions  
+From Simon Cox to Everyone:  04:58 PM  
+https://id.loc.gov/vocabulary/relators.html  
+https://id.loc.gov/vocabulary/relators/brl.html  
