@@ -1,0 +1,87 @@
+# 2022-03-16 Material Sample Task Group Meeting Notes
+
+## Participants
+### 10AM MST
+Teresa M.; Roger B; Dag E; Steve B.; Christian B.; Richard P; Dave V.; Jutta B.; John W.; Sharon G.
+### 4PM MST
+Teresa M.; Richard P.; Stan B.
+## Agenda Items
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+## Items for discussion
+1. Create a controlled vocabulary for materialSampleType  
+     a. Steve will build with existing specimen types
+2. We should document our process and decision making for handoff to the next steps 
+     a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+     b. Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing  
+3. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?  
+4. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.  
+5. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.  
+6. Not requiring GUID for materialSampleID - we need to be aware of the consequences. Do we need to add anything or change anything?  
+     a. Simplified the definition to refer to dwc:MaterialSample  
+     b. Moved the rest to comments  
+     c. Do we need better examples? How do you pass a doi? Include the https or no? UGH!  
+     d. Do we need materialSampleLODID? Or materialSampleActionableID - make recommendation for “higher up” in TDWG to think about this  
+     e. Do we steer people away from the DwC triplet?  
+7. Need to know the difference between dwc:catalogNumber and dwc:materialSampleID  
+8. Richard and Stan to work on use cases. See also https://www.w3.org/TR/vocab-ssn-ext/#sample-chains  
+9. May timeframe deadline for TDWg abstracts  
+10. Teresa to set up some working hours for the next month.  
+
+## Next steps and assignments
+## Meeting Chat 10AM MDT
+From Me to Everyone 10:05 AM  
+https://docs.google.com/docum  
+https://docs.google.com/spread  
+From Dag Endresen to Everyone 10:21 AM  
+materialSampleID + materialSamplePID or dwciri:materialSampleID …??  
+I believe that I read that EOSC FAIR/PID guidelines will require GUIDs from 2024 to be EOSC compliant  
+EOSCO PID guidelines https://ec.europa.eu/info/sites/default/files/research_and_innovation/ki0420576enn-updt.pdf  
+https://doi.org/10.2777/926037  
+EOSC: “The use of Persistent Identifiers is required from 2021, however globally unique PIDs is proposed from 2024 onwards” https://www.eoscsecretariat.eu/news-opinion/fair-metrics-and-certification-recommendations-eosc  
+From Dave Vieglais to Everyone 10:24 AM  
+An identifier can also be computed from immutable properties of an instance (content based identifier, or hash), which may be an option in some cases. It does require that the combination of immutable properties are unique for an instance.  
+From Dag Endresen to Everyone 10:28 AM  
+But leave the “In the absence of… “ also out of the comments  
+From Jutta Buschbom to Everyone 10:34 AM  
+Sorry to be late - time change and overlapping meetings  
+From John Wieczorek to Everyone 10:40 AM  
+In the intro to the Quick Reference Guide, we say, “Capitalized terms, such as Occurrence, are Darwin Core classes, which are special category terms used to group sets of terms for convenience.”  
+That should apply everywhere they appear, but it is non-normative.  
+See comments on http://rs.tdwg.org/dwc/terms/organismQuantityType  
+From Dag Endresen to Everyone 10:43 AM  
+Comments	A dwc:organismQuantityType must have a corresponding dwc:organismQuantity.  
+@Jutta: “An identifier for a particular dwc:MaterialSample.”  
+From John Wieczorek to Everyone 10:49 AM  
+Cristian’s suggestion would also affect occurrenceID. Frankly, I am surprised we missed this when we extracted comments from definitions.  
+From Dag Endresen to Everyone 10:49 AM  
+The parenthesis also disjoints the MaterialSample from an DigitalExtededSpecimen ??  
+From John Wieczorek to Everyone 10:50 AM  
+YEs, Organism too, though it looks a little different there.  
+From Richard Pyle to Everyone 10:51 AM  
+In occurrenceID "occurrence" is not capitalized in the parenthetical, but "Organism" is.  
+From Dave Vieglais to Everyone 10:51 AM  
+perhaps “particular instance of dwc:MaterialSample”  
+From John Wieczorek to Everyone 10:53 AM  
+The parenthetical stuff about not the digital version came out of the identifiers workshop in Sweden.  
+From Richard Pyle to Everyone 10:55 AM  
+Actually, earlier than that. I remember we discussed it a lot at one of the earlier TDWG/GBIF Identifier workshops.  
+But maybe only got into DWC after Sweden  
+From John Wieczorek to Everyone 10:59 AM  
+I made https://github.com/tdwg/dwc/issues/404  
+From Dag Endresen to Everyone 11:07 AM  
+“DOI name, e.g., 10.1000/xyz123”  
+https://www.doi.org/index.html  
+DOI link (try this one: https://doi.org/10.1109/5.771073)  
+https://www.doi.org/doi_handbook/3_Resolution.html#3.6  
+From Sharon Grant to Everyone 11:08 AM  
+I'll send over a separate link  
+From Sharon Grant to Me (Direct Message) 11:10 AM  
+Apologies - my calendar duplicated and shifted the time of the call - will join in the 2nd call later today  
+From Richard Pyle to Everyone 11:10 AM  
+If anyone wants to see my own take on this Http prefix thing, I wrote a bit about it here: http://bioguid.org/about under the heading "Dereference Services"   
+
+## Meeting Chat 4PM MDT
+From Me to Everyone 04:31 PM  
+https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing  
+From Stan Blum to Everyone 04:46 PM  
+https://github.com/tdwg/material-sample/wiki  
