@@ -1,0 +1,52 @@
+# 2022-07-20 Material Sample Task Group Meeting Notes
+## Participants
+### 10AM MDT
+Richard B., Pip, Eric Sokol, Jutta Buschbom, Teresa, Rich Pyle
+### 4PM MDT
+Teresa - after 40 minutes Zoom kicked me off, so I hope nobody showed after that. :-(
+
+[not sure where to add my questions (Jutta):
+* Is it really critical that terms are used exactly the same across fields and communities? Eg. just had the issue with “thallus” in AC: actually a very different, non-homologue structure in algae, liverworts, fungi and lichens. However, within a given search/work context the term and its use then are very specific.
+     * [Teresa] - We handle this in Arctos with a comprehensive definition. “For X, this means Y and for Z this means a”. It also serves as a kind of warning - don’t just pick all the “thallus” or you will get things you don’t want. To get what you want, you will need to search “thallus” plus something else (i.e. taxa) as well.
+     * If you have an iterative process, with somebody pointing out that you aren’t following the overall definition used for data sharing, then people not reading the definitions will over time be introduced to it by fellow data users and the use of the definition will be more widespread and harmonized (idealistically)
+* Left-most column “vocabulary suggestions”: this reminds me of the vocabularies currently defined within AC (at a very high level, eg. stem, leave, …). It might make sense to combine these efforts.
+     * [Teresa] “currently defined within AC” - agree, but the list is severely lacking for a bunch of groups. At some point, it may make sense to incorporate AC terms as controlled vocabulary (or to use their term as it is) but for now it isn’t broad enough (and may never be since it is meant for things one can label from an image - not sure how “liver” would fit there….)
+     * Yes, the AC vocab’s are very small currently, though presumably they will grow. “Liver”: a photo or drawing of a liver would be the AC equivalent, wouldn’t it?
+* Thanks Teresa!
+]
+
+With regard to finding “tissue” - how do people find this now? Only via GGBN? As I see it, tissues can be PreservedSpecimen or MaterialSample and those can currently be used somewhat interchangeably. I maintain that preservation dictates what is “tissue” and what is not and the answer may depend upon what the “tissue” will be used for. Also note that ggbn:materialSampleType is a free text field, equivalent to the huge list of terms we have in our vocabulary suggestions column of the brainstorm document.  
+
+With regard to “fossil” - I think allowing for the use of pipe separated terms in specimenType could allow for fossil | organism part, but is that necessary? Isn’t a fossil by definition an organism part? I kinda dislike the fossil term, but people seem to need it (specimenType = organism part and materialType = Rock is a fossil, no?) Don’t want fossils, then only look for stuff with materialType = Organic material?  
+
+One thing that seems to be missing from the SampledFeatureType list are terms related to biological features. For instance, the “hindgut content” term is sampled from what? An organism? A whole organism is a sample of a population? A taxon?  
+## Agenda Items
+### Helpful links
+[Change requests in process ](https://github.com/tdwg/material-sample/tree/main/primary_deliverable)  
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+[materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing) 
+[TDWG 2022 Abstract](https://docs.google.com/document/d/1coVwKWy-m4OEiIsT2KhxH3irRr8UWfmZavRdlL-Mnp4/edit?usp=sharing)  
+## Items for discussion
+1. Current proposals  
+     a. [MaterialSample change proposal draft](https://github.com/tdwg/material-sample/issues/2#issuecomment-1084808918).  
+     b. [materialSampleID change proposal draft](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialSampleID.md).  
+2. iSamples Review  
+     a. iSamples added to [materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+     b. [iSamples vocabulary definitions](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit#gid=1379955038)  
+     c. Some other vocabs to consider  
+     ggbn:materialSampleType - https://rs.gbif.org/extension/ggbn/materialsample.xml  
+      * Classification of kind of physical sample in addition to BasisOfRecord/RecordBasis and Preparation Type. Please use preparationType for further specification such as "leg","blood","gDNA","axenic culture". Equal to KindOfUnit in ABCD! See also http://terms.tdwg.org/wiki/ggbn:materialSampleType (504 Gateway Time-out)  
+      * Examples: tissue, culture strain, specimen, DNA, RNA, Protein.  
+      dwc:preparations - https://dwc.tdwg.org/terms/#dwc:preparations  
+      * A list (concatenated and separated) of preparations and preservation methods for a specimen.  
+3. We should document our process and decision making for handoff to the next steps   
+      a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+      b. Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing   
+4. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?  
+5. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.  
+6. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.  
+7. Need to know the difference between dwc:catalogNumber and dwc:materialSampleID  
+8. Richard and Stan to work on use cases. See also https://www.w3.org/TR/vocab-ssn-ext/#sample-chains  
+## Next steps and assignments
+## Meeting Chat 10AM MDT
+## Meeting Chat 4PM MDT
