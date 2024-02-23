@@ -30,6 +30,7 @@ Google Sheet with terms for review - [MaterialSample and its properties](https:/
                 3. iSamples description and definitions  
                 4. New Google Sheet for workshop participants  
 
+```
 Team,
 
 I have created a new Google workbook that we can use at the workshop and started a draft announcement/invitation. Both can be found in this folder. Please add or edit as you see fit.
@@ -39,6 +40,7 @@ Also, I failed to mention it at the meeting this morning, but I need to complete
 Thanks for all you are doing!
 
 Teresa J. Mayfield-Meyer
+```
 
 3. We should document our process and decision making for handoff to the next steps   
      a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
