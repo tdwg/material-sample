@@ -1,0 +1,110 @@
+# 2022-08-17 Material Sample Task Group Meeting Notes
+## Participants
+### 10AM MDT
+Stephen M. Richard, Dag Endresen, Abby Benson, Stan Blum, Teresa Mayfield-Meyer, Jutta Buschbom, Rich Pyle
+
+Tricky bits with biological sample. Have organism part, whole organism, but need to know is it living? How is it preserved (i.e. suitable for genomic analysis...?). We agree that these appear to be other facets of a material sample (and maybe these properties would be useful? [preservationMethod](https://github.com/tdwg/material-sample/issues/18) and [preparations](https://github.com/tdwg/material-sample/issues/7) Although preparations needs a re-boot because it is a combination of preparations and preservations… See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml   
+Seems to be general consensus among this group to use the iSamples vocabulary and either recommend or bring in as a controlled vocabulary for the terms. Teresa’s question is where do we go next? How do we get adoption from the community?
+Stephen suggests getting some early adopters  
+We can follow the example of the invasive species terms and the controlled vocabularies for them to figure out how to add   the iSamples terms to Darwin Core with the controlled vocabularies - https://dwc.tdwg.org/em/   
+We need definitions for the three new properties. New Github Issues have been created for these:  
+ - [specimenType](https://github.com/tdwg/material-sample/issues/26)  
+ - [materialType](https://github.com/tdwg/material-sample/issues/27)  
+ - [sampledFeatureType](https://github.com/tdwg/material-sample/issues/28)  
+Stephen to bring the iSamples definitions for us to start with.
+## Discussion
+
+We should strive for a list with 3-40 elements;
+If we’re stuck about how to proceed we should look to use cases to guide next steps/ultimate goals
+
+Among the use cases (query side and publishing side) we see that is not helped by the iSample list are:
+
+ * Where for tissue/genetic resources (distinguish between single organism and multi-organism samples)
+Living organism (think botanical garden, zoo, genetic resources, culture collections)
+
+ * Also note that the natural history collections community needs to describe collections as a whole, as well as at the item level.  Do we need separate terms (controlled vocabularies) for these purposes?
+
+The collections community needs a term for preparation/preservation
+
+## 4PM MDT
+Teresa M, Stan B, Rich P.
+## Agenda Items
+### Helpful links
+[Change requests in process ](https://github.com/tdwg/material-sample/tree/main/primary_deliverable)  
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+[materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+[TDWG 2022 Abstract](https://docs.google.com/document/d/1coVwKWy-m4OEiIsT2KhxH3irRr8UWfmZavRdlL-Mnp4/edit?usp=sharing)  
+## Items for discussion
+1. Current proposals
+     a. [MaterialSample change proposal draft](https://github.com/tdwg/material-sample/issues/2#issuecomment-1084808918).  
+     b. [materialSampleID change proposal draft](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialSampleID.md).  
+2. iSamples Review  
+     a. iSamples added to [materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+     b. [iSamples vocabulary definitions](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit#gid=1379955038)  
+     c. Some other vocabs to consider  
+     ggbn:materialSampleType - https://rs.gbif.org/extension/ggbn/materialsample.xml  
+          * Classification of kind of physical sample in addition to BasisOfRecord/RecordBasis and Preparation Type. Please use preparationType for further specification such as "leg","blood","gDNA","axenic culture". Equal to KindOfUnit in ABCD! See also http://terms.tdwg.org/wiki/ggbn:materialSampleType (504 Gateway Time-out)  
+          * Examples: tissue, culture strain, specimen, DNA, RNA, Protein.  
+     dwc:preparations - https://dwc.tdwg.org/terms/#dwc:preparations  
+          * A list (concatenated and separated) of preparations and preservation methods for a specimen.  
+3. We should document our process and decision making for handoff to the next steps  
+     a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+     b. Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing  
+4. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?  
+5. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.  
+6. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.  
+7. Need to know the difference between dwc:catalogNumber and dwc:materialSampleID  
+8. Richard and Stan to work on use cases. See also https://www.w3.org/TR/vocab-ssn-ext/#sample-chains  
+## Next steps and assignments
+## Meeting Chat 10AM MDT
+From Me to Everyone 10:03 AM  
+https://docs.google.com/document/  
+From Abby Benson to Everyone 10:06 AM  
+Link to agenda/notes: https://docs.google.com/document/d/1zGqbHzp2QOPyxEPxTl4S8NH6z_rw90BD-6KHX23SRYM/edit?usp=sharing  
+From Dag Endresen to Everyone 10:17 AM  
+And environment sample (which could be multiple complete organisms)  
+The samples you make metabarcoding on  
+From Abby Benson to Everyone 10:31 AM  
+https://docs.google.com/document/d/1Cq2kHITy1mHPZAzwNjk7oAqn1UO0qzIlEk8J2xrebSU/edit?usp=sharing  
++1 Rich  
+From Dag Endresen to Everyone 10:35 AM  
+Yes, they are presented from the DwC, https://dwc.tdwg.org/em/  
+https://dwc.tdwg.org/doe/  
+From Abby Benson to Everyone 10:43 AM  
+https://github.com/tdwg/dwc/issues/314  
+For eDNA or metagenomics I like the SampledFeatureType to differentiate between marine and freshwater samples but understand if it doesn't work for the rest of the material sample types.  
+From Dag Endresen to Everyone 10:44 AM  
+They could be nested. One term completely inside another...  
+From Dag Endresen to Everyone 10:53 AM  
+It would be ok if the curator sometimes will need to revisit the actual specimen… 
+From Jutta Buschbom to Everyone 10:58 AM  
+I’m sorry, I will need to leave soon.  
+See you !  
+From Me to Everyone 10:58 AM  
+Bye!  
+From Richard Pyle to Everyone 11:02 AM  
+Sorry - I need to jump off. I'll try to join again at the second session later today.  
+From Abby Benson to Everyone 11:08 AM  
+https://dwc.tdwg.org/em/  
+https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit#gid=1379955038  
+From Dag Endresen to Everyone 11:09 AM  
+We have an issue on materialSampleType https://github.com/tdwg/material-sample/issues/14  
+## Meeting Chat 4PM MDT
+
+## Discussion
+
+We should strive for a list with 3-40 elements;
+If we’re stuck about how to proceed we should look to use cases to guide next steps/ultimate goals
+
+Among the use cases (query side and publishing side) we see that is not helped by the iSample list are:
+
+ * Where for tissue/genetic resources (distinguish between single organism and multi-organism samples)
+ * Living organism (think botanical garden, zoo)
+
+Also note that the natural history collections community needs to describe collections as a whole, as well as at the item level.  Do we need separate terms (controlled vocabularies) for these purposes?
+
+
+The collections community needs a term for preparation/preservation
+
+
+Our tests of these terms and vocabularies should be framed against queries and assessment (fitness for use).
