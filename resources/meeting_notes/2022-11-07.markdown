@@ -1,0 +1,149 @@
+# 2022-11-07 Material Sample Working Session
+## Participants
+Please add your name and affiliation.
+* Teresa J Mayfield-Meyer, Arctos Community Coordinator
+* Jutta Buschbom, Statistical Genetics
+* Mathias Dillen, Meise Botanic Garden
+* Steve Baskauf, Vanderbilt University Heard Libraries
+* Christian Bölling, Museum für Naturkunde Berlin
+* James Macklin, Agriculture and Agri-Food Canada, Ottawa
+* Carlos Martínez (BIOfid, Senckenberg Frankfurt)
+* Mariel Campbell, Museum of Southwestern Biology, Genomic Resources
+* John W., GBIF and the community
+* Stan Blum, TDWG
+## Agenda Items
+### Helpful links
+[Change requests in process ](https://github.com/tdwg/material-sample/tree/main/primary_deliverable)  
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+[materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)    
+## Items for discussion
+### What we’ve done so far
+* [MaterialSample definition](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/MaterialSample.md) - A physical object that represents a physical entity of interest in whole or in part.
+    * This definition includes a physical photograph and a physical drawing of an organism or fossil, right?  
+        * I wouldn't consider those as part of a *material* *sample*, e.g., I don't sample a photograph, I take a soil sample in a bag  
+        * A material sample could be a whole organism preserved in a collection, such as a type specimen. The ZooCode: "72.5.6. In the case of a nominal species-group taxon based on an illustration or description, or on a bibliographic reference to an illustration or description, the name-bearing type is the specimen or specimens illustrated or described (and not the illustration or description itself)."  
+        * I would consider photos and drawings “samples” of those things, not whatever is depicted. What is depicted is an information artifact.  
+    * What is the notion of representation?  
+    * Sample -  
+* [materialSampleID definition](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialSampleID.md)  
+* Recommend deprecation of FossilSpecimen, LivingSpecimen and PreservedSpecimen  
+### What we are working on
+* materialSampleType - Needed for coarse filtering of objects (fossil, living, preserved)  
+    * Seems overloaded with preparation, preservation, extinct/extant, and living/preserved
+    * [Internet of Samples](https://isamplesorg.github.io/home/) (iSamples) working vocabularies for sample description:
+        * [materialSampleType](https://isamplesorg.github.io/metadata/vocabularies/specimentype.html) - Property to specify the kind of thing the specimen is.
+        * [sampledFeature](https://isamplesorg.github.io/metadata/vocabularies/sampledfeature.html) - Property to specify the broad context that a sample is intended to represent.
+        * [materialType](https://isamplesorg.github.io/metadata/vocabularies/materialtype.html) - Property to specify the kind of material that constitutes a physical sample.
+             * Can the combination of these three terms with selections from their controlled vocabularies allow providers and users of data about physical objects to get at what they need?
+             * We need testers and opinions - https://forms.gle/czYVknLXXpq4Ghc29
+         * [Latimer Core](https://github.com/tdwg/rs.tdwg.org/blob/latimer/process/page_build_scripts/index.md#ltc_ObjectClassification) - have they done this for us?  
+             * baseTypeOfCollection - High-level term describing the fundamental nature of objects in the ObjectGroup.
+                 * Notes - For natural history collections baseTypeOfCollection describes types of occurrences and may constrain the values available in objectType. Notes for ObjectGroups where baseTypeOfCollection is 'InformationArtefact': subsequent ‘type’ properties could include hierarchical Audubon Core/Dublin Core terms – e.g. dc:type (http://purl.org/dc/elements/1.1/type), ac:subtype / ac:subtypeLiteral (http://rs.tdwg.org/ac/terms/subtypeLiteral), or (proposed) ac:3DResourceType.
+                 * Examples - MaterialSample, InformationArtefact
+             * Discipline - A high level classification of the scientific discipline to which the objects within the collection belong or are related.
+                 * Notes - The recommendation is to use a controlled vocabulary that is also common across other community collections, object and occurrence standards. Suggested list https://confluence.egi.eu/display/EGIG/Scientific+Disciplines
+                 * Examples -
+             * typeOfCollection - Additional information that exists that describes the object(s) in the collection.
+                 * Notes - Terms such as soil, pollen, faeces, muscle, genomic DNA are currently put in preparationType. These terms have been parked for discussion: HumanObservations, MachineObservations.
+                 * Examples - PreservedSpecimens, FossilSpecimens, MineralSpecimens, ArchaeologicalArtefacts, EthnographicObjects, HumanRemains, HominidRemains, MaterialSamples, LivingSpecimens
+            * objectType - A more generic classification of items in the collection than described in preparationType.
+                 * Note - This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification). For cultural collections terms such as 'bowl', 'textile' are appropriate at this level. For large collections of multiple types use pipe delimited lists.
+                 * Examples - tissue, specimen, culture, rna, mineral, dna, environmental sample, HTS Library
+            * material - Material denotes the raw substance(s) from which the object is formed, in whole or in part.
+                 * Notes - This definition maps roughly to the concept of E57 'material' from the CIDOC CRM: https://cidoc-crm.org/Entity/E57-Material/version-7.1.1
+                 * Examples - The object, or artefact could contain biological parts, for example jewellery made of amber with insects in, or cloaks made of bird feathers. It should not be used for taxonomic identifications. Examples include terms such as brick, gold, aluminium, polycarbonate, resin, amber, feather
+            * preparationType - A term used to classify or describe an object that indicates the actions that have been taken upon it and/or the processes it has been put through to prepare it for scientific use or study.
+                 * Notes - This can be the same as PreservationMethod (e.g. Bone), but is not always. This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification). For large collections with multiple types use a pipe delimited list.
+                 * Examples - Bones, Eggs, Fossils, Gemstones, Lysate, Macrofossils, eDNA, Viable cells, Pollen, Muscle, Leaf, Blood, Known - witheld
+            * preservationMethod - A term used to classify or describe an object that indicates the primary or most recent action, measure or process that has been used in order to preserve the objects in the collection for long-term storage.
+                 * Notes - Not intended to be used as the fossilization method. Use preservationMode for that. This field is intended to be use where a collection has a single or prominent preservationMethod. If the collection has multiple preservationMethods then this should be expressed elsewhere, such as in ObjectQuantity. We recommend the Arctos PART_PRESERVATION vocabulary (https://arctos.database.museum/info/ctDocumentation.cfm?table=CTPART_PRESERVATION). For herbarium sheets use 'dried_pressed'. If an alcohol collection uses mixed percentages use 'alcohol'.
+                 * Examples - fluid_preserved, alcohol, formaldehyde, dried, dried_pinned, dried_pressed, mounted, microscope_slide, glycerin, gum_arabic, frozen, refrigerated, freeze_dried, mixed, no_treatment, known:withheld, unknown, papered/packaged
+              * preservationMode - The means by which a palaeontological specimen was preserved or created e.g. body, cast, mold, trace fossil, soft parts mineralised etc.
+                  * Notes - This property is aligned with the concept of preservationMode (https://efg.geocase.eu/documentation/html/efg.html#element_PreservationMode_Link03032878) in ABCD(EFG).
+                  * Examples - adpression/compression, body, cast, charcoalification, coalified, concretion, dissolution traces, mold/impression, permineralised, recrystallised, soft parts, trace
+
+### Notes
+* “Sample” is problematic, consider “catalogueRecord”, “object”, “entity”, “unit”
+* High-level distinction between material and information artefact
+## Meeting Chat
+00:14:17	Teresa Mayfield-Meyer:	https://docs.google.com/document/d/1EFCaPTuPAnc3oU0t-JAXQvjUsxmHotnHnWhweZxw8Es/edit?usp=sharing
+00:15:34	TDWG Executive:	https://docs.google.com/document/d/1EFCaPTuPAnc3oU0t-JAXQvjUsxmHotnHnWhweZxw8Es/edit?usp=sharing
+00:16:00	TDWG Executive:	https://docs.google.com/document/d/1EFCaPTuPAnc3oU0t-JAXQvjUsxmHotnHnWhweZxw8Es/edit?usp=sharing
+00:19:21	Steve Baskauf:	https://docs.google.com/document/d/1EFCaPTuPAnc3oU0t-JAXQvjUsxmHotnHnWhweZxw8Es/edit?usp=sharing
+00:23:45	Steve Baskauf:	https://docs.google.com/document/d/1EFCaPTuPAnc3oU0t-JAXQvjUsxmHotnHnWhweZxw8Es/edit?usp=sharing
+00:25:59	Mathias Dillen:	This definition includes a physical photograph and a physical drawing of an organism or fossil, right?
+00:28:53	Carlos Martínez:	I wouldn't consider those as part of a *material* *sample*, e.g., I don't sample a photograph, I take a soil sample in a bag
+00:31:36	Carlos Martínez:	photographs and illustrations are "works" in the sense of the ZooCode
+00:34:03	Carlos Martínez:	A material sample could be a whole organism preserved in a collection, such as a type specimen. The ZooCode: "72.5.6. In the case of a nominal species-group taxon based on an illustration or description, or on a bibliographic reference to an illustration or description, the name-bearing type is the specimen or specimens illustrated or described (and not the illustration or description itself)."
+00:37:28	Christian Bölling:	I believe it can't be stressed enough that in the context of information standards like DwC all terms need to be seen as linguistic shortcuts of what the corresponding definition explicates.
+00:38:16	Steve Baskauf:	The critical distinction is that an information artifact can be duplicated and transmitted electronically. Physical things can’t do that
+00:40:32	Stanley Blum:	But physical photographs can be copied, too, and the "representation" they contain transfers to the copy, albeit with perhaps some loss or degradation.
+00:40:37	Christian Bölling:	Teresa, in https://forms.gle/czYVknLXXpq4Ghc29 - what is the source of the figures?
+00:41:47	Steve Baskauf:	@stan, but you could have a historical photograph whose physical instance is itself an item of interest (independent of a scan of it)
+00:42:19	Jutta Buschbom:	baseTypeOfCollection: High-level term describing the fundamental nature of objects in the ObjectGroup.
+00:42:20	Teresa Mayfield-Meyer:	the figures came from iSamples
+00:42:27	Mariel Campbell:	And that photograph could be loaned . . .
+00:42:55	Steve Baskauf:	Same is true with fossils, though
+00:47:06	Jutta Buschbom:	A model that I’m working on currently at the intersection of the MaterialSample group, LtC terms and GRSciColl as use case: https://docs.google.com/spreadsheets/d/12D6P4lt-zDAALJzod7sq475tWgqKiTbDrFjKEuSXVg4/edit?usp=sharing
+00:50:45	Deborah Paul:	"item"
+00:50:57	Carlos Martínez:	Samples come from *sampling*, e.g., collecting material things during a field trip / sampling event. A digital photograph is not a material sample. I think that we are confusing "collection objects" with material samples in the sense used by field biologists. I am a biologist and calling a photograph a material sample is counterintuitive (read wrong) to me.
+00:51:10	Steve Baskauf:	One of the arguments for using opaque identifiers is to force people to read definitions. But they are harder to use and remember than those where the identifier is some sort of mnemonic.
+00:51:13	Teresa Mayfield-Meyer:	I prefer object - a digital image could be an item....
+00:51:18	Mathias Dillen:	dcterms:type = PhysicalObject
+00:51:20	Deborah Paul:	would material item? be less confusing? An "sample" could be an item ...
+00:51:43	Mariel Campbell:	Material Entity or Object
+00:51:54	Teresa Mayfield-Meyer:	👍🏻
+00:52:11	Deborah Paul:	A herbarium sheet, sometimes only has an image on it.
+00:54:16	Mathias Dillen:	They need to have an identifier, i.e. a resolving mechanism, to be part of a collection. Otherwise there is no way to retrieve them when asked for them.
+00:55:10	Deborah Paul:	@Christina We do use DwC this way in TaxonWorks … we map IRIs to our concepts in our database.
+00:55:35	Deborah Paul:	*@Christian (type above)
+00:56:12	Carlos Martínez:	A herbarium sheet is not a material sample, the plant on it is. If there is no plant and there is just a picture, there is no material sample on the sheet and the sheet is just a collection object.
+00:56:41	Deborah Paul:	Hm. @Carlos we may have to agree to disagree :-)
+00:58:30	Mariel Campbell:	If we change the term to Material Object or Entity, and define it as a physical object, then an herbarium sheet with a physical photograph in it is indeed a Material Object. It can be barcoded and loaned.
+00:58:53	Carlos Martínez:	Things that are included in a material sample: the three main materials upon which scientific names of animals are based: 1) specimens, 2) fossils that are substitutions (replacements, impressions, moulds and casts) for the actual remains of animals, and 3) the fossilized work of animals (ichnofossils).
+00:58:55	Deborah Paul:	^^^ +1 @Mariel
+01:01:06	Carlos Martínez:	@Debbie, I don't sample "herbarium sheets". I have sampled plants, herborized them, and mounted them on herbarium sheets. Calling a herbarium sheet a material sample makes no sense to me. If the term will not make sense to biologists, what is the point of using it?
+01:02:56	Deborah Paul:	I understand @Carlos. Hence this conversation. Which also includes that we may all need to broaden our understandings / our concepts of some terms. Standards evolve and we have to do the same … It takes time and lots of conversations.
+01:03:50	Christian Bölling:	@Carlos: This is a valid point of view that conforms with your community's use of the word "sample". According to the proposed definition of this Task Group it would be. But I agree with you: the terms used in an information standards should as much as possible respect the existing use of words and if necessary use terms (words) that are recognizably technical and force users to read their definitions to understand them.
+01:04:14	Mariel Campbell:	The photograph is evidence of the plant, but in this case, the actual photograph is itself a material object, independent of what it represents or what can be sampled from it.
+01:04:29	Deborah Paul:	^^^ Yup.
+01:05:29	Steve Baskauf:	I feel like we are plowing ground that was plowed a year ago in this group...
+01:06:10	Christian Bölling:	I like "entity". It's nicely abstract.
+01:07:09	Mariel Campbell:	Entity may work better in context of archaeological collections or even zoo animals with names. More neutral.
+01:07:19	Christian Bölling:	+1 Mariel
+01:09:25	Deborah Paul:	Any term changes / definition changes, same issue Teresa .. delays in adoption / mapping
+01:10:48	Jutta Buschbom:	More possible terms: evidence, token
+01:11:59	Carlos Martínez:	How I see information standards working for more people, being accepted by communities, and used more: A standard will be more successful the more it reflects the broad use by a community and the more intuitive it is. The opposite is also true: A standard will be unsuccessful if it is counterintuitive and if it goes against established usage of the term. The more "mapping" across terminologies, the more mental effort and the less acceptance. I want communities to come closer to biodiversity informatics standards. To me, that means reflecting as much of their terminology usage as possible in the most intuitive way possible. I think that we all want more communities coming closer to standards. :)
+01:13:20	Deborah Paul:	@Carlos, understood. As we increasingly encompass more communities, we will need this again. And it will be both standards evolving, and the humans and their standards-of-practice :-)
+01:14:34	Jutta Buschbom:	Would “entity” be easy to understand for newcomers, citizen scientists, lay experts, COVID-19 specialists, medical scientists
+01:15:32	Deborah Paul:	Thanks @James! This is exactly what we do in TaxonWorks ...
+01:15:53	Mariel Campbell:	+1 James
+01:16:01	John Wieczorek:	“Entity” might not be so easy to understand. But then maybe it will force people to read the definition. ;-)
+01:17:13	John Wieczorek:	Though that is partially joking, I think the subtype WILL be more understandable for people.
+01:17:31	James Macklin:	+1 John
+01:17:45	Mariel Campbell:	It also avoids calling a part or representation of a human or named animal as an "object" which is an issue
+01:18:14	John Wieczorek:	DigitalEntity = “something digital” MaterialEntity = “something material”
+01:18:23	Jutta Buschbom:	Community-specific labels: +1
+01:19:04	James Macklin:	+100 on actually reading the definitions!
+01:19:31	Jutta Buschbom:	There are analog records, too 🙂 (eg. Schallplatten - EN?)
+01:19:47	Deborah Paul:	+100 on examples! They are key (imho)
+01:20:30	James Macklin:	Yes, essential component of the definition ;-)
+01:22:37	Deborah Paul:	Well-said Christian
+01:23:55	Christian Bölling:	Jutta: Mapping what to what? Can you elaborate?
+01:25:29	Mathias Dillen:	What's the difference between MaterialEntity and PhysicalObject? Other than the potential negative connotations the word object comes with.
+01:27:03	Christian Bölling:	@Mathias: my understanding is that as technical terms occurring in some standard or ontology they are synonymously used. But of course one would have to look at their definitions in particular the resources.
+01:28:18	James Macklin:	Steve, this is likely to be important for the TAG!
+01:30:05	Christian Bölling:	@Mathias: Some information schemes seem to assume a certain spatial-structural continuity as a necessary condition to what is a PhysicalOBJECT, making "Entity" the more general term some could argue.
+01:30:16	Steve Baskauf:	Yes, definitely!
+01:32:33	Steve Baskauf:	Latimer Core is in expert review, but not yet public review. So there is still time for the task group to do the alignment
+01:32:47	James Macklin:	Oops..
+01:35:22	Mariel Campbell:	+1 Christian re biomedical ontologies
+01:36:30	Steve Baskauf:	Take note: The draft Views Controlled Vocabularies (currently under public comment) do exactly that. See https://github.com/tdwg/ac/blob/master/views/code/subjectPart/subjectPart.md “Definition derived from” field
+01:39:20	Stanley Blum:	+1 re biomedical ontologies
+01:45:44	Jutta Buschbom:	Could somebody copy the chat?
+01:46:53	Carlos Martínez:	Thank you, Teresa! Thank you, everyone!
+Meeting Recording
+You can access the recordings via this link:
+ 
+https://us06web.zoom.us/rec/share/qkiEU1Dvw0AdU378jLYJXVsg66Xb-FWjVr3FVcMxpitPfnDIKJZn72mBtUgDKKDt.ePAVkoTpf0ltbxx1?startTime=1667840525000
+Passcode: 0KV#+J^C
