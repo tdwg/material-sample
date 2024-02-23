@@ -1,0 +1,68 @@
+# 2022-05-18 Material Sample Task Group Meeting Notes
+## Participants
+### 10AM MDT
+Steve Richard, Teresa Mayfield, Jutta Buschbom, Abby Benson, Steve Baskauf, Roger Burkhalter, Richard Pyle
+### 4PM MDT
+Teresa Mayfield, Simon Cox, Richard Pyle
+## Agenda Items
+[Change requests in process ](https://github.com/tdwg/material-sample/tree/main/primary_deliverable)  
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+## Items for discussion
+1. Current proposals  
+     a. [MaterialSample change proposal draft](https://github.com/tdwg/material-sample/issues/2#issuecomment-1084808918).  
+     b. [materialSampleID change proposal draft](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialSampleID.md).  
+2. materialSampleType - see also  
+     a. ggbn:materialSampleType - https://rs.gbif.org/extension/ggbn/materialsample.xml 
+          i. Classification of kind of physical sample in addition to BasisOfRecord/RecordBasis and Preparation Type. Please use preparationType for further specification such as "leg","blood","gDNA","axenic culture". Equal to KindOfUnit in ABCD! See also http://terms.tdwg.org/wiki/ggbn:materialSampleType (504 Gateway Time-out)  
+          ii. Examples: tissue, culture strain, specimen, DNA, RNA, Protein.  
+     b. dwc:preparations - https://dwc.tdwg.org/terms/#dwc:preparations  
+          i. A list (concatenated and separated) of preparations and preservation methods for a specimen.  
+     c. ADBC KindOfUnit - https://terms.tdwg.org › wiki › abcd2:KindOfUnit (504 Gateway Time-out)  
+          i. ?  
+3. Create a controlled vocabulary for materialSampleType  
+     a. Working brainstorm sheet  
+          i. skos vocabs for iSamples: https://github.com/isamplesorg/metadata/tree/develop/src/vocabularies  
+          ii. Definitions for iSamples https://docs.google.com/spreadsheets/d/1MBEePJv6v1b5louTNAUKDw2-KOc_Nv7-Qwonoqg2vwI/edit#gid=109899255  
+          iii. Steve B. advocated for testing the iSamples controlled vocabularies with users to facilitate the adoption of the terms during the review process  
+                1. Rich suggested we ask users to look for ones that don’t fit / the vocabularies can’t accommodate
+                2. Make sure it’s clear that you do not have to apply all of them to all examples  
+     b. Steve has built this with existing specimen types. See https://github.com/tdwg/material-sample/issues/24 for open questions about the work.  
+     c. "What parameters are we trying to represent in the values of materialSampleType?  
+4. We should document our process and decision making for handoff to the next steps  
+     a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+     b. Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing   
+5. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?  
+6. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.  
+7. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.  
+8. Need to know the difference between dwc:catalogNumber and dwc:materialSampleID  
+9. Richard and Stan to work on use cases. See also https://www.w3.org/TR/vocab-ssn-ext/#sample-chains  
+10. May timeframe deadline for TDWg abstracts  
+11. Teresa to set up some working hours for the next month.  
+## Next steps and assignments
+## Meeting Chat 10AM MDT
+From Me to Everyone 10:06 AM  
+https://docs.google.com/document/d/1NaZWEZXTod7PVW4lLHKQB_DRapIorBmBGmKytk24Qn0/edit#  
+https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing  
+From Stephen Richard to Everyone 10:28 AM  
+https://docs.google.com/spreadsheets/d/1MBEePJv6v1b5louTNAUKDw2-KOc_Nv7-Qwonoqg2vwI/edit#gid=109899255  
+skos vocabs for iSamples: https://github.com/isamplesorg/metadata/tree/develop/src/vocabularies  
+From Abby Benson to Everyone 10:44 AM  
+There is dwc:habitat so that could be a place to be more specific on the ecological specifics.  
+DNA is not always sampled from an organism but the point is well taken.  
+From Steve Baskauf to Everyone 11:00 AM  
+https://www.tdwg.org/conferences/2022/call-for-abstracts/  
+https://www.tdwg.org/conferences/2022/session-list/  
+From Abby Benson to Everyone 11:00 AM  
+I have to run. Thanks all!  
+## Meeting Chat 4PM MDT
+Rich  
+Come up with things that WON’T fit  
+Do we need more granularity?  
+
+Simon  
+ENVO part of OBO - environmental ontology maybe check it out  
+BCO  
+  
+Teresa  
+Take care of overlap with habitat in SampleFeatureType?  
+
