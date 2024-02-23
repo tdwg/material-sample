@@ -1,0 +1,208 @@
+# 2022-04-20 Material Sample Task Group Meeting Notes
+## Participants
+### 10AM MST
+Stephen Richard, Roger Burkhalter, Teresa, Steve B., Dag Endresen, Jutta Buschbom, Richard Pyle, Christian Bolling, John Wieczorek
+### 4PM MST
+Teresa, Stan Blum, Simon Cox, Greg Whitbread, Abby Benson
+## Agenda Items
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+## Items for discussion
+1. Should we focus on this?
+2. [MaterialSample change proposal draft.](https://github.com/tdwg/material-sample/issues/2#issuecomment-1084808918)
+3. materialSampleID - Stephen R. Jutta B. and Teresa M. discussed this at length on 2022-03-31 during working hour.  
+     a. Physical samples WILL have more than one identifier - how do you choose the one that goes here? (Jutta discuss identifier class)
+     b. Are we commingling identifiers for the physical object and the digital representation?  
+     c. Do we need a term for the identifier for the digital representation of the MaterialSample?  
+     d. Identifiers have/need their own set of metadata: who issued them?, who applied them?, are they verified?  
+     e. Do we need better examples? How do you pass a doi? Include the https or no? UGH!  
+     f. Do we need materialSampleLODID? Or materialSampleActionableID - make recommendation for “higher up” in TDWG to think about this  
+     g. Do we steer people away from the DwC triplet? This was much discussed in the 10AM meeting. Majority feel that we should remove this recommendation  
+4. Create a controlled vocabulary for materialSampleType  
+     a. Steve has built this with existing specimen types. See https://github.com/tdwg/material-sample/issues/24 for open questions about the work.  
+     b. "What parameters are we trying to represent in the values of materialSampleType?  
+5. We should document our process and decision making for handoff to the next steps 
+     a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+     b. Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing   
+6. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?
+7. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.
+8. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.
+9. Need to know the difference between dwc:catalogNumber and dwc:materialSampleID
+10. Richard and Stan to work on use cases. See also https://www.w3.org/TR/vocab-ssn-ext/#sample-chains
+11. May timeframe deadline for TDWg abstracts
+12. Teresa to set up some working hours for the next month.
+## Next steps and assignments
+## Meeting Chat 10AM MDT
+From Christian Bölling to Everyone 10:02 AM  
+Saw the pre-recoded part.  
+From Me to Everyone 10:03 AM  
+https://docs.google.com/document/d/1XLM2YCVEocXYZM5l2EraFZH0fKWPQ0O7fdxnH8ZAYa8/edit#  
+From John Wieczorek to Everyone 10:17 AM  
+The Material Sample repository has a team of 21 members, all of which have write permission to the repository. https://github.com/orgs/tdwg/teams  
+From Stephen Richard to Everyone 10:29 AM  
+https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit#gid=0 google sheet  
+From Dag Endresen to Everyone 10:32 AM  
+Comments say so  
+From John Wieczorek to Everyone 10:34 AM  
+Sorry folks. My connectivity is so bad today I can’t stay connected well enough long enough to actually talk.  
+From Me to Everyone 10:35 AM  
+Can you type?  
+From John Wieczorek to Everyone 10:35 AM  
+Badly, as always. ;-)  
+From Me to Everyone 10:35 AM  
+That's Ok I read badly  
+From Abby Benson to Everyone 10:37 AM  
+No I would not assume!  
+Never assume.  
+From Me to Everyone 10:37 AM  
+Arctos has been wrangling with this https://github.com/ArctosDB/arctos/issues/4101  
+From Stephen Richard to Everyone 10:38 AM  
+I am strongly in favor of including an explicit materialSampleId for identifier for physicalSample  
+From John Wieczorek to Everyone 10:39 AM  
+I wonder if trying to solve the identifier general problem is out of scope. It would be needed/useful for every identifier. If we are still treating terms as Darwin Core does, as a bag of terms, then materialSampleID should be able to stand on its own. It is any identifier for a material sample. It need only be unique within a dataset. It ought to be many more things to be useful.  
+Steve is expressing my serious concerns right now.  
+We will not satisfy a stability requirement for changes in terms going down the road being talked about now.  
+From Me to Everyone 10:39 AM  
+It need only be unique within a dataset. is problematic in the example I gave previously....  
+From John Wieczorek to Everyone 10:40 AM  
+It is not problematic to the one publishing the dataset until someone wants to do more with it. You won’t be able to enforce any other uniqueness, otherwise you will lose publishabilty, which is against the principles of not creating obstacles to sharing data.  
+From Dag Endresen to Everyone 10:42 AM  
+We could maybe make the “Comments” recommendation on uniqueness stronger? For non-unique "identifiewrs" there is  atalogNumber?  
+From Stephen Richard to Everyone 10:42 AM  
+if we're just clear that materialSampleID is about the physical object, good. Then add a note that if you want people to annotate your metadata, you need a separate identifier for the representation (the digital thing)  
+From John Wieczorek to Everyone 10:42 AM  
+In a graph-based representation, the ID terms in Darwin Core are not usable.  
+From Me to Everyone 10:42 AM  
+So we need materialSampleDigitalID?  
+From John Wieczorek to Everyone 10:42 AM  
+The RDF Guide discusses why this is so.  
+From Richard Pyle to Everyone 10:43 AM  
+Comments make it clear that the identifier is for the physical thing, not the digitial representation  
+From Abby Benson to Everyone 10:43 AM  
+All the people I work with to share data are doing so in spreadsheets.  
+From Stephen Richard to Everyone 10:43 AM  
+critical thing about any identifier is being clear what you're identifying. See also https://en.wikipedia.org/wiki/HTTPRange-14  
+From Richard Pyle to Everyone 10:44 AM  
+I think the same is implied for xxxxID of other DwC classes, but in most cases the identifier represents a conceptual thing, rather than physical thing, but I lump Physical+Conceptual things together, collectively different from digital metadata records for Physical or Conceptual things.  
+From John Wieczorek to Everyone 10:45 AM  
+materialSampleIDs identify physical objects.  
+From Richard Pyle to Everyone 10:45 AM  
+As it says in the comments  
+From Christian Bölling to Everyone 10:46 AM  
+actually, in a MaterialSample spreadsheet, this column would then be something like a primary key and "MaterialSampleID" would be its header. Translating that to a graph representation is straitforward. But this element is not a property of omething, its just the primary key for the entities the spreadsheet rows are about.  
+From John Wieczorek to Everyone 10:46 AM  
+It can when it is done right.  
+But we can’t enforce it doing things right without losing almost all existing data.  
+From Dag Endresen to Everyone 10:47 AM  
+We can rid of the “in the absence of an unique identifier…” to guide the community better?  
+From Steve Baskauf to Everyone 10:47 AM  
+@christian It may be the primary key. But there are also spreadsheets where people use the xID terms as foreign keys. That's why they just aren't usable for linked data  
+From Richard Pyle to Everyone 10:47 AM  
+@John: Can you confirm whether "Material Entity" of grand unified model includes more than just MaterialSample instances (e.g., including Organisms)?  
+From John Wieczorek to Everyone 10:49 AM  
+MaterialEntity in the GUM is a physical object. The physical stuff of an Organism at a given moment in time can be a MaterialEntity, but an Organism (as a concept) is not a subtype of a MaterialEntity - it has relationships to MaterialEntities (such as parts take from it).  
+From Abby Benson to Everyone 10:49 AM  
+I guess I would disagree. I think the data is still useful even without a resolvable globally unique identifier ¯\_(ツ)_/¯  
+From Richard Pyle to Everyone 10:49 AM  
+@John: Right...too early in the morning here. I was thinking EntityOfInterest. Sorry for the distraction  
+From John Wieczorek to Everyone 10:50 AM  
+I agree with Abby. We have 20 years of evidence.  
+@Rich, Yes, an Organism is often an EntityOfInterest in the various use cases.  
+From Dag Endresen to Everyone 10:50 AM  
+Data is useful without - but even more useful with an unique identifier  
+From John Wieczorek to Everyone 10:50 AM  
+@dag nailed it  
+From Christian Bölling to Everyone 10:51 AM  
+Resolvability via HTTP is not the issue - but an identifier will, as an anchor let you get related information in some way.  
+From John Wieczorek to Everyone 10:54 AM  
+@Teresa, That would be inconsistent with how Darwin Core teas with definitions. That is for the usage comments.  
+“deals”, not “teas”  
+From Steve Baskauf to Everyone 10:55 AM  
+I propose that we keep materialSampleID with the best definition we can give. We would be consistent with the rest of Darwin Core. This term would have all of the same problems and benefits as all of the other ID terms.  
+It's not our job in this group to solve the broader problems  
+From John Wieczorek to Everyone 10:55 AM  
+There is a DwC principle that constraints are not part of the definition.  
+From Dag Endresen to Everyone 10:56 AM  
+I (also) suggest to remove the “in the absence of…”  
+From Abby Benson to Everyone 10:56 AM  
+I disagree really strongly.  
+From John Wieczorek to Everyone 10:56 AM  
+I agree about removing it.  
+If it stays, it should be restated.  
+From Steve Baskauf to Everyone 10:56 AM  
+Yes, remove from the definition and put in notes if necessary  
+From Dag Endresen to Everyone 10:57 AM  
+It is not more “wrong” to make a c rappy identifier if it says so or not in the comments  
+From John Wieczorek to Everyone 10:57 AM  
+It is a little too confident of a recommendation.  
+From Roger Burkhalter to Everyone 10:57 AM  
+Agree  
+From John Wieczorek to Everyone 10:57 AM  
+In some contexts it is actually a bad recommendation.  
+Arctos is one of those cases.  
+From Christian Bölling to Everyone 10:58 AM  
+@Abby: What are you referring too in your last comment?  
+From Steve Baskauf to Everyone 10:59 AM  
+Sorry I was confusing Current and Revised  
+From John Wieczorek to Everyone 10:59 AM  
+Abby has a use case for comments that should remain there, but should be better explained.  
+From Richard Pyle to Everyone 11:00 AM  
+"Primary Key" only in the sense of the shared DwC dataset, not in the sense of the source database from which the data came.  
+From Dag Endresen to Everyone 11:01 AM  
+@Abby, but you can put that string in catalogNumber  
+From Richard Pyle to Everyone 11:01 AM  
+Yes, I think that's why the word and meaning of "Persistent" int he comment.  
+From Dag Endresen to Everyone 11:03 AM  
+@Abby .. you can still put the dwc-triplett in occurrenceID even if the Comments does not include the sentence in in absence...  
+From Richard Pyle to Everyone 11:03 AM  
+I think @Abby makes a critical point that identifiers should not just be unique within a particular DwC dataset, but also persistent across multiple versions/snapshots of the same DwC dataset.  
+From Stephen Richard to Everyone 11:03 AM  
+sorry guys, gotta run to another meeting. Great and ongoing discussion.... no clear solution, but if we're just clear on what we mean....  
+From Abby Benson to Everyone 11:04 AM  
+@Dag fair enough, I just think it is useful advice to those who don't have a UUID in their data and no way to create one.  
+From Jutta Buschbom to Everyone 11:05 AM  
+Change to “… recommended best practice in many contexts is …”  
+From Richard Pyle to Everyone 11:07 AM  
+I like @Christian's proposed revision in the Google sheet.  
+From John Wieczorek to Everyone 11:07 AM  
+@dg, I understand the reticence to recommend something that is not a good idea in many cases, but what if the conditions under which that would be a practical solution were given?  
+From Jutta Buschbom to Everyone 11:07 AM  
++1 @Christian & Richard  
+From Abby Benson to Everyone 11:09 AM  
+But I will say that it's kind of hard to find advice on how to apply Darwin Core to their data 😕 And that frequently the reference guide is all there is.  
+From Jutta Buschbom to Everyone 11:09 AM  
++1 Abby  
+From Richard Pyle to Everyone 11:10 AM  
+I would make some minor wordsmith tweaks: "Values of dwc:materialSampleID are intended to uniquely identify each particular material sample (instance of dwc:MaterialSample) within a group of material samples. While it is not required, recommended best practice is to use a persistent, globally unique identifier. This identifier is for the physical object as opposed to a particular digital record of the material sample."  
+From Steve Baskauf to Everyone 11:10 AM  
+@abby. Audubon Core has started “recipe" documents for this kind of thing. There's no reason DwC can't do that.  
+From John Wieczorek to Everyone 11:10 AM  
+The DwC Q&A is meant to be a funnel to produce recipe documents.  
+From Steve Baskauf to Everyone 11:10 AM  
+The “recipe" documents aren't part of the standard, but are on the website  
+From Christian Bölling to Everyone 11:10 AM  
+@Richard: Go ahead!  
+From Richard Pyle to Everyone 11:11 AM  
+OK, will do.  
+## Meeting Chat 4PM MDT
+From Me to Everyone 04:05 PM  
+https://docs.google.com/docum  
+https://docs.google.com/spread  
+From Simon Cox to Everyone 04:17 PM  
+Apologies - I can now see Abby's hand up - I talked over her :-(  
+(I've moved the chat box now which was obscuring it)  
+From Abby Benson to Everyone 04:20 PM  
+I think I put my hand up after you were talking Simon so no problem!  
+From Simon Cox to Everyone 04:26 PM  
+Hi Greg!  
+From Greg Whitbread to Everyone 04:27 PM  
+morning, Simon  
+From Abby Benson to Everyone 04:51 PM  
+https://github.com/baskaufs/msc/blob/master/MaterialSample_cv/MaterialSample_cv.csv  
+From Simon Cox to Everyone 04:54 PM  
+I'm going to have to drop out now - I'm hoping to have a small funded project to allow me to engage more consistently soon.  
+From Abby Benson to Everyone 04:54 PM  
+Bye Simon good to see you!  
+From Simon Cox to Everyone 04:55 PM  
+Good to see this conversation  
+From Abby Benson to Everyone 04:59 PM  
+https://github.com/tdwg/material-sample/issues/24  
