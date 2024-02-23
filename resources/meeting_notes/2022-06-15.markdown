@@ -1,0 +1,70 @@
+# 2022-06-15 Material Sample Task Group Meeting Notes
+## Participants
+### 10AM MDT
+Teresa Mayfield-Meyer, Stan Blum, Stephen Richard, Abby Benson
+### 4PM MDT
+Teresa Mayfield-Meyer, Steve Baskauf, Roger Burkhalter, Rich Pyle
+## Agenda Items
+### Helpful links
+[Change requests in process ](https://github.com/tdwg/material-sample/tree/main/primary_deliverable)  
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+[materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+[TDWG 2022 Abstract](https://docs.google.com/document/d/1coVwKWy-m4OEiIsT2KhxH3irRr8UWfmZavRdlL-Mnp4/edit?usp=sharing)  
+## Items for discussion
+1. Current proposals  
+     a. [MaterialSample change proposal draft](https://github.com/tdwg/material-sample/issues/2#issuecomment-1084808918).  
+     b. [materialSampleID change proposal draft](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialSampleID.md).  
+2. Create a controlled vocabulary for materialSampleType  
+     a. [Working brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+          i. skos vocabs for iSamples: https://github.com/isamplesorg/metadata/tree/develop/src/vocabularies  
+          ii. Definitions for iSamples https://docs.google.com/spreadsheets/d/1MBEePJv6v1b5louTNAUKDw2-KOc_Nv7-Qwonoqg2vwI/edit#gid=109899255  
+          iii. Steve B. advocated for testing the iSamples controlled vocabularies with users to facilitate the adoption of the terms during the review process  
+               1. Rich suggested we ask users to look for ones that don’t fit / the vocabularies can’t accommodate  
+               2. Make sure it’s clear that you do not have to apply all of them to all examples  
+      b. . Need more input - how to ge it?
+          i. Abby to contact NEON people  
+          ii. Teresa to get Sharon on board - working with Field Museum  
+          iii. Let’s use next month’s meeting to do a workshop - need to create:  
+                1. Description of the Task Group and what we are doing  
+                2. Description of workshop purpose and activity  
+                3. iSamples description and definitions  
+                4. New Google Sheet for workshop participants  
+
+Team,
+
+I have created a new Google workbook that we can use at the workshop and started a draft announcement/invitation. Both can be found in this folder. Please add or edit as you see fit.
+
+Also, I failed to mention it at the meeting this morning, but I need to complete our Task Group summary abstract for the TDWG meeting. Draft is here scroll past the conference details to the last section. Please edit or add comments.
+
+Thanks for all you are doing!
+
+Teresa J. Mayfield-Meyer
+
+3. We should document our process and decision making for handoff to the next steps   
+     a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+     b. Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing   
+4. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?  
+5. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.  
+6. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.  
+7. Need to know the difference between dwc:catalogNumber and dwc:materialSampleID  
+8. Richard and Stan to work on use cases. See also https://www.w3.org/TR/vocab-ssn-ext/#sample-chains  
+## Next steps and assignments
+## Meeting Chat 10AM MDT
+From Me to Everyone 10:05 AM  
+https://docs.google.com/document/  
+https://docs.google.com/spreadshe  
+From Abby Benson to Everyone 10:17 AM  
+Also for fossils  
+I am not understanding the difference between Earth Surface, Earth environment, and Earth interior.  
+From Stephen Richard to Everyone 10:19 AM  
+iSamples grant  https://nsf.gov/awardsearch/showAward?AWD_ID=2004839  
+From Abby Benson to Everyone 10:27 AM  
+If there is time I would like to ask about how to apply the 3 terms to the four vocabulary suggestions.  
+That I added.  
+From Stephen Richard to Everyone 10:56 AM  
+these are the bio-oriented people on the iSamples team-- Neil Davies, University of California, Berkeley;  Chris Meyer, Smithsonian Institution; David Vieglais, U Kansas  
+From Abby Benson to Everyone 11:00 AM  
+I have to run to another meeting! I'll see if Eric Sokol is available to come and also ping some GBIF NA folks.  
+
+## Meeting Chat 4PM MDT
+No chat  
