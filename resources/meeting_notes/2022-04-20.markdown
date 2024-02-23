@@ -7,7 +7,7 @@ Teresa, Stan Blum, Simon Cox, Greg Whitbread, Abby Benson
 ## Agenda Items
 Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
 ## Items for discussion
-1. Should we focus on this?
+1. Should we focus on this? [](https://private-user-images.githubusercontent.com/5725767/307364277-bd013ee0-ae74-4d58-9658-2eed89c9d3ab.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg3MDEzOTgsIm5iZiI6MTcwODcwMTA5OCwicGF0aCI6Ii81NzI1NzY3LzMwNzM2NDI3Ny1iZDAxM2VlMC1hZTc0LTRkNTgtOTY1OC0yZWVkODljOWQzYWIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMjNUMTUxMTM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjljZWY4ZmJmZGM5NjU4MDE4MDczY2JlZTg0MDQ3ZWYzZmM1MTkwZGUwMjA0NjMxM2VhM2NmOTM4OWZiYzVlYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Zzz6LY105wDWYp1-SoWyduupGVocol4BgVm0IYFn61w)
 2. [MaterialSample change proposal draft.](https://github.com/tdwg/material-sample/issues/2#issuecomment-1084808918)
 3. materialSampleID - Stephen R. Jutta B. and Teresa M. discussed this at length on 2022-03-31 during working hour.  
      a. Physical samples WILL have more than one identifier - how do you choose the one that goes here? (Jutta discuss identifier class)
