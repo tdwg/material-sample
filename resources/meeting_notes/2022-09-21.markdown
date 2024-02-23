@@ -53,52 +53,49 @@ Items for discussion
           i. See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml  
 7. Also note that the natural history collections community needs to describe collections as a whole, as well as at the item level.  Do we need separate terms (controlled vocabularies) for these purposes?  
 ### Items for proposal
-Current proposals
-MaterialSample change proposal draft.
-materialSampleID change proposal draft.
-iSamples Terms
-We need definitions for the three new properties. New Github Issues have been created for these:
-specimenType
-materialType
-sampledFeatureType
-We can follow the example of the invasive species terms and the controlled vocabularies for them to figure out how to add the iSamples terms to Darwin Core with the controlled vocabularies - https://dwc.tdwg.org/em/
-Some other vocabs to consider
-ggbn:materialSampleType - https://rs.gbif.org/extension/ggbn/materialsample.xml
-Classification of kind of physical sample in addition to BasisOfRecord/RecordBasis and Preparation Type. Please use preparationType for further specification such as "leg","blood","gDNA","axenic culture". Equal to KindOfUnit in ABCD! See also http://terms.tdwg.org/wiki/ggbn:materialSampleType (504 Gateway Time-out)
-Examples: tissue, culture strain, specimen, DNA, RNA, Protein.
-dwc:preparations - https://dwc.tdwg.org/terms/#dwc:preparations
-A list (concatenated and separated) of preparations and preservation methods for a specimen.
-We should document our process and decision making for handoff to the next steps 
-see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements
-Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing 
-catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?
-Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.
-What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.
-Need to know the difference between dwc:catalogNumber and dwc:materialSampleID
-Richard and Stan to work on use cases. See also https://www.w3.org/TR/vocab-ssn-ext/#sample-chains
-Tricky bits with biological sample. Have organism part, whole organism, but need to know is it living? How is it preserved (i.e. suitable for genomic analysis...?). We agree that these appear to be other facets of a material sample (and maybe these properties would be useful? preservationMethod and preparations Although preparations needs a re-boot because it is a combination of preparations and preservations… See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml
-Among the use cases (query side and publishing side) we see that is not helped by the iSample list are:
-Where for tissue/genetic resources (distinguish between single organism and multi-organism samples)
-Living organism (think botanical garden, zoo)
-Next steps and assignments
-Meeting Chat 10AM MDT
+1. Current proposals
+     a. [MaterialSample change proposal draft](https://github.com/tdwg/material-sample/issues/2#issuecomment-1084808918).  
+     b. [materialSampleID change proposal draft](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialSampleID.md).  
+2. iSamples Review  
+     a. iSamples added to [materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+     b. [iSamples vocabulary definitions](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit#gid=1379955038)  
+     c. Some other vocabs to consider  
+     ggbn:materialSampleType - https://rs.gbif.org/extension/ggbn/materialsample.xml  
+          * Classification of kind of physical sample in addition to BasisOfRecord/RecordBasis and Preparation Type. Please use preparationType for further specification such as "leg","blood","gDNA","axenic culture". Equal to KindOfUnit in ABCD! See also http://terms.tdwg.org/wiki/ggbn:materialSampleType (504 Gateway Time-out)  
+          * Examples: tissue, culture strain, specimen, DNA, RNA, Protein.  
+     dwc:preparations - https://dwc.tdwg.org/terms/#dwc:preparations  
+          * A list (concatenated and separated) of preparations and preservation methods for a specimen.  
+3. We should document our process and decision making for handoff to the next steps  
+     a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+     b. Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing  
+4. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?  
+5. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.  
+6. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.  
+7. Need to know the difference between dwc:catalogNumber and dwc:materialSampleID  
+8. Richard and Stan to work on use cases. See also https://www.w3.org/TR/vocab-ssn-ext/#sample-chains
+9. Tricky bits with biological sample. Have organism part, whole organism, but need to know is it living? How is it preserved (i.e. suitable for genomic analysis...?). We agree that these appear to be other facets of a material sample (and maybe these properties would be useful? [preservationMethod](https://github.com/tdwg/material-sample/issues/18) and [preparations](https://github.com/tdwg/material-sample/issues/7) Although preparations needs a re-boot because it is a combination of preparations and preservations… See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml  
+10. Among the use cases (query side and publishing side) we see that is not helped by the iSample list are:  
+     a. Where for tissue/genetic resources (distinguish between single organism and multi-organism samples)  
+     b. Living organism (think botanical garden, zoo)  
+## Next steps and assignments
+## Meeting Chat 10AM MDT
 
-Meeting Chat 4PM MDT
+## Meeting Chat 4PM MDT
 
 
 
 The Baby Step
 
-materialSampleType
-Biological - 
-Preserved
-Living
-Fossil
-Tissue
-Geological
-Anthropological
-Atmospheric
-Environmental Sample
-Terrestrial
-Marine
-Freshwater
+* materialSampleType  
+    * Biological - 
+         * Preserved  
+         * Living  
+         * Fossil  
+         * Tissue  
+    * Geological  
+    * Anthropological  
+    * Atmospheric  
+    * Environmental Sample
+         * Terrestrial  
+         * Marine  
+         * Freshwater  
