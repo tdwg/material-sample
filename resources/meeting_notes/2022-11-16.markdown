@@ -1,0 +1,114 @@
+# 2022-11-16 Material Sample Task Group Meeting Notes
+## Participants
+### 10AM MDT
+Teresa Mayfield-Meyer, Jutta Buschbom, Steve Baskauf, Stan Blum, Roger Burkhalter, Abby Benson
+### 4PM MDT
+Teresa Mayfield-Meyer, Stan Blum
+## Agenda Items
+### Helpful links
+[Change requests in process ](https://github.com/tdwg/material-sample/tree/main/primary_deliverable)  
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+[materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+[MS Working Session](https://docs.google.com/document/d/1EFCaPTuPAnc3oU0t-JAXQvjUsxmHotnHnWhweZxw8Es/edit?usp=share_link)  
+### Items for discussion
+1. [TDWG Working Session](https://docs.google.com/document/d/1EFCaPTuPAnc3oU0t-JAXQvjUsxmHotnHnWhweZxw8Es/edit?usp=share_link) recap
+2. [Terms Crosswalk](https://docs.google.com/spreadsheets/d/1_3ykV_GzG1MaH9mTQ4HaXD6GVrCD7KdtanxMX9RZ1KQ/edit?usp=sharing)
+3. [Internet of Samples](https://isamplesorg.github.io/home/) (iSamples) working vocabularies for sample description:  
+     a. [materialSampleType](https://isamplesorg.github.io/metadata/vocabularies/specimentype.html) - Property to specify the kind of thing the specimen is.  
+     b. [sampledFeature](https://isamplesorg.github.io/metadata/vocabularies/sampledfeature.html) - Property to specify the broad context that a sample is intended to represent.  
+     c. [materialType](https://isamplesorg.github.io/metadata/vocabularies/materialtype.html) - Property to specify the kind of material that constitutes a physical sample.  
+          i. Can the combination of these three terms with selections from their controlled vocabularies allow providers and users of data about physical objects to get at what they need?  
+          ii. We need testers and opinions - https://forms.gle/czYVknLXXpq4Ghc29  
+4. [Latimer Core](https://github.com/tdwg/rs.tdwg.org/blob/latimer/process/page_build_scripts/index.md#ltc_ObjectClassification) - have they done this for us? The natural history collections community needs to describe collections as a whole, as well as at the item level.  Do we need separate terms (controlled vocabularies) for these purposes? intersection of the MaterialSample group, LtC terms and GRSciColl as use case: https://docs.google.com/spreadsheets/d/12D6P4lt-zDAALJzod7sq475tWgqKiTbDrFjKEuSXVg4/edit?usp=sharing   
+#### LatimerCore “material” terms
+a. baseTypeOfCollection - High-level term describing the fundamental nature of objects in the ObjectGroup.  
+    i. Notes - For natural history collections baseTypeOfCollection describes types of occurrences and may constrain the values available in objectType. Notes for ObjectGroups where baseTypeOfCollection is 'InformationArtefact': subsequent ‘type’ properties could include hierarchical Audubon Core/Dublin Core terms – e.g. dc:type (http://purl.org/dc/elements/1.1/type), ac:subtype / ac:subtypeLiteral (http://rs.tdwg.org/ac/terms/subtypeLiteral), or (proposed) ac:3DResourceType.  
+    ii. Examples - MaterialSample, InformationArtefact  
+b. Discipline - A high level classification of the scientific discipline to which the objects within the collection belong or are related.  
+    i. Notes - The recommendation is to use a controlled vocabulary that is also common across other community collections, object and occurrence standards. Suggested list https://confluence.egi.eu/display/EGIG/Scientific+Disciplines  
+    ii. Examples -   
+c. typeOfCollection - Additional information that exists that describes the object(s) in the collection.  
+    i. Notes - Terms such as soil, pollen, faeces, muscle, genomic DNA are currently put in preparationType. These terms have been parked for discussion: HumanObservations, MachineObservations.  
+    ii. Examples - PreservedSpecimens, FossilSpecimens, MineralSpecimens, ArchaeologicalArtefacts, EthnographicObjects, HumanRemains, HominidRemains, MaterialSamples, LivingSpecimens   
+d. objectType - A more generic classification of items in the collection than described in preparationType.  
+    i. Note - This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification). For cultural collections terms such as 'bowl', 'textile' are appropriate at this level. For large collections of multiple types use pipe delimited lists.  
+    ii. Examples - tissue, specimen, culture, rna, mineral, dna, environmental sample, HTS Library  
+e. material - Material denotes the raw substance(s) from which the object is formed, in whole or in part.  
+    i. Notes - This definition maps roughly to the concept of E57 'material' from the CIDOC CRM: https://cidoc-crm.org/Entity/E57-Material/version-7.1.1  
+    ii. Examples - The object, or artefact could contain biological parts, for example jewellery made of amber with insects in, or cloaks made of bird feathers. It should not be used for taxonomic identifications. Examples include terms such as brick, gold, aluminium, polycarbonate, resin, amber, feather  
+f. preparationType - A term used to classify or describe an object that indicates the actions that have been taken upon it and/or the processes it has been put through to prepare it for scientific use or study.  
+    i. Notes - This can be the same as PreservationMethod (e.g. Bone), but is not always. This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification). For large collections with multiple types use a pipe delimited list.  
+    ii. Examples - Bones, Eggs, Fossils, Gemstones, Lysate, Macrofossils, eDNA, Viable cells, Pollen, Muscle, Leaf, Blood, Known - witheld   
+g. preservationMethod - A term used to classify or describe an object that indicates the primary or most recent action, measure or process that has been used in order to preserve the objects in the collection for long-term storage.  
+    i. Notes - Not intended to be used as the fossilization method. Use preservationMode for that. This field is intended to be use where a collection has a single or prominent preservationMethod. If the collection has multiple preservationMethods then this should be expressed elsewhere, such as in ObjectQuantity. We recommend the Arctos PART_PRESERVATION vocabulary (https://arctos.database.museum/info/ctDocumentation.cfm?table=CTPART_PRESERVATION). For herbarium sheets use 'dried_pressed'. If an alcohol collection uses mixed percentages use 'alcohol'.  
+    ii. Examples - fluid_preserved, alcohol, formaldehyde, dried, dried_pinned, dried_pressed, mounted, microscope_slide, glycerin, gum_arabic, frozen, refrigerated, freeze_dried, mixed, no_treatment, known:withheld, unknown, papered/packaged  
+h. preservationMode - The means by which a palaeontological specimen was preserved or created e.g. body, cast, mold, trace fossil, soft parts mineralised etc.  
+    i. Notes - This property is aligned with the concept of preservationMode (https://efg.geocase.eu/documentation/html/efg.html#element_PreservationMode_Link03032878) in ABCD(EFG).  
+    ii. Examples - adpression/compression, body, cast, charcoalification, coalified, concretion, dissolution traces, mold/impression, permineralised, recrystallised, soft parts, trace  
+5. Complete the “minimum data about a materialSample by adding:  
+    a. materialSampleDescription - for the humans in the room!  
+    b. preservationMethod  
+    c. preparations  
+        i. See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml  
+  
+### Items for proposal
+1. Current proposals
+     a. [MaterialSample change proposal draft](https://github.com/tdwg/material-sample/issues/2#issuecomment-1084808918).  
+     b. [materialSampleID change proposal draft](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialSampleID.md).  
+2. iSamples Review  
+     a. iSamples added to [materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+     b. [iSamples vocabulary definitions](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit#gid=1379955038)  
+     c. Some other vocabs to consider  
+     ggbn:materialSampleType - https://rs.gbif.org/extension/ggbn/materialsample.xml  
+          * Classification of kind of physical sample in addition to BasisOfRecord/RecordBasis and Preparation Type. Please use preparationType for further specification such as "leg","blood","gDNA","axenic culture". Equal to KindOfUnit in ABCD! See also http://terms.tdwg.org/wiki/ggbn:materialSampleType (504 Gateway Time-out)  
+          * Examples: tissue, culture strain, specimen, DNA, RNA, Protein.  
+     dwc:preparations - https://dwc.tdwg.org/terms/#dwc:preparations  
+          * A list (concatenated and separated) of preparations and preservation methods for a specimen.  
+3. We should document our process and decision making for handoff to the next steps  
+     a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+     b. Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing  
+4. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?  
+5. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.  
+6. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.  
+  
+## Next steps and assignments
+## Meeting Chat 10AM MDT
+From Me to Everyone 10:03 AM  
+https://docs.google.com/document/  
+From Jutta Buschbom to Everyone 10:10 AM  
+https://docs.google.com/spreadsheets/d/12D6P4lt-zDAALJzod7sq475tWgqKiTbDrFjKEuSXVg4/edit#gid=1176357398  
+https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit#gid=0  
+From Roger Burkhalter to Everyone 10:24 AM  
+No vouchers are retained.  
+From Jutta Buschbom to Everyone 10:34 AM  
+eDNA = “processed” ?!  under typeOfCollection (column B)  
+From Abby Benson to Everyone 10:59 AM  
+I guess I would recommend considering how what we are proposing would fit in here. My understanding of what this group is trying to do is replace what's in basisOfRecord so what would we be proposing goes here in this table instead? I'm hoping a practical example helps https://docs.gbif.org/publishing-dna-derived-data/1.0/en/#mapping-metabarcoding-edna-and-barcoding-data  
+I have to run to another meeting. Thanks for keeping eDNA in consideration for what we are doing :-)  
+From Steve Baskauf to Everyone 11:02 AM  
+I have to go to another meeting, thanks everyone!  
+From Jutta Buschbom to Everyone 11:02 AM  
+Bye Steve!  
+From Jutta Buschbom to Everyone 11:10 AM  
+https://github.com/tdwg/cd/blob/master/standard/terms/ltc_standard_terms_draft.csv  
+review https://github.com/tdwg/cd/blob/review/standard/terms/ltc_standard_terms_draft.csv  
+
+## Meeting Chat 4PM MDT
+
+
+
+The Baby Step
+
+* materialSampleType  
+    * Biological - 
+         * Preserved  
+         * Living  
+         * Fossil  
+         * Tissue  
+    * Geological  
+    * Anthropological  
+    * Atmospheric  
+    * Environmental Sample
+         * Terrestrial  
+         * Marine  
+         * Freshwater  
