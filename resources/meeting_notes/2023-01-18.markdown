@@ -1,0 +1,180 @@
+# 2023-01-18 Material Sample Task Group Meeting Notes
+## Participants
+### 10AM MDT
+Teresa Mayflied-Meyer, Christian Bölling, Dag Endresen, Jutta Buschbom, Stan Blum, Stephen Richard, Sam Leeflang, John Wieczorek
+### 4PM MDT
+Teresa, Stan Blum, Steve Baskauf, John Wieczorek
+## Agenda Items
+### Helpful links
+[Google Drive](https://drive.google.com/drive/folders/1iZDVzmA52lbwKFRdWwdQTtaP11I9awNH?usp=sharing)  
+[Change requests in process ](https://github.com/tdwg/material-sample/tree/main/primary_deliverable)  
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+[materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+[MS Working Session](https://docs.google.com/document/d/1EFCaPTuPAnc3oU0t-JAXQvjUsxmHotnHnWhweZxw8Es/edit?usp=share_link)  
+### Items for discussion
+1. New Term Proposal - Adding a top-level term for material resources in Darwin Core - evaluating the alternatives tdwg/material-sample#31  
+     a. How is the definition different from the term we could borrow?  
+     b. Why did we choose to mint rather than borrow?  
+     c. https://github.com/tdwg/dwc/issues/421#   
+
+#### dwc:MaterialEntity
+A third alternative is to create a new top-level term in the Darwin Core namespace, rather than importing a term from outside. While using the same label as bfo:MaterialEntity, dwc:MaterialEntity would be formally independent from the former. This could be desirable when there are remaining doubts about the scope, applicability or governance of the external term and would establish full control over the term to TDWG - including an own, self-sufficient definition (without references to other BFO concepts - a suggestion has been made here) and the possibility to declare the relation to outside terms, e.g. making dwc:MaterialEntity a subclass or indeed an equivalent class to the outside terms.  
+
+Proposal for a definition (first proposed [here](https://github.com/tdwg/dwc/issues/421#issuecomment-1332579624)):  
+
+A dwc:MaterialEntity is an entity that persists through some period of time, maintaining its identity, and has some portion of matter as a part at any given moment of its existence.  
+
+This is basically a mashup of the definitions used in BFO, avoiding their technicalities.  
+## Next steps and assignments
+1. Christian - write a new proposal in our repo so we can flesh it out  
+    a. Include an explanation for why this is necessary (achieve a materialEntity extension)  
+    b. Future goal to mint a small number of terms to describe dwc:MaterialEntity  
+2. We need to have justifications prepared  
+     a. We need to make justifications for why not Steve’s proposal or bfo:MaterialEntity  
+     b. [Steve's comments] The general conclusion from the TAG meeting was that a new term should be minted when the proposed definition did not have an "equivalentConcept" mapping to a term that could be borrowed. This leads to several general questions to be addressed when deciding whether to borrow a term or mint a new one:  
+          i. What are the important differences between the proposed definition and the definition of the term that could be borrowed?  
+          ii. Why are the different features of the proposed definition necessary?  
+
+     In our proposal for the new Darwin Core term, we need to briefly describe the rationale behind our decision to mint rather than borrow. For example, if the chief problem with the Dublin Core term is lack of clarity about the meaning of "material" in the definition "a material thing" and that the new definition uses the more clear word "matter", we should say that. The proposed new terms also include aspects of persistence and maintaining its identity. Why are they important? I realize that these points have been discussed in the two GitHub issues, however they need to be very succinctly summarized (like no more than one sentence for each point) in the proposal since people will not want to dig through the lengthy series of comments.  
+     c. We are following SDS and not introducing a semantic layer  
+
+## Meeting Chat 10AM MDT
+10:01:57 From  Teresa Mayfield-Meyer  to  Everyone:  
+	https://docs.google.com/document/d/1leXShKng1euB6wLgj1DlzVFX9Xzh_MejG9o379s2Jl8/edit?usp=sharing  
+10:02:14 From  Teresa Mayfield-Meyer  to  Everyone:  
+	https://docs.google.com/document/d/1leXShKng1euB6wLgj1DlzVFX9Xzh_MejG9o379s2Jl8/edit?usp=sharing  
+10:03:32 From  Teresa Mayfield-Meyer  to  Everyone:  
+	https://docs.google.com/document/d/1leXShKng1euB6wLgj1DlzVFX9Xzh_MejG9o379s2Jl8/edit?usp=sharing  
+10:04:39 From  Christian Bölling  to  Everyone:  
+	https://github.com/tdwg/material-sample/issues/31  
+10:11:06 From  Teresa Mayfield-Meyer  to  Everyone:  
+	Original term request - https://github.com/tdwg/dwc/issues/421#  
+10:18:39 From  Teresa Mayfield-Meyer  to  Everyone:  
+	Is this true? "Users can decide if they want to import owl:sameAs or owl:equivalentClass mappings to bfo:MaterialEntity with the inferential baggage it carries."  
+10:22:22 From  Stephen Richard  to  Everyone:  
+	yes, I think allowing import of mappings with those kinds of assertions solves the problem If someone wants all the BFO implications, they import the mapping triples that make the owl:same as assertions  
+10:23:41 From  Stephen Richard  to  Everyone:  
+	everything in skos vocabulary is an instance of a skos:concept (which is an owl:Thing).  The skos semantic relations (e.g. broader, narrower) are between instances, not classes.  
+10:51:47 From  Dag Endresen  to  Everyone:  
+	On Stans very good diagram what I see and like is that the IDENTITY of the material thing is on the top level  
+10:53:29 From  Dag Endresen  to  Everyone:  
+	Whatever people thinks that the subclass might be, it remains with the same identity  
+10:59:50 From  Stephen Richard  to  Everyone:  
+	yes, if the entity type has multiple values, it dodges the problem  
+11:02:05 From  Christian Bölling  to  Everyone:  
+	https://github.com/tdwg/material-sample/issues/31  
+11:04:28 From  Christian Bölling  to  Everyone:  
+	We certainly should wait for the other meeting to form a consensus.  
+11:06:09 From  Jutta Buschbom  to  Everyone:  
+	Are there any concerns in this group with Christian’s proposal?  
+11:06:23 From  Stephen Richard  to  Everyone:  
+	I'm in favor  
+11:07:11 From  Dag Endresen  to  Everyone:  
+	I am for - (only wonder how do we link the dws:MaterialEntity to bfo:000040)  
+11:07:57 From  Christian Bölling  to  Everyone:  
+	This is very helpful John.  
+11:10:52 From  Dag Endresen  to  Everyone:  
+	To me the basisOfRecord gives the type of evidence for an Occurrence  
+11:11:28 From  Dag Endresen  to  Everyone:  
+	And not really relevant for the type of material entity  
+11:11:48 From  Stan Blum  to  Everyone:  
+	Reacted to "To me the basisOfRec..." with 👍  
+11:12:45 From  Stan Blum  to  Everyone:  
+	But also DwC records could also be Taxon, in the context of shipping around Catalog of Life type records.  
+11:13:16 From  Dag Endresen  to  Everyone:  
+	And a Taxon record would not have a basisOfRecord  
+11:16:55 From  Stan Blum  to  Everyone:  
+	Maybe I should have said DwCA(rchive) records, and my understanding was that a DwCA data set would basisOfRecord = Taxon  (and I agree, Taxon records don’t represent Occurrences).  
+11:18:42 From  Jutta Buschbom  to  Everyone:  
+	+1 Dag  
+	empirical fact/evidence = basisOFRecord  
+	taxon = abstract model  
+	identification = based on an empirical evidence, thus a basisOfRecord is indirectly connected  
+11:18:48 From  Stan Blum  to  Everyone:  
+	Doesn’t basisOfRecord “go away” in the new GBIF data model?  
+11:22:16 From  John Wieczorek  to  Everyone:  
+	Yes, basisOfRecord goes away in the GBIF Unified Model.  
+11:22:55 From  John Wieczorek  to  Everyone:  
+	MaterialEntity is a fundamental concept in that model.  
+11:23:12 From  John Wieczorek  to  Everyone:  
+	And we think of it as a bfo:material entity.  
+11:24:15 From  John Wieczorek  to  Everyone:  
+	We are not making any commitments to existing vocabularies until we do all of the mappings: to BFO, to SOSA, to PROV, etc.  
+## Meeting Chat 4PM MDT
+
+## Not Addressed
+2. [Terms Crosswalk](https://docs.google.com/spreadsheets/d/1_3ykV_GzG1MaH9mTQ4HaXD6GVrCD7KdtanxMX9RZ1KQ/edit?usp=sharing)
+3. [Internet of Samples](https://isamplesorg.github.io/home/) (iSamples) working vocabularies for sample description:  
+     a. [materialSampleType](https://isamplesorg.github.io/metadata/vocabularies/specimentype.html) - Property to specify the kind of thing the specimen is.  
+     b. [sampledFeature](https://isamplesorg.github.io/metadata/vocabularies/sampledfeature.html) - Property to specify the broad context that a sample is intended to represent.  
+     c. [materialType](https://isamplesorg.github.io/metadata/vocabularies/materialtype.html) - Property to specify the kind of material that constitutes a physical sample.  
+          i. Can the combination of these three terms with selections from their controlled vocabularies allow providers and users of data about physical objects to get at what they need?  
+          ii. We need testers and opinions - https://forms.gle/czYVknLXXpq4Ghc29  
+4. [Latimer Core](https://github.com/tdwg/rs.tdwg.org/blob/latimer/process/page_build_scripts/index.md#ltc_ObjectClassification) - have they done this for us? The natural history collections community needs to describe collections as a whole, as well as at the item level.  Do we need separate terms (controlled vocabularies) for these purposes? intersection of the MaterialSample group, LtC terms and GRSciColl as use case: https://docs.google.com/spreadsheets/d/12D6P4lt-zDAALJzod7sq475tWgqKiTbDrFjKEuSXVg4/edit?usp=sharing   
+#### LatimerCore “material” terms
+    a. baseTypeOfCollection - High-level term describing the fundamental nature of objects in the ObjectGroup.  
+        i. Notes - For natural history collections baseTypeOfCollection describes types of occurrences and may constrain the values available in objectType. Notes for ObjectGroups where baseTypeOfCollection is 'InformationArtefact': subsequent ‘type’ properties could include hierarchical Audubon Core/Dublin Core terms – e.g. dc:type (http://purl.org/dc/elements/1.1/type), ac:subtype / ac:subtypeLiteral (http://rs.tdwg.org/ac/terms/subtypeLiteral), or (proposed) ac:3DResourceType.  
+        ii. Examples - MaterialSample, InformationArtefact  
+    b. Discipline - A high level classification of the scientific discipline to which the objects within the collection belong or are related.  
+        i. Notes - The recommendation is to use a controlled vocabulary that is also common across other community collections, object and occurrence standards. Suggested list https://confluence.egi.eu/display/EGIG/Scientific+Disciplines  
+        ii. Examples -   
+    c. typeOfCollection - Additional information that exists that describes the object(s) in the collection.  
+        i. Notes - Terms such as soil, pollen, faeces, muscle, genomic DNA are currently put in preparationType. These terms have been parked for discussion: HumanObservations, MachineObservations.  
+        ii. Examples - PreservedSpecimens, FossilSpecimens, MineralSpecimens, ArchaeologicalArtefacts, EthnographicObjects, HumanRemains, HominidRemains, MaterialSamples, LivingSpecimens   
+    d. objectType - A more generic classification of items in the collection than described in preparationType.  
+        i. Note - This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification). For cultural collections terms such as 'bowl', 'textile' are appropriate at this level. For large collections of multiple types use pipe delimited lists.  
+        ii. Examples - tissue, specimen, culture, rna, mineral, dna, environmental sample, HTS Library  
+    e. material - Material denotes the raw substance(s) from which the object is formed, in whole or in part.  
+        i. Notes - This definition maps roughly to the concept of E57 'material' from the CIDOC CRM: https://cidoc-crm.org/Entity/E57-Material/version-7.1.1  
+        ii. Examples - The object, or artefact could contain biological parts, for example jewellery made of amber with insects in, or cloaks made of bird feathers. It should not be used for taxonomic identifications. Examples include terms such as brick, gold, aluminium, polycarbonate, resin, amber, feather  
+    f. preparationType - A term used to classify or describe an object that indicates the actions that have been taken upon it and/or the processes it has been put through to prepare it for scientific use or study.  
+        i. Notes - This can be the same as PreservationMethod (e.g. Bone), but is not always. This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification). For large collections with multiple types use a pipe delimited list.  
+        ii. Examples - Bones, Eggs, Fossils, Gemstones, Lysate, Macrofossils, eDNA, Viable cells, Pollen, Muscle, Leaf, Blood, Known - witheld   
+    g. preservationMethod - A term used to classify or describe an object that indicates the primary or most recent action, measure or process that has been used in order to preserve the objects in the collection for long-term storage.  
+        i. Notes - Not intended to be used as the fossilization method. Use preservationMode for that. This field is intended to be use where a collection has a single or prominent preservationMethod. If the collection has multiple preservationMethods then this should be expressed elsewhere, such as in ObjectQuantity. We recommend the Arctos PART_PRESERVATION vocabulary (https://arctos.database.museum/info/ctDocumentation.cfm?table=CTPART_PRESERVATION). For herbarium sheets use 'dried_pressed'. If an alcohol collection uses mixed percentages use 'alcohol'.  
+        ii. Examples - fluid_preserved, alcohol, formaldehyde, dried, dried_pinned, dried_pressed, mounted, microscope_slide, glycerin, gum_arabic, frozen, refrigerated, freeze_dried, mixed, no_treatment, known:withheld, unknown, papered/packaged  
+    h. preservationMode - The means by which a palaeontological specimen was preserved or created e.g. body, cast, mold, trace fossil, soft parts mineralised etc.  
+        i. Notes - This property is aligned with the concept of preservationMode (https://efg.geocase.eu/documentation/html/efg.html#element_PreservationMode_Link03032878) in ABCD(EFG).  
+        ii. Examples - adpression/compression, body, cast, charcoalification, coalified, concretion, dissolution traces, mold/impression, permineralised, recrystallised, soft parts, trace  
+5. Complete the “minimum data about a materialSample by adding:  
+    a. materialSampleDescription - for the humans in the room!  
+    b. preservationMethod  
+    c. preparations  
+        i. See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml  
+  
+### Items for proposal
+1. Current proposals
+     a. [MaterialSample change proposal draft](https://github.com/tdwg/material-sample/issues/2#issuecomment-1084808918).  
+     b. [materialSampleID change proposal draft](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialSampleID.md).  
+2. iSamples Review  
+     a. iSamples added to [materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+     b. [iSamples vocabulary definitions](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit#gid=1379955038)  
+     c. Some other vocabs to consider  
+     ggbn:materialSampleType - https://rs.gbif.org/extension/ggbn/materialsample.xml  
+          * Classification of kind of physical sample in addition to BasisOfRecord/RecordBasis and Preparation Type. Please use preparationType for further specification such as "leg","blood","gDNA","axenic culture". Equal to KindOfUnit in ABCD! See also http://terms.tdwg.org/wiki/ggbn:materialSampleType (504 Gateway Time-out)  
+          * Examples: tissue, culture strain, specimen, DNA, RNA, Protein.  
+     dwc:preparations - https://dwc.tdwg.org/terms/#dwc:preparations  
+          * A list (concatenated and separated) of preparations and preservation methods for a specimen.  
+3. We should document our process and decision making for handoff to the next steps  
+     a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+     b. Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing  
+4. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?  
+5. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.  
+6. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.  
+  
+The Baby Step
+
+* materialSampleType  
+    * Biological - 
+         * Preserved  
+         * Living  
+         * Fossil  
+         * Tissue  
+    * Geological  
+    * Anthropological  
+    * Atmospheric  
+    * Environmental Sample
+         * Terrestrial  
+         * Marine  
+         * Freshwater  
+
