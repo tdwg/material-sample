@@ -1,0 +1,100 @@
+# 2022-09-21 Material Sample Task Group Meeting Notes
+## Participants
+### 10AM MDT
+Teresa, Jutta, Steve Baskauf, Stan, Abby, Stephen Richard
+### 4PM MDT
+Teresa, Stan, Abby
+## Agenda Items
+Helpful links
+Change requests in process 
+Google Sheet with terms for review - MaterialSample and its properties
+materialSampleType brainstorm sheet
+TDWG 2022 Abstract
+Items for discussion
+Annual Report Review
+The convener of each Interest and Task Group needs to submit the group's annual report. These reports are due to the TDWG secretary by Tuesday, November 15, but submitting prior to the annual meeting is even better.
+TDWG 2022 Report Slide
+We need ONE slide with a few bullet points highlighting the major accomplishments of your group during the past year. You or a representative of your group may be asked to present the information on the slide. There is a conference presentation template at https://docs.google.com/presentation/d/1iUjiT6lKWy1VSOkIiBRBfSVCoANzwcNdvQiFhKMinzo/edit?usp=sharing that you may use to maintain a consistent theme. Please send your slide (or a link to your slide) to secretary@tdwg.org by Monday, October 10. 
+TDWG 2022 Slides
+Authors - please suggest/edit!
+Maybe we should take baby steps? Will the community adopt a wholesale change or can we do this incrementally?
+materialSampleType
+A coarse description of the material, use the familiar terms (Fossil, Living, Preserved) add terms (Environmental, Anthropogenic, Geological)?
+How about Anthropogenic, Atmospheric, Biological, Environmental, Geological then we place Fossil, Living, and Preserved under Biological?
+New iSamples term definitions
+specimenType - Property to specify the kind of thing the specimen is.
+Instead use materialSsampleType as specimen seems loaded
+Property to coarsely specify the kind of thing the material sample is.
+Notes: The value of this property should inform a user about the kind of thing they will see if they look at the material samplespecimen, largely independent of the material it is composed of. The classes are related to how the material samplespecimen is unified (a single object, a bunch of stuff in a bag, a fluid in a container), and its origin -- biological, geological, human made.
+Maybe ABCD equivalence = SampleType (/DataSets/DataSet/Units/Unit/SampleType)
+Definition: Category of material represented by this unit, e.g. DNA, RNA, tissue.
+
+materialType - a property to specify the kind of material that constitutes a physical sample.
+Notes: The approach to defining kinds of material here is motivated by analyzing the specimens documented in sample databases from the geoscience, archaeology, geonomics, and biological domains. The classes are related to chemical composition, genetic origin (biologic, human, geologic), and physical state.
+Maybe ABCD equivalence = KindOfUnit (/DataSets/DataSet/Units/Unit/KindOfUnit)
+Definition: Part(s), physical state, or class of materials represented by this specimen.
+Notes: Note that sex, stages etc. should normally be recorded using the respective elements, but may also end up here if the source database mixes them with other data.
+Examples: whole organisms, antlers, bark, blood samples,,bones, bulbs, claws…
+
+sampledFeatureType - property to specify the broad context that a sample is intended to represent.
+Notes: a material sample is distinguished from other things by the fact that the intention of a material sample is to represent some physical 'feature of interest' in the world. This can be challenging because contexts are typically nested, and can be defined based on different perspectives. An archaeologist would view the context of a sample collected from a profile in a trench differently than a soil scientist. The context for a sample of material from the gut of an animal could be considered to be the particular animal sampled, the species of the animal, or the environment in which the animal lived. It is expected that to the extent possible this property should represent the intention of the original collector of the sample. Other information in the sample description should allow inferences about other broader or narrower contexts of interest.
+Maybe ABCD equivalence = RecordBasis (/DataSets/DataSet/Units/Unit/RecordBasis)
+Definition: A controlled vocabulary indicating what the unit record represents.
+Notes: Note that the element {{{SourceReference}}} provides for the case that the record is based on a publication.
+
+Complete the “minimum data about a materialSample by adding:
+materialSampleDescription - for the humans in the room!
+preservationMethod
+preparations 
+See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml
+Also note that the natural history collections community needs to describe collections as a whole, as well as at the item level.  Do we need separate terms (controlled vocabularies) for these purposes?
+Items for proposal
+Current proposals
+MaterialSample change proposal draft.
+materialSampleID change proposal draft.
+iSamples Terms
+We need definitions for the three new properties. New Github Issues have been created for these:
+specimenType
+materialType
+sampledFeatureType
+We can follow the example of the invasive species terms and the controlled vocabularies for them to figure out how to add the iSamples terms to Darwin Core with the controlled vocabularies - https://dwc.tdwg.org/em/
+Some other vocabs to consider
+ggbn:materialSampleType - https://rs.gbif.org/extension/ggbn/materialsample.xml
+Classification of kind of physical sample in addition to BasisOfRecord/RecordBasis and Preparation Type. Please use preparationType for further specification such as "leg","blood","gDNA","axenic culture". Equal to KindOfUnit in ABCD! See also http://terms.tdwg.org/wiki/ggbn:materialSampleType (504 Gateway Time-out)
+Examples: tissue, culture strain, specimen, DNA, RNA, Protein.
+dwc:preparations - https://dwc.tdwg.org/terms/#dwc:preparations
+A list (concatenated and separated) of preparations and preservation methods for a specimen.
+We should document our process and decision making for handoff to the next steps 
+see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements
+Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing 
+catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?
+Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.
+What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.
+Need to know the difference between dwc:catalogNumber and dwc:materialSampleID
+Richard and Stan to work on use cases. See also https://www.w3.org/TR/vocab-ssn-ext/#sample-chains
+Tricky bits with biological sample. Have organism part, whole organism, but need to know is it living? How is it preserved (i.e. suitable for genomic analysis...?). We agree that these appear to be other facets of a material sample (and maybe these properties would be useful? preservationMethod and preparations Although preparations needs a re-boot because it is a combination of preparations and preservations… See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml
+Among the use cases (query side and publishing side) we see that is not helped by the iSample list are:
+Where for tissue/genetic resources (distinguish between single organism and multi-organism samples)
+Living organism (think botanical garden, zoo)
+Next steps and assignments
+Meeting Chat 10AM MDT
+
+Meeting Chat 4PM MDT
+
+
+
+The Baby Step
+
+materialSampleType
+Biological - 
+Preserved
+Living
+Fossil
+Tissue
+Geological
+Anthropological
+Atmospheric
+Environmental Sample
+Terrestrial
+Marine
+Freshwater
