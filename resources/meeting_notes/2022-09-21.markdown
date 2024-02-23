@@ -5,50 +5,54 @@ Teresa, Jutta, Steve Baskauf, Stan, Abby, Stephen Richard
 ### 4PM MDT
 Teresa, Stan, Abby
 ## Agenda Items
-Helpful links
-Change requests in process 
-Google Sheet with terms for review - MaterialSample and its properties
-materialSampleType brainstorm sheet
-TDWG 2022 Abstract
+### Helpful links
+[Change requests in process ](https://github.com/tdwg/material-sample/tree/main/primary_deliverable)  
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+[materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+[TDWG 2022 Abstract](https://docs.google.com/document/d/1coVwKWy-m4OEiIsT2KhxH3irRr8UWfmZavRdlL-Mnp4/edit?usp=sharing)  
 Items for discussion
-Annual Report Review
-The convener of each Interest and Task Group needs to submit the group's annual report. These reports are due to the TDWG secretary by Tuesday, November 15, but submitting prior to the annual meeting is even better.
-TDWG 2022 Report Slide
-We need ONE slide with a few bullet points highlighting the major accomplishments of your group during the past year. You or a representative of your group may be asked to present the information on the slide. There is a conference presentation template at https://docs.google.com/presentation/d/1iUjiT6lKWy1VSOkIiBRBfSVCoANzwcNdvQiFhKMinzo/edit?usp=sharing that you may use to maintain a consistent theme. Please send your slide (or a link to your slide) to secretary@tdwg.org by Monday, October 10. 
-TDWG 2022 Slides
-Authors - please suggest/edit!
-Maybe we should take baby steps? Will the community adopt a wholesale change or can we do this incrementally?
-materialSampleType
-A coarse description of the material, use the familiar terms (Fossil, Living, Preserved) add terms (Environmental, Anthropogenic, Geological)?
-How about Anthropogenic, Atmospheric, Biological, Environmental, Geological then we place Fossil, Living, and Preserved under Biological?
-New iSamples term definitions
-specimenType - Property to specify the kind of thing the specimen is.
-Instead use materialSsampleType as specimen seems loaded
-Property to coarsely specify the kind of thing the material sample is.
-Notes: The value of this property should inform a user about the kind of thing they will see if they look at the material samplespecimen, largely independent of the material it is composed of. The classes are related to how the material samplespecimen is unified (a single object, a bunch of stuff in a bag, a fluid in a container), and its origin -- biological, geological, human made.
-Maybe ABCD equivalence = SampleType (/DataSets/DataSet/Units/Unit/SampleType)
-Definition: Category of material represented by this unit, e.g. DNA, RNA, tissue.
+1. [Annual Report Review](https://docs.google.com/document/d/1mRTjTrYYwSPu-ZuOKUIZ52xtxmc3Ukc9PISM8_oMpd0/edit?usp=sharing)  
+     a. The convener of each Interest and Task Group needs to submit the group's annual report. These reports are due to the TDWG secretary by Tuesday, November 15, but submitting prior to the annual meeting is even better.  
+2. [TDWG 2022 Report Slide](https://docs.google.com/presentation/d/1gfOhwUh_yqpxHrEqX1Xjd8OXgyxFkNwGxelDIclBCTE/edit?usp=sharing)  
+     a. We need ONE slide with a few bullet points highlighting the major accomplishments of your group during the past year. You or a representative of your group may be asked to present the information on the slide. There is a conference presentation template at https://docs.google.com/presentation/d/1iUjiT6lKWy1VSOkIiBRBfSVCoANzwcNdvQiFhKMinzo/edit?usp=sharing that you may use to maintain a consistent theme. Please send your slide (or a link to your slide) to secretary@tdwg.org by Monday, October 10. 
+3. [TDWG 2022 Slides  ](https://docs.google.com/presentation/d/1Gskj0f9DUQDQP_RKYr-KPZblS1mp1OPKqZSUTZ5LDs0/edit?usp=sharing)  
+     a. Authors - please suggest/edit!  
+4. Maybe we should take baby steps? Will the community adopt a wholesale change or can we do this incrementally?  
+     a. materialSampleType  
+          i. A coarse description of the material, use the familiar terms (Fossil, Living, Preserved) add terms (Environmental, Anthropogenic, Geological)?  
+          ii. How about Anthropogenic, Atmospheric, Biological, Environmental, Geological then we place Fossil, Living, and Preserved under Biological?  
+5. New iSamples term definitions  
+     a. [specimenType](v) - Property to specify the kind of thing the specimen is.  
+          i. Instead use materialSsampleType as specimen seems loaded  
+          ii. Property to coarsely specify the kind of thing the material sample is.  
+          iii. Notes: The value of this property should inform a user about the kind of thing they will see if they look at the material samplespecimen, largely independent of the material it is composed of. The classes are related to how the material samplespecimen is unified (a single object, a bunch of stuff in a bag, a fluid in a container), and its origin -- biological, geological, human made.  
+          iv. Maybe ABCD equivalence = [SampleType](https://terms.tdwg.org/wiki/abcd2:SampleType) ([/DataSets/DataSet/Units/Unit/SampleType](v))  
+                1. Definition: Category of material represented by this unit, e.g. DNA, RNA, tissue.
+![image](https://private-user-images.githubusercontent.com/5725767/307459532-6c74ed22-61a4-43a6-89dc-b0d01b8cb23b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg3MjU0MjMsIm5iZiI6MTcwODcyNTEyMywicGF0aCI6Ii81NzI1NzY3LzMwNzQ1OTUzMi02Yzc0ZWQyMi02MWE0LTQzYTYtODlkYy1iMGQwMWI4Y2IyM2IucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMjNUMjE1MjAzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzViYjc0ZjIxZGUyOTZiMjkxNmM4OTBjMDg0MDBjM2YzZjI3MTdiMGEwOWNmNjE1OTQ0NzdkZDRjY2ZlYzhhNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.ZFPvEAFFB6DrjN28RFwrlWIb8UH8_rcGXY2gSFJYoy4)  
+                2.      
 
-materialType - a property to specify the kind of material that constitutes a physical sample.
-Notes: The approach to defining kinds of material here is motivated by analyzing the specimens documented in sample databases from the geoscience, archaeology, geonomics, and biological domains. The classes are related to chemical composition, genetic origin (biologic, human, geologic), and physical state.
-Maybe ABCD equivalence = KindOfUnit (/DataSets/DataSet/Units/Unit/KindOfUnit)
-Definition: Part(s), physical state, or class of materials represented by this specimen.
-Notes: Note that sex, stages etc. should normally be recorded using the respective elements, but may also end up here if the source database mixes them with other data.
-Examples: whole organisms, antlers, bark, blood samples,,bones, bulbs, claws…
-
-sampledFeatureType - property to specify the broad context that a sample is intended to represent.
-Notes: a material sample is distinguished from other things by the fact that the intention of a material sample is to represent some physical 'feature of interest' in the world. This can be challenging because contexts are typically nested, and can be defined based on different perspectives. An archaeologist would view the context of a sample collected from a profile in a trench differently than a soil scientist. The context for a sample of material from the gut of an animal could be considered to be the particular animal sampled, the species of the animal, or the environment in which the animal lived. It is expected that to the extent possible this property should represent the intention of the original collector of the sample. Other information in the sample description should allow inferences about other broader or narrower contexts of interest.
-Maybe ABCD equivalence = RecordBasis (/DataSets/DataSet/Units/Unit/RecordBasis)
-Definition: A controlled vocabulary indicating what the unit record represents.
-Notes: Note that the element {{{SourceReference}}} provides for the case that the record is based on a publication.
-
-Complete the “minimum data about a materialSample by adding:
-materialSampleDescription - for the humans in the room!
-preservationMethod
-preparations 
-See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml
-Also note that the natural history collections community needs to describe collections as a whole, as well as at the item level.  Do we need separate terms (controlled vocabularies) for these purposes?
-Items for proposal
+     b. [materialType](https://github.com/tdwg/material-sample/issues/27) - a property to specify the kind of material that constitutes a physical sample.  
+          i. Notes: The approach to defining kinds of material here is motivated by analyzing the specimens documented in sample databases from the geoscience, archaeology, geonomics, and biological domains. The classes are related to chemical composition, genetic origin (biologic, human, geologic), and physical state.  
+          ii. Maybe ABCD equivalence = [KindOfUnit](https://terms.tdwg.org/wiki/abcd2:KindOfUnit) ([/DataSets/DataSet/Units/Unit/KindOfUnit](https://terms.tdwg.org/wiki/abcd2:KindOfUnit))  
+               1. Definition: Part(s), physical state, or class of materials represented by this specimen.  
+               2. Notes: Note that sex, stages etc. should normally be recorded using the respective elements, but may also end up here if the source database mixes them with other data.  
+               3. Examples: whole organisms, antlers, bark, blood samples,,bones, bulbs, claws…  
+![image](https://private-user-images.githubusercontent.com/5725767/307460302-23b1eacc-5248-42f5-94d9-f046021bcda2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg3MjU2NzEsIm5iZiI6MTcwODcyNTM3MSwicGF0aCI6Ii81NzI1NzY3LzMwNzQ2MDMwMi0yM2IxZWFjYy01MjQ4LTQyZjUtOTRkOS1mMDQ2MDIxYmNkYTIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMjNUMjE1NjExWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDBlODk1MzEzZGY5OTIzNGNjZGYxYTI0MWJhM2EyODQ0OGNlYzY0Njc5YTIwMTc1MzEzMTA0YjZjOGEzMjYxMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.TKZ3E8HezDILM8l7LbkYjE3ot18gPFp8cTLutIRdkKM)  
+          iii.
+     c. [sampledFeatureType](https://github.com/tdwg/material-sample/issues/28) - property to specify the broad context that a sample is intended to represent.  
+          i. Notes: a material sample is distinguished from other things by the fact that the intention of a material sample is to represent some physical 'feature of interest' in the world. This can be challenging because contexts are typically nested, and can be defined based on different perspectives. An archaeologist would view the context of a sample collected from a profile in a trench differently than a soil scientist. The context for a sample of material from the gut of an animal could be considered to be the particular animal sampled, the species of the animal, or the environment in which the animal lived. It is expected that to the extent possible this property should represent the intention of the original collector of the sample. Other information in the sample description should allow inferences about other broader or narrower contexts of interest.  
+          ii. Maybe ABCD equivalence = [RecordBasis](https://terms.tdwg.org/wiki/abcd2:RecordBasis) ([/DataSets/DataSet/Units/Unit/RecordBasis](https://terms.tdwg.org/wiki/abcd2:RecordBasis))    
+               1. Definition: A controlled vocabulary indicating what the unit record represents.  
+               2. Notes: Note that the element {{{SourceReference}}} provides for the case that the record is based on a publication.  
+![image](https://private-user-images.githubusercontent.com/5725767/307460738-8f6ed885-0408-4d65-a27c-1126ccd1345d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg3MjU4MjcsIm5iZiI6MTcwODcyNTUyNywicGF0aCI6Ii81NzI1NzY3LzMwNzQ2MDczOC04ZjZlZDg4NS0wNDA4LTRkNjUtYTI3Yy0xMTI2Y2NkMTM0NWQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMjNUMjE1ODQ3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjNhZjkwOTJkMmVmNzEyNzM4ZDBiODZhY2QyYjMwYjdmMTE0NmYxZjQ4ZjBiMzcyMTAxMjVhNGUyYjg0YTdhNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.oH1BZGg0rmAGoVI1qFRofm8iQsv_xy3rucX0kZ9GlcI)  
+          iii.
+6. Complete the “minimum data about a materialSample by adding:  
+     a. materialSampleDescription - for the humans in the room!  
+     b. [preservationMethod](https://github.com/tdwg/material-sample/issues/18)  
+     c. [preparations](https://github.com/tdwg/material-sample/issues/7)  
+          i. See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml  
+7. Also note that the natural history collections community needs to describe collections as a whole, as well as at the item level.  Do we need separate terms (controlled vocabularies) for these purposes?  
+### Items for proposal
 Current proposals
 MaterialSample change proposal draft.
 materialSampleID change proposal draft.
