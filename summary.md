@@ -81,7 +81,7 @@ To
 
 - A material entity that represents an entity of interest in whole or in part.
 
-This also resulted in the creation of a new class - MaterialEntity [https://dwc.tdwg.org/terms/#materialentity](https://dwc.tdwg.org/terms/#materialentity) 
+This also resulted in the creation of a new class - MaterialEntity [http://rs.tdwg.org/dwc/terms/MaterialEntity](https://dwc.tdwg.org/terms/#materialentity) 
 
 
 <table>
@@ -127,11 +127,11 @@ We suggest that all three terms be deprecated and that they eventually be consid
 Recommendations for a revised formal definition as it pertains to materialSample but  not considering other data types.
 
 * [catalogNumber](https://dwc.tdwg.org/terms/#dwc:catalogNumber) 
-* [Preparations](https://dwc.tdwg.org/terms/#dwc:preparations) 
+* [preparations](https://dwc.tdwg.org/terms/#dwc:preparations) 
 * [disposition](https://dwc.tdwg.org/terms/#dwc:disposition) 
 * [associatedSequences](https://dwc.tdwg.org/terms/#dwc:associatedSequences) 
 * [otherCatalogNumbers](https://dwc.tdwg.org/terms/#dwc:otherCatalogNumbers) 
-* [BasisOfRecord](https://dwc.tdwg.org/terms/#dwc:basisOfRecord). 
+* [basisOfRecord](https://dwc.tdwg.org/terms/#dwc:basisOfRecord). 
 
 Definitions for “material” type terms that made reference to any of the material “subclasses” were updated to refer to MaterialEntity in order to encompass all versions of “material”. This included the terms above as well as other references to MaterialSample in term definitions.
 
