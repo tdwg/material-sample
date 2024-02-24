@@ -42,7 +42,7 @@ The primary deliverable will be accompanied by a review of the following propert
 * [disposition](https://dwc.tdwg.org/terms/#dwc:disposition) 
 * [associatedSequences](https://dwc.tdwg.org/terms/#dwc:associatedSequences) 
 * [otherCatalogNumbers](https://dwc.tdwg.org/terms/#dwc:otherCatalogNumbers) 
-* [BasisOfRecord](https://dwc.tdwg.org/terms/#dwc:basisOfRecord). 
+* [basisOfRecord](https://dwc.tdwg.org/terms/#dwc:basisOfRecord). 
 
 Recommendations will be provided for a revised formal definition as it pertains to materialSample but will not consider other data types.
 
