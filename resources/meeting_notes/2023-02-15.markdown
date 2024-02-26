@@ -1,0 +1,136 @@
+# 2023-02-15 Material Sample Task Group Meeting Notes
+## Participants
+### 10AM MDT
+Roger Burkhalter, Stan Blum, Steve Baskauf, Teresa Mayfield-Meyer, Jutta Buschbaum, Dag Endresen, John Wieczorek, Stephen Richard, Rich Pyle
+### 4PM MDT
+Teresa, Stan
+## Agenda Items
+### Helpful links
+Google Drive
+Current milestone
+MS Working Session
+Items for discussion
+Missed opportunity - https://discourse.gbif.org/t/darwin-core-public-commentary/3843
+https://github.com/tdwg/dwc/milestone/16  
+New Term Proposal - MaterialEntity
+https://github.com/tdwg/dwc/issues/426 
+https://github.com/tdwg/material-sample/issues/34 
+Can we wrap this up and move on?
+Yes - pick definition 2: An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists.
+MaterialEntityID: An identifier for a particular instance of dwc:MaterialEntity.
+Need to add in comments that his is preferable to MaterialSampleID
+Make a package of materialEntity, MaterialEntityID and whatever is in Occurrence that goes with material as a package for review. - Target is May 1.
+Does the Task Group need a new name - Material? Material Entity? Does it matter?
+Steve says no because it is too much trouble
+Stay Material Sample and move on
+Term for Material dead or alive? Reuse proposed new term vitality?
+Next steps and assignments
+
+Meeting Chat 10AM MDT
+10:02:08 From  Steve Baskauf  to  Everyone:
+	It will happen when it happens
+10:03:08 From  Roger Burkhalter  to  Everyone:
+	My new email is: rogerburkhalter1956@gmail.com
+10:07:16 From  Dag Endresen  to  Everyone:
+	(I have our meeting series twice in my calendar :-D)
+10:07:56 From  John Wieczorek  to  Everyone:
+	I have this meeting twice on my calendar as well.
+10:09:02 From  John Wieczorek  to  Everyone:
+	The definition will go through a public commentary again anyway.
+10:10:26 From  Teresa Mayfield-Meyer  to  Everyone:
+	This is the definition: An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists.
+10:11:47 From  John Wieczorek  to  Everyone:
+	I can’t talk.
+10:11:51 From  John Wieczorek  to  Everyone:
+	However...
+10:12:01 From  John Wieczorek  to  Everyone:
+	It isn’t a matter of need...
+10:12:12 From  John Wieczorek  to  Everyone:
+	It is a matter of the scope of what can be done if we have it.
+10:12:37 From  John Wieczorek  to  Everyone:
+	Without it we have essentially just one more basifOfRecord term.
+10:12:51 From  John Wieczorek  to  Everyone:
+	With it we can instantiate MaterialEntities.
+10:17:21 From  Teresa Mayfield-Meyer  to  Everyone:
+	MaterialEntityID: An identifier for a particular instance of dwc:MaterialEntity.
+10:17:53 From  John Wieczorek  to  Everyone:
+	Humans would be pointed in the right direction. It would break IPT mappings.
+10:18:33 From  Steve Baskauf  to  Everyone:
+	https://dwc.tdwg.org/list/#dwc_individualID
+10:19:32 From  Stan Blum  to  Everyone:
+	That would be my concern (breaking IPT mappings), but the way forward that is internally consistent. No?
+10:19:33 From  Dag Endresen  to  Everyone:
+	ID for the instyance
+10:19:43 From  John Wieczorek  to  Everyone:
+	Yes, IDs for the instances.
+10:20:46 From  John Wieczorek  to  Everyone:
+	MaterialEntity would be a class, materialEntityID would be a property organized in the MaterialEntity class.
+10:23:39 From  Dag Endresen  to  Everyone:
+	The bone is different curatorial entity from other bones fro the same organism…?
+10:23:48 From  Dag Endresen  to  Everyone:
+	Different materialID
+10:24:27 From  Teresa Mayfield-Meyer  to  Everyone:
+	The bone is different curatorial entity from other bones fro the same organism…?
+	
+	Could be - especially if something interesting was done with that particular bone
+10:26:44 From  Dag Endresen  to  Everyone:
+	Like each time you look at the bone you need a different ID for it (like occurrenceID)…
+10:27:54 From  Teresa Mayfield-Meyer  to  Everyone:
+	No, the bone would get an ID that you always use for that particular bone, which may have a parent, that is the whole skeleton with it's own ID
+10:28:25 From  Dag Endresen  to  Everyone:
+	That is how I see it too (just trying to stretch Juttas case)
+10:30:57 From  Dag Endresen  to  Everyone:
+	I think we need an ID for the material and a type for it
+10:32:05 From  Stan Blum  to  Everyone:
+	Are adding materialEntityID and deprecating materialSampleID two parts of the same proposal?  (I think so!)
+10:32:32 From  John Wieczorek  to  Everyone:
+	I would say let that be a different battle so as not to hold this one up.
+10:33:13 From  John Wieczorek  to  Everyone:
+	Getting rid of materialSampleID will after people and organizations.
+10:33:20 From  John Wieczorek  to  Everyone:
+	affect
+10:33:38 From  Dag Endresen  to  Everyone:
+	If “deprecating” materialSampleID would jeopardise the new MaterialEntiry then hold it, but better to replace it
+10:33:39 From  John Wieczorek  to  Everyone:
+	A goal could be to deprecate it someday.
+10:33:52 From  John Wieczorek  to  Everyone:
+	Lesson learned from trying to get rid of individualCount.
+10:34:26 From  Steve Baskauf  to  Everyone:
+	Reacted to "Lesson learned from ..." with 😩
+10:35:09 From  John Wieczorek  to  Everyone:
+	That would be a normative change.
+10:36:16 From  John Wieczorek  to  Everyone:
+	That sounds correct, Steve.
+10:36:26 From  John Wieczorek  to  Everyone:
+	Yes, Dag.
+10:36:34 From  John Wieczorek  to  Everyone:
+	That would be a good recoomendation.
+10:37:22 From  John Wieczorek  to  Everyone:
+	Another different and nasty battle.
+10:43:34 From  John Wieczorek  to  Everyone:
+	Roger, do you mean preparations?
+10:43:44 From  John Wieczorek  to  Everyone:
+	MaterialSample has no type term.
+10:44:37 From  Jutta Buschbom  to  Everyone:
+	Terms & Vocabularies https://docs.google.com/spreadsheets/d/12D6P4lt-zDAALJzod7sq475tWgqKiTbDrFjKEuSXVg4/edit?usp=sharing
+10:44:43 From  Teresa Mayfield-Meyer  to  Everyone:
+	https://github.com/tdwg/dwc/issues/426
+10:46:00 From  Roger Burkhalter  to  Everyone:
+	John, I’ll check with Holly, but I recall it was for MaterialSample. We were looking at GBIF searchable terms and MaterialSample is the only was to return only Fossil material.
+10:46:40 From  Roger Burkhalter  to  Everyone:
+	Excuse mr, Basis of Record. Sorry
+10:46:41 From  Dag Endresen  to  Everyone:
+	Maybe Holly looked at values for basisOfRecord…?
+10:51:52 From  John Wieczorek  to  Everyone:
+	I hate to, but I have to go. The proposed path forward sounds perfect.
+10:59:57 From  Dag Endresen  to  Everyone:
+	https://www.tdwg.org/community/osr/how-did-it-die/
+11:00:26 From  Dag Endresen  to  Everyone:
+	“How did it die” …
+11:01:55 From  Steve Baskauf  to  Everyone:
+	https://github.com/tdwg/rs.tdwg.org/blob/vitality/process/page_build_scripts/vitality.md
+11:04:23 From  Steve Baskauf  to  Everyone:
+	https://github.com/tdwg/dwc/issues/363
+11:05:38 From  Roger Burkhalter  to  Everyone:
+	Thank you Steve
+## Meeting Chat 4PM MDT
