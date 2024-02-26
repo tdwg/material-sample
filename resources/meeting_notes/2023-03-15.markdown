@@ -1,0 +1,199 @@
+# 2023-03-15 Material Sample Task Group Meeting Notes
+## Participants
+### 10AM MDT
+Jutta B., Roger, Stephen R.,Teresa MM., Stan B., Dag E., Steve B., John W. 
+### 4PM MDT
+Teresa
+## Agenda Items
+### Helpful links
+[Google Drive](https://drive.google.com/drive/folders/1iZDVzmA52lbwKFRdWwdQTtaP11I9awNH?usp=sharing)  
+[Change requests in process ](https://github.com/tdwg/material-sample/tree/main/primary_deliverable)  
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+[materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+[MS Working Session](https://docs.google.com/document/d/1EFCaPTuPAnc3oU0t-JAXQvjUsxmHotnHnWhweZxw8Es/edit?usp=share_link) 
+### Items for discussion
+#### 10AM MDT
+1. MaterialEntityID: An identifier for a particular instance of dwc:MaterialEntity.  
+     a. Can we wrap this up?  
+     b. A materialSampleID is meant to be, ideally, a resolvable (IRI that returns metadata when requested) global unique identifier for a physical object. (JW)  
+2. [vitality](https://github.com/tdwg/material-sample/issues/36) - do we need to comment or just let it get added as is?  
+     a. Seems better as a property of dwc:Organism  
+     b. Is an Organism a subset of MaterialEntity? OOF  
+3. Existing terms in the milestone  
+     a. [Other Deliverable - catalogNumber review](https://github.com/tdwg/material-sample/issues/6)  
+          i. A catalogNumber is meant to be a number assigned to something in some collection to distinguish it from other things in that collection. It is not expected to be globally unique, nor an IRI, and it could refer to a specimen, all the parts of an organism, an image, a video, a sound, a human or machine observation. It is a local identifier for a class that is a combination of material and digital entities, the use of which has significance within a collection. (JW)  
+          ii. a catalogNumber can't be rigorously defined as a property of an Occurrence (nor is it, in Darwin Core, it is merely grouped under that Class for convenience). Whatever the destiny of catalogNumber for organizational purposes, otherCatalogNumbers should share that fate. (JW)  
+          iii.My hot take - we need both. catalogNumber traditionally identifies a thing in the world and it seems to me that we are missing some sort of recordNumber (as we have in Occurrence) which identifies a digital object that represents a thing in the world). I am totally willing to concede I am wrong - just my gut reaction. (TMM)  
+          iv. LatimerCore Identifier class - https://github.com/tdwg/material-sample/issues/10#issuecomment-1433517467  
+     b. [Other Deliverable - otherCatalogNumbers review](https://github.com/tdwg/material-sample/issues/10)
+     c. [Other Deliverable - disposition review](https://github.com/tdwg/material-sample/issues/8)  
+          i. Move to MaterialEntity  
+          ii. Change definition  
+          iii. Change Examples  
+#### 4PM MDT
+
+     d. [Other Deliverable - preparations review](https://github.com/tdwg/material-sample/issues/7)  
+     e. [Other Deliverable - associatedSequences review](https://github.com/tdwg/material-sample/issues/8)  
+![image](https://private-user-images.githubusercontent.com/5725767/307862127-dbf8072d-0e69-407b-9e44-c4efdea8cb8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg5NjM5MjUsIm5iZiI6MTcwODk2MzYyNSwicGF0aCI6Ii81NzI1NzY3LzMwNzg2MjEyNy1kYmY4MDcyZC0wZTY5LTQwN2ItOWU0NC1jNGVmZGVhOGNiOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIyNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMjZUMTYwNzA1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmY3ZjUyYzUxNzc3ZDRkOTBjZjU4NWVhZWNkMWZkMTk3MTBhMmMxODVlMjg4ZGIxYzc0MjM3NWZhMzllNzVlYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.lH3VgGUZ55f0S_4X3ddOqGd5RkLDDxvKBImAUpfCAeo)  
+
+## Next steps and assignments
+Continue considering preparations and associated sequences - send an email
+
+```
+MaterialSample Task Group,
+
+We had a pretty productive meeting today. Continuing our work, the next steps are to evaluate preparations and associated sequences as properties of MaterialEntity.
+
+Please visit the GitHub issues and discuss them there. A reminder that we have given ourselves a deadline of May 1 to develop a package to submit for review, this means we have one more meeting (April 19, 2023) to round this up.
+
+I hope to see many of you next month but I hope to see all of you participating in the GitHub issues.
+
+Thank you for the time you give to this effort!
+
+Teresa J. Mayfield-Meyer
+```
+
+## Meeting Chat 10AM MDT
+10:00:01 From  Teresa Mayfield-Meyer  to  Everyone:  
+	https://docs.google.com/document/d/1jRDnAj3_nyhM37kkXpzmJDlfL5W-IjJdyeArIc7ebIQ/edit?usp=sharing  
+10:00:38 From  Teresa Mayfield-Meyer  to  Everyone:  
+	https://docs.google.com/document/d/1jRDnAj3_nyhM37kkXpzmJDlfL5W-IjJdyeArIc7ebIQ/edit?usp=sharing  
+10:01:33 From  Teresa Mayfield-Meyer  to  Everyone:  
+	https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialEntityID.md  
+10:08:31 From  Jutta Buschbom  to  Everyone:  
+	Could somebody post the link to the agenda, please?  
+10:09:53 From  Dag Endresen  to  Everyone:  
+	Agenda https://docs.google.com/document/d/1jRDnAj3_nyhM37kkXpzmJDlfL5W-IjJdyeArIc7ebIQ/edit#  
+10:10:34 From  Jutta Buschbom  to  Everyone:  
+	Thanks Dag!  
+10:13:37 From  Teresa Mayfield-Meyer  to  Everyone:  
+	https://github.com/tdwg/material-sample/issues/10#issuecomment-1433517467  
+10:13:47 From  Stan Blum  to  Everyone:  
+	If one “catalogNumber” has primacy over others, it’s the one used in the current management context.  
+10:15:52 From  Dag Endresen  to  Everyone:  
+	I think of catalogNumber as the human friendly specimen identifier while the materialEntityID would be the machine-friendly identifier  
+10:17:12 From  Stan Blum  to  Everyone:  
+	Reacted to "I think of catalogNu..." with 👍  
+10:20:38 From  Stephen Richard  to  Everyone:  
+	+1 for identifier class.  
+10:24:18 From  Dag Endresen  to  Everyone:  
+	I think of fieldNumber as broader than the recordNumber the latter the number assigned by the collector to the collected sample?  
+10:25:10 From  Dag Endresen  to  Everyone:  
+	fieldNumber = An identifier given to the event in the field. Often serves as a link between field notes and the Event  
+10:26:52 From  Stan Blum  to  Everyone:  
+	But field notes can be for a single organism/specimen, or all the material that derive from a collectingEvent (i.e., net full of fish).  
+10:28:02 From  Stan Blum  to  Everyone:  
+	In ichthyology, there can be both fieldNumber (collectingEvent) and collectorsNumber (individual).  
+10:28:05 From  Dag Endresen  to  Everyone:  
+	recordNumber = An identifier given to the Occurrence at the time it was recorded. Often serves as a link between field notes and an Occurrence record, such as a specimen collector's number  
+10:33:51 From  John Wieczorek  to  Everyone:  
+	There is no Record Class in Darwin Core. The properties organized in that section of the Quick Reference Guide are there because they can apply to many different classes.  
+10:35:40 From  Jutta Buschbom  to  Everyone:  
+	A Record class has a specific role. That is my experience.  
+10:35:59 From  John Wieczorek  to  Everyone:  
+	That is fine, but Darwin Core does not have one.  
+10:36:18 From  Dag Endresen  to  Everyone:  
+	Agree there is a need for a “Record class” but Darwin Core does not have one…  
+10:39:11 From  Jutta Buschbom  to  Everyone:  
+	Disposition: shred a cd?  
+10:41:39 From  Stephen Richard  to  Everyone:  
+	+1 domain of disposition and preparation is materialEntity  
+10:42:14 From  John Wieczorek  to  Everyone:  
+	The distribution of data in a recent GBIF snapshot, by basisOfRecord, shows disposition used for everything.  
+10:42:27 From  Steve Baskauf  to  Everyone:  
+	Reacted to "The distribution of ..." with 🙀  
+10:42:48 From  John Wieczorek  to  Everyone:  
+	It is much more rare, but it is there.  
+10:44:08 From  Steve Baskauf  to  Everyone:  
+	@tuco, is that also true for preparations?  
+10:44:41 From  John Wieczorek  to  Everyone:  
+	Checking preparations...  
+10:45:39 From  John Wieczorek  to  Everyone:  
+	I perused the HUMAN_OBSERVATION examples and they all seem like mistakes.  
+10:48:20 From  Stan Blum  to  Everyone:  
+	I’ve gotta run on the hour; so let’s leave a little time for “what’s next”  
+10:49:10 From  Teresa Mayfield-Meyer  to  Everyone:  
+	The current state of a specimen with respect to the collection identified in collectionCode or collectionID.  
+10:50:53 From  roger  to  Everyone:  
+	disposition examples: in collection, missing, voucher elsewhere, duplicates elsewhere  
+10:51:00 From  Teresa Mayfield-Meyer  to  Everyone:  
+	The current state of a MaterialEntity with respect to a collection.  
+10:54:59 From  Teresa Mayfield-Meyer  to  Everyone:  
+	in collection, missing, on loan, used up, destroyed, deaccessioned  
+## Meeting Chat 4PM MDT
+## Not Addressed
+2. [Terms Crosswalk](https://docs.google.com/spreadsheets/d/1_3ykV_GzG1MaH9mTQ4HaXD6GVrCD7KdtanxMX9RZ1KQ/edit?usp=sharing)
+3. [Internet of Samples](https://isamplesorg.github.io/home/) (iSamples) working vocabularies for sample description:  
+     a. [materialSampleType](https://isamplesorg.github.io/metadata/vocabularies/specimentype.html) - Property to specify the kind of thing the specimen is.  
+     b. [sampledFeature](https://isamplesorg.github.io/metadata/vocabularies/sampledfeature.html) - Property to specify the broad context that a sample is intended to represent.  
+     c. [materialType](https://isamplesorg.github.io/metadata/vocabularies/materialtype.html) - Property to specify the kind of material that constitutes a physical sample.  
+          i. Can the combination of these three terms with selections from their controlled vocabularies allow providers and users of data about physical objects to get at what they need?  
+          ii. We need testers and opinions - https://forms.gle/czYVknLXXpq4Ghc29  
+4. [Latimer Core](https://github.com/tdwg/rs.tdwg.org/blob/latimer/process/page_build_scripts/index.md#ltc_ObjectClassification) - have they done this for us? The natural history collections community needs to describe collections as a whole, as well as at the item level.  Do we need separate terms (controlled vocabularies) for these purposes? intersection of the MaterialSample group, LtC terms and GRSciColl as use case: https://docs.google.com/spreadsheets/d/12D6P4lt-zDAALJzod7sq475tWgqKiTbDrFjKEuSXVg4/edit?usp=sharing   
+#### LatimerCore “material” terms
+    a. baseTypeOfCollection - High-level term describing the fundamental nature of objects in the ObjectGroup.  
+        i. Notes - For natural history collections baseTypeOfCollection describes types of occurrences and may constrain the values available in objectType. Notes for ObjectGroups where baseTypeOfCollection is 'InformationArtefact': subsequent ‘type’ properties could include hierarchical Audubon Core/Dublin Core terms – e.g. dc:type (http://purl.org/dc/elements/1.1/type), ac:subtype / ac:subtypeLiteral (http://rs.tdwg.org/ac/terms/subtypeLiteral), or (proposed) ac:3DResourceType.  
+        ii. Examples - MaterialSample, InformationArtefact  
+    b. Discipline - A high level classification of the scientific discipline to which the objects within the collection belong or are related.  
+        i. Notes - The recommendation is to use a controlled vocabulary that is also common across other community collections, object and occurrence standards. Suggested list https://confluence.egi.eu/display/EGIG/Scientific+Disciplines  
+        ii. Examples -   
+    c. typeOfCollection - Additional information that exists that describes the object(s) in the collection.  
+        i. Notes - Terms such as soil, pollen, faeces, muscle, genomic DNA are currently put in preparationType. These terms have been parked for discussion: HumanObservations, MachineObservations.  
+        ii. Examples - PreservedSpecimens, FossilSpecimens, MineralSpecimens, ArchaeologicalArtefacts, EthnographicObjects, HumanRemains, HominidRemains, MaterialSamples, LivingSpecimens   
+    d. objectType - A more generic classification of items in the collection than described in preparationType.  
+        i. Note - This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification). For cultural collections terms such as 'bowl', 'textile' are appropriate at this level. For large collections of multiple types use pipe delimited lists.  
+        ii. Examples - tissue, specimen, culture, rna, mineral, dna, environmental sample, HTS Library  
+    e. material - Material denotes the raw substance(s) from which the object is formed, in whole or in part.  
+        i. Notes - This definition maps roughly to the concept of E57 'material' from the CIDOC CRM: https://cidoc-crm.org/Entity/E57-Material/version-7.1.1  
+        ii. Examples - The object, or artefact could contain biological parts, for example jewellery made of amber with insects in, or cloaks made of bird feathers. It should not be used for taxonomic identifications. Examples include terms such as brick, gold, aluminium, polycarbonate, resin, amber, feather  
+    f. preparationType - A term used to classify or describe an object that indicates the actions that have been taken upon it and/or the processes it has been put through to prepare it for scientific use or study.  
+        i. Notes - This can be the same as PreservationMethod (e.g. Bone), but is not always. This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification). For large collections with multiple types use a pipe delimited list.  
+        ii. Examples - Bones, Eggs, Fossils, Gemstones, Lysate, Macrofossils, eDNA, Viable cells, Pollen, Muscle, Leaf, Blood, Known - witheld   
+    g. preservationMethod - A term used to classify or describe an object that indicates the primary or most recent action, measure or process that has been used in order to preserve the objects in the collection for long-term storage.  
+        i. Notes - Not intended to be used as the fossilization method. Use preservationMode for that. This field is intended to be use where a collection has a single or prominent preservationMethod. If the collection has multiple preservationMethods then this should be expressed elsewhere, such as in ObjectQuantity. We recommend the Arctos PART_PRESERVATION vocabulary (https://arctos.database.museum/info/ctDocumentation.cfm?table=CTPART_PRESERVATION). For herbarium sheets use 'dried_pressed'. If an alcohol collection uses mixed percentages use 'alcohol'.  
+        ii. Examples - fluid_preserved, alcohol, formaldehyde, dried, dried_pinned, dried_pressed, mounted, microscope_slide, glycerin, gum_arabic, frozen, refrigerated, freeze_dried, mixed, no_treatment, known:withheld, unknown, papered/packaged  
+    h. preservationMode - The means by which a palaeontological specimen was preserved or created e.g. body, cast, mold, trace fossil, soft parts mineralised etc.  
+        i. Notes - This property is aligned with the concept of preservationMode (https://efg.geocase.eu/documentation/html/efg.html#element_PreservationMode_Link03032878) in ABCD(EFG).  
+        ii. Examples - adpression/compression, body, cast, charcoalification, coalified, concretion, dissolution traces, mold/impression, permineralised, recrystallised, soft parts, trace  
+5. Complete the “minimum data about a materialSample by adding:  
+    a. materialSampleDescription - for the humans in the room!  
+    b. preservationMethod  
+    c. preparations  
+        i. See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml  
+  
+### Items for proposal
+1. Current proposals
+     a. [MaterialSample change proposal draft](https://github.com/tdwg/material-sample/issues/2#issuecomment-1084808918).  
+     b. [materialSampleID change proposal draft](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialSampleID.md).  
+2. iSamples Review  
+     a. iSamples added to [materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+     b. [iSamples vocabulary definitions](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit#gid=1379955038)  
+     c. Some other vocabs to consider  
+     ggbn:materialSampleType - https://rs.gbif.org/extension/ggbn/materialsample.xml  
+          * Classification of kind of physical sample in addition to BasisOfRecord/RecordBasis and Preparation Type. Please use preparationType for further specification such as "leg","blood","gDNA","axenic culture". Equal to KindOfUnit in ABCD! See also http://terms.tdwg.org/wiki/ggbn:materialSampleType (504 Gateway Time-out)  
+          * Examples: tissue, culture strain, specimen, DNA, RNA, Protein.  
+     dwc:preparations - https://dwc.tdwg.org/terms/#dwc:preparations  
+          * A list (concatenated and separated) of preparations and preservation methods for a specimen.  
+3. We should document our process and decision making for handoff to the next steps  
+     a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+     b. Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing  
+4. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?  
+5. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.  
+6. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.  
+  
+The Baby Step
+
+* materialSampleType  
+    * Biological - 
+         * Preserved  
+         * Living  
+         * Fossil  
+         * Tissue  
+    * Geological  
+    * Anthropological  
+    * Atmospheric  
+    * Environmental Sample
+         * Terrestrial  
+         * Marine  
+         * Freshwater  
+
