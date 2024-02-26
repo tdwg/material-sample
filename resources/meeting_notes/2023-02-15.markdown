@@ -6,131 +6,212 @@ Roger Burkhalter, Stan Blum, Steve Baskauf, Teresa Mayfield-Meyer, Jutta Buschba
 Teresa, Stan
 ## Agenda Items
 ### Helpful links
-Google Drive
-Current milestone
-MS Working Session
-Items for discussion
-Missed opportunity - https://discourse.gbif.org/t/darwin-core-public-commentary/3843
-https://github.com/tdwg/dwc/milestone/16  
-New Term Proposal - MaterialEntity
-https://github.com/tdwg/dwc/issues/426 
-https://github.com/tdwg/material-sample/issues/34 
-Can we wrap this up and move on?
-Yes - pick definition 2: An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists.
-MaterialEntityID: An identifier for a particular instance of dwc:MaterialEntity.
-Need to add in comments that his is preferable to MaterialSampleID
-Make a package of materialEntity, MaterialEntityID and whatever is in Occurrence that goes with material as a package for review. - Target is May 1.
-Does the Task Group need a new name - Material? Material Entity? Does it matter?
-Steve says no because it is too much trouble
-Stay Material Sample and move on
-Term for Material dead or alive? Reuse proposed new term vitality?
-Next steps and assignments
+[Google Drive](https://drive.google.com/drive/folders/1iZDVzmA52lbwKFRdWwdQTtaP11I9awNH?usp=sharing)  
+[Change requests in process ](https://github.com/tdwg/material-sample/tree/main/primary_deliverable)  
+Google Sheet with terms for review - [MaterialSample and its properties](https://docs.google.com/spreadsheets/d/1KWWGF6p4BREoDZy7HeVbC3NEFIMzNbA78sMsOR6uX_k/edit?usp=sharing)  
+[materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+[MS Working Session](https://docs.google.com/document/d/1EFCaPTuPAnc3oU0t-JAXQvjUsxmHotnHnWhweZxw8Es/edit?usp=share_link) 
+### Items for discussion
+1. issed opportunity - https://discourse.gbif.org/t/darwin-core-public-commentary/3843  
+     a. https://github.com/tdwg/dwc/milestone/16  
+2. New Term Proposal - [MaterialEntity](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialentity.md)  
+     a. https://github.com/tdwg/dwc/issues/426 
+     b. https://github.com/tdwg/material-sample/issues/34 
+     c. Can we wrap this up and move on?  
+     d. Yes - pick definition 2: An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists.  
+3. MaterialEntityID: An identifier for a particular instance of dwc:MaterialEntity.  
+     a. Need to add in comments that his is preferable to MaterialSampleID  
+4. Make a package of materialEntity, MaterialEntityID and whatever is in Occurrence that goes with material as a package for review. - Target is May 1.  
+5. Does the Task Group need a new name - Material? Material Entity? Does it matter?  
+     a. Steve says no because it is too much trouble  
+     b. Stay Material Sample and move on  
+6. Term for Material dead or alive? Reuse proposed new term vitality?
+     a. Dag - From the proposed term description at https://github.com/tdwg/dwc/issues/363  
+     "Generally intended to be used with a dwc:basisOfRecord of PreservedSpecimen, MaterialSample, or HumanObservation"  
+## Next steps and assignments
 
-Meeting Chat 10AM MDT
-10:02:08 From  Steve Baskauf  to  Everyone:
-	It will happen when it happens
-10:03:08 From  Roger Burkhalter  to  Everyone:
-	My new email is: rogerburkhalter1956@gmail.com
-10:07:16 From  Dag Endresen  to  Everyone:
-	(I have our meeting series twice in my calendar :-D)
-10:07:56 From  John Wieczorek  to  Everyone:
-	I have this meeting twice on my calendar as well.
-10:09:02 From  John Wieczorek  to  Everyone:
-	The definition will go through a public commentary again anyway.
-10:10:26 From  Teresa Mayfield-Meyer  to  Everyone:
-	This is the definition: An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists.
-10:11:47 From  John Wieczorek  to  Everyone:
-	I can’t talk.
-10:11:51 From  John Wieczorek  to  Everyone:
-	However...
-10:12:01 From  John Wieczorek  to  Everyone:
-	It isn’t a matter of need...
-10:12:12 From  John Wieczorek  to  Everyone:
-	It is a matter of the scope of what can be done if we have it.
-10:12:37 From  John Wieczorek  to  Everyone:
-	Without it we have essentially just one more basifOfRecord term.
-10:12:51 From  John Wieczorek  to  Everyone:
-	With it we can instantiate MaterialEntities.
-10:17:21 From  Teresa Mayfield-Meyer  to  Everyone:
-	MaterialEntityID: An identifier for a particular instance of dwc:MaterialEntity.
-10:17:53 From  John Wieczorek  to  Everyone:
-	Humans would be pointed in the right direction. It would break IPT mappings.
-10:18:33 From  Steve Baskauf  to  Everyone:
-	https://dwc.tdwg.org/list/#dwc_individualID
-10:19:32 From  Stan Blum  to  Everyone:
-	That would be my concern (breaking IPT mappings), but the way forward that is internally consistent. No?
-10:19:33 From  Dag Endresen  to  Everyone:
-	ID for the instyance
-10:19:43 From  John Wieczorek  to  Everyone:
-	Yes, IDs for the instances.
-10:20:46 From  John Wieczorek  to  Everyone:
-	MaterialEntity would be a class, materialEntityID would be a property organized in the MaterialEntity class.
-10:23:39 From  Dag Endresen  to  Everyone:
-	The bone is different curatorial entity from other bones fro the same organism…?
-10:23:48 From  Dag Endresen  to  Everyone:
-	Different materialID
-10:24:27 From  Teresa Mayfield-Meyer  to  Everyone:
-	The bone is different curatorial entity from other bones fro the same organism…?
+## Meeting Chat 10AM MDT
+10:02:08 From  Steve Baskauf  to  Everyone:  
+	It will happen when it happens  
+10:03:08 From  Roger Burkhalter  to  Everyone:  
+	My new email is: rogerburkhalter1956@gmail.com  
+10:07:16 From  Dag Endresen  to  Everyone:  
+	(I have our meeting series twice in my calendar :-D)  
+10:07:56 From  John Wieczorek  to  Everyone:  
+	I have this meeting twice on my calendar as well.  
+10:09:02 From  John Wieczorek  to  Everyone:  
+	The definition will go through a public commentary again anyway.  
+10:10:26 From  Teresa Mayfield-Meyer  to  Everyone:  
+	This is the definition: An entity that can be identified, exists for some period of time, and consists in whole or n part of physical matter while it exists.  
+10:11:47 From  John Wieczorek  to  Everyone:  
+	I can’t talk.  
+10:11:51 From  John Wieczorek  to  Everyone:  
+	However...  
+10:12:01 From  John Wieczorek  to  Everyone:  
+	It isn’t a matter of need...  
+10:12:12 From  John Wieczorek  to  Everyone:  
+	It is a matter of the scope of what can be done if we have it.  
+10:12:37 From  John Wieczorek  to  Everyone:  
+	Without it we have essentially just one more basifOfRecord term.  
+10:12:51 From  John Wieczorek  to  Everyone:  
+	With it we can instantiate MaterialEntities.  
+10:17:21 From  Teresa Mayfield-Meyer  to  Everyone:  
+	MaterialEntityID: An identifier for a particular instance of dwc:MaterialEntity.  
+10:17:53 From  John Wieczorek  to  Everyone:  
+	Humans would be pointed in the right direction. It would break IPT mappings.  
+10:18:33 From  Steve Baskauf  to  Everyone:  
+	https://dwc.tdwg.org/list/#dwc_individualID  
+10:19:32 From  Stan Blum  to  Everyone:  
+	That would be my concern (breaking IPT mappings), but the way forward that is internally consistent. No?  
+10:19:33 From  Dag Endresen  to  Everyone:  
+	ID for the instyance  
+10:19:43 From  John Wieczorek  to  Everyone:  
+	Yes, IDs for the instances.  
+10:20:46 From  John Wieczorek  to  Everyone:  
+	MaterialEntity would be a class, materialEntityID would be a property organized in the MaterialEntity class.  
+10:23:39 From  Dag Endresen  to  Everyone:  
+	The bone is different curatorial entity from other bones fro the same organism…?  
+10:23:48 From  Dag Endresen  to  Everyone:  
+	Different materialID  
+10:24:27 From  Teresa Mayfield-Meyer  to  Everyone:  
+	The bone is different curatorial entity from other bones fro the same organism…?  
 	
-	Could be - especially if something interesting was done with that particular bone
-10:26:44 From  Dag Endresen  to  Everyone:
-	Like each time you look at the bone you need a different ID for it (like occurrenceID)…
-10:27:54 From  Teresa Mayfield-Meyer  to  Everyone:
-	No, the bone would get an ID that you always use for that particular bone, which may have a parent, that is the whole skeleton with it's own ID
-10:28:25 From  Dag Endresen  to  Everyone:
-	That is how I see it too (just trying to stretch Juttas case)
-10:30:57 From  Dag Endresen  to  Everyone:
-	I think we need an ID for the material and a type for it
-10:32:05 From  Stan Blum  to  Everyone:
-	Are adding materialEntityID and deprecating materialSampleID two parts of the same proposal?  (I think so!)
-10:32:32 From  John Wieczorek  to  Everyone:
-	I would say let that be a different battle so as not to hold this one up.
-10:33:13 From  John Wieczorek  to  Everyone:
-	Getting rid of materialSampleID will after people and organizations.
-10:33:20 From  John Wieczorek  to  Everyone:
-	affect
-10:33:38 From  Dag Endresen  to  Everyone:
-	If “deprecating” materialSampleID would jeopardise the new MaterialEntiry then hold it, but better to replace it
-10:33:39 From  John Wieczorek  to  Everyone:
-	A goal could be to deprecate it someday.
-10:33:52 From  John Wieczorek  to  Everyone:
-	Lesson learned from trying to get rid of individualCount.
-10:34:26 From  Steve Baskauf  to  Everyone:
-	Reacted to "Lesson learned from ..." with 😩
-10:35:09 From  John Wieczorek  to  Everyone:
-	That would be a normative change.
-10:36:16 From  John Wieczorek  to  Everyone:
-	That sounds correct, Steve.
-10:36:26 From  John Wieczorek  to  Everyone:
-	Yes, Dag.
-10:36:34 From  John Wieczorek  to  Everyone:
-	That would be a good recoomendation.
-10:37:22 From  John Wieczorek  to  Everyone:
-	Another different and nasty battle.
-10:43:34 From  John Wieczorek  to  Everyone:
-	Roger, do you mean preparations?
-10:43:44 From  John Wieczorek  to  Everyone:
-	MaterialSample has no type term.
-10:44:37 From  Jutta Buschbom  to  Everyone:
-	Terms & Vocabularies https://docs.google.com/spreadsheets/d/12D6P4lt-zDAALJzod7sq475tWgqKiTbDrFjKEuSXVg4/edit?usp=sharing
-10:44:43 From  Teresa Mayfield-Meyer  to  Everyone:
-	https://github.com/tdwg/dwc/issues/426
-10:46:00 From  Roger Burkhalter  to  Everyone:
-	John, I’ll check with Holly, but I recall it was for MaterialSample. We were looking at GBIF searchable terms and MaterialSample is the only was to return only Fossil material.
-10:46:40 From  Roger Burkhalter  to  Everyone:
-	Excuse mr, Basis of Record. Sorry
-10:46:41 From  Dag Endresen  to  Everyone:
-	Maybe Holly looked at values for basisOfRecord…?
-10:51:52 From  John Wieczorek  to  Everyone:
-	I hate to, but I have to go. The proposed path forward sounds perfect.
-10:59:57 From  Dag Endresen  to  Everyone:
-	https://www.tdwg.org/community/osr/how-did-it-die/
-11:00:26 From  Dag Endresen  to  Everyone:
-	“How did it die” …
-11:01:55 From  Steve Baskauf  to  Everyone:
-	https://github.com/tdwg/rs.tdwg.org/blob/vitality/process/page_build_scripts/vitality.md
-11:04:23 From  Steve Baskauf  to  Everyone:
-	https://github.com/tdwg/dwc/issues/363
-11:05:38 From  Roger Burkhalter  to  Everyone:
-	Thank you Steve
+	Could be - especially if something interesting was done with that particular bone  
+10:26:44 From  Dag Endresen  to  Everyone:  
+	Like each time you look at the bone you need a different ID for it (like occurrenceID)…  
+10:27:54 From  Teresa Mayfield-Meyer  to  Everyone:  
+	No, the bone would get an ID that you always use for that particular bone, which may have a parent, that is the whole skeleton with it's own ID  
+10:28:25 From  Dag Endresen  to  Everyone:  
+	That is how I see it too (just trying to stretch Juttas case)  
+10:30:57 From  Dag Endresen  to  Everyone:  
+	I think we need an ID for the material and a type for it  
+10:32:05 From  Stan Blum  to  Everyone:  
+	Are adding materialEntityID and deprecating materialSampleID two parts of the same proposal?  (I think so!)  
+10:32:32 From  John Wieczorek  to  Everyone:  
+	I would say let that be a different battle so as not to hold this one up.  
+10:33:13 From  John Wieczorek  to  Everyone:  
+	Getting rid of materialSampleID will after people and organizations.  
+10:33:20 From  John Wieczorek  to  Everyone:  
+	affect  
+10:33:38 From  Dag Endresen  to  Everyone:  
+	If “deprecating” materialSampleID would jeopardise the new MaterialEntiry then hold it, but better to replace it  
+10:33:39 From  John Wieczorek  to  Everyone:  
+	A goal could be to deprecate it someday.  
+10:33:52 From  John Wieczorek  to  Everyone:  
+	Lesson learned from trying to get rid of individualCount.  
+10:34:26 From  Steve Baskauf  to  Everyone:  
+	Reacted to "Lesson learned from ..." with 😩  
+10:35:09 From  John Wieczorek  to  Everyone:  
+	That would be a normative change.  
+10:36:16 From  John Wieczorek  to  Everyone:  
+	That sounds correct, Steve.  
+10:36:26 From  John Wieczorek  to  Everyone:  
+	Yes, Dag.  
+10:36:34 From  John Wieczorek  to  Everyone:  
+	That would be a good recoomendation.  
+10:37:22 From  John Wieczorek  to  Everyone:  
+	Another different and nasty battle.  
+10:43:34 From  John Wieczorek  to  Everyone:  
+	Roger, do you mean preparations?  
+10:43:44 From  John Wieczorek  to  Everyone:  
+	MaterialSample has no type term.  
+10:44:37 From  Jutta Buschbom  to  Everyone:  
+	Terms & Vocabularies https://docs.google.com/spreadsheets/d/12D6P4lt-zDAALJzod7sq475tWgqKiTbDrFjKEuSXVg4/edit?usp=sharing  
+10:44:43 From  Teresa Mayfield-Meyer  to  Everyone:  
+	https://github.com/tdwg/dwc/issues/426  
+10:46:00 From  Roger Burkhalter  to  Everyone:  
+	John, I’ll check with Holly, but I recall it was for MaterialSample. We were looking at GBIF searchable terms and MaterialSample is the only was to return only Fossil material.  
+10:46:40 From  Roger Burkhalter  to  Everyone:  
+	Excuse mr, Basis of Record. Sorry  
+10:46:41 From  Dag Endresen  to  Everyone:  
+	Maybe Holly looked at values for basisOfRecord…?  
+10:51:52 From  John Wieczorek  to  Everyone:  
+	I hate to, but I have to go. The proposed path forward sounds perfect.  
+10:59:57 From  Dag Endresen  to  Everyone:  
+	https://www.tdwg.org/community/osr/how-did-it-die/  
+11:00:26 From  Dag Endresen  to  Everyone:  
+	“How did it die” …  
+11:01:55 From  Steve Baskauf  to  Everyone:  
+	https://github.com/tdwg/rs.tdwg.org/blob/vitality/process/page_build_scripts/vitality.md  
+11:04:23 From  Steve Baskauf  to  Everyone:  
+	https://github.com/tdwg/dwc/issues/363  
+11:05:38 From  Roger Burkhalter  to  Everyone:  
+	Thank you Steve  
 ## Meeting Chat 4PM MDT
+
+## Not Addressed
+2. [Terms Crosswalk](https://docs.google.com/spreadsheets/d/1_3ykV_GzG1MaH9mTQ4HaXD6GVrCD7KdtanxMX9RZ1KQ/edit?usp=sharing)
+3. [Internet of Samples](https://isamplesorg.github.io/home/) (iSamples) working vocabularies for sample description:  
+     a. [materialSampleType](https://isamplesorg.github.io/metadata/vocabularies/specimentype.html) - Property to specify the kind of thing the specimen is.  
+     b. [sampledFeature](https://isamplesorg.github.io/metadata/vocabularies/sampledfeature.html) - Property to specify the broad context that a sample is intended to represent.  
+     c. [materialType](https://isamplesorg.github.io/metadata/vocabularies/materialtype.html) - Property to specify the kind of material that constitutes a physical sample.  
+          i. Can the combination of these three terms with selections from their controlled vocabularies allow providers and users of data about physical objects to get at what they need?  
+          ii. We need testers and opinions - https://forms.gle/czYVknLXXpq4Ghc29  
+4. [Latimer Core](https://github.com/tdwg/rs.tdwg.org/blob/latimer/process/page_build_scripts/index.md#ltc_ObjectClassification) - have they done this for us? The natural history collections community needs to describe collections as a whole, as well as at the item level.  Do we need separate terms (controlled vocabularies) for these purposes? intersection of the MaterialSample group, LtC terms and GRSciColl as use case: https://docs.google.com/spreadsheets/d/12D6P4lt-zDAALJzod7sq475tWgqKiTbDrFjKEuSXVg4/edit?usp=sharing   
+#### LatimerCore “material” terms
+    a. baseTypeOfCollection - High-level term describing the fundamental nature of objects in the ObjectGroup.  
+        i. Notes - For natural history collections baseTypeOfCollection describes types of occurrences and may constrain the values available in objectType. Notes for ObjectGroups where baseTypeOfCollection is 'InformationArtefact': subsequent ‘type’ properties could include hierarchical Audubon Core/Dublin Core terms – e.g. dc:type (http://purl.org/dc/elements/1.1/type), ac:subtype / ac:subtypeLiteral (http://rs.tdwg.org/ac/terms/subtypeLiteral), or (proposed) ac:3DResourceType.  
+        ii. Examples - MaterialSample, InformationArtefact  
+    b. Discipline - A high level classification of the scientific discipline to which the objects within the collection belong or are related.  
+        i. Notes - The recommendation is to use a controlled vocabulary that is also common across other community collections, object and occurrence standards. Suggested list https://confluence.egi.eu/display/EGIG/Scientific+Disciplines  
+        ii. Examples -   
+    c. typeOfCollection - Additional information that exists that describes the object(s) in the collection.  
+        i. Notes - Terms such as soil, pollen, faeces, muscle, genomic DNA are currently put in preparationType. These terms have been parked for discussion: HumanObservations, MachineObservations.  
+        ii. Examples - PreservedSpecimens, FossilSpecimens, MineralSpecimens, ArchaeologicalArtefacts, EthnographicObjects, HumanRemains, HominidRemains, MaterialSamples, LivingSpecimens   
+    d. objectType - A more generic classification of items in the collection than described in preparationType.  
+        i. Note - This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification). For cultural collections terms such as 'bowl', 'textile' are appropriate at this level. For large collections of multiple types use pipe delimited lists.  
+        ii. Examples - tissue, specimen, culture, rna, mineral, dna, environmental sample, HTS Library  
+    e. material - Material denotes the raw substance(s) from which the object is formed, in whole or in part.  
+        i. Notes - This definition maps roughly to the concept of E57 'material' from the CIDOC CRM: https://cidoc-crm.org/Entity/E57-Material/version-7.1.1  
+        ii. Examples - The object, or artefact could contain biological parts, for example jewellery made of amber with insects in, or cloaks made of bird feathers. It should not be used for taxonomic identifications. Examples include terms such as brick, gold, aluminium, polycarbonate, resin, amber, feather  
+    f. preparationType - A term used to classify or describe an object that indicates the actions that have been taken upon it and/or the processes it has been put through to prepare it for scientific use or study.  
+        i. Notes - This can be the same as PreservationMethod (e.g. Bone), but is not always. This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification). For large collections with multiple types use a pipe delimited list.  
+        ii. Examples - Bones, Eggs, Fossils, Gemstones, Lysate, Macrofossils, eDNA, Viable cells, Pollen, Muscle, Leaf, Blood, Known - witheld   
+    g. preservationMethod - A term used to classify or describe an object that indicates the primary or most recent action, measure or process that has been used in order to preserve the objects in the collection for long-term storage.  
+        i. Notes - Not intended to be used as the fossilization method. Use preservationMode for that. This field is intended to be use where a collection has a single or prominent preservationMethod. If the collection has multiple preservationMethods then this should be expressed elsewhere, such as in ObjectQuantity. We recommend the Arctos PART_PRESERVATION vocabulary (https://arctos.database.museum/info/ctDocumentation.cfm?table=CTPART_PRESERVATION). For herbarium sheets use 'dried_pressed'. If an alcohol collection uses mixed percentages use 'alcohol'.  
+        ii. Examples - fluid_preserved, alcohol, formaldehyde, dried, dried_pinned, dried_pressed, mounted, microscope_slide, glycerin, gum_arabic, frozen, refrigerated, freeze_dried, mixed, no_treatment, known:withheld, unknown, papered/packaged  
+    h. preservationMode - The means by which a palaeontological specimen was preserved or created e.g. body, cast, mold, trace fossil, soft parts mineralised etc.  
+        i. Notes - This property is aligned with the concept of preservationMode (https://efg.geocase.eu/documentation/html/efg.html#element_PreservationMode_Link03032878) in ABCD(EFG).  
+        ii. Examples - adpression/compression, body, cast, charcoalification, coalified, concretion, dissolution traces, mold/impression, permineralised, recrystallised, soft parts, trace  
+5. Complete the “minimum data about a materialSample by adding:  
+    a. materialSampleDescription - for the humans in the room!  
+    b. preservationMethod  
+    c. preparations  
+        i. See also https://rs.gbif.org/extension/ggbn/materialsample.xml, https://rs.gbif.org/extension/ggbn/preparation.xml, and https://rs.gbif.org/extension/ggbn/preservation.xml  
+  
+### Items for proposal
+1. Current proposals
+     a. [MaterialSample change proposal draft](https://github.com/tdwg/material-sample/issues/2#issuecomment-1084808918).  
+     b. [materialSampleID change proposal draft](https://github.com/tdwg/material-sample/blob/main/primary_deliverable/materialSampleID.md).  
+2. iSamples Review  
+     a. iSamples added to [materialSampleType brainstorm sheet](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit?usp=sharing)  
+     b. [iSamples vocabulary definitions](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit#gid=1379955038)  
+     c. Some other vocabs to consider  
+     ggbn:materialSampleType - https://rs.gbif.org/extension/ggbn/materialsample.xml  
+          * Classification of kind of physical sample in addition to BasisOfRecord/RecordBasis and Preparation Type. Please use preparationType for further specification such as "leg","blood","gDNA","axenic culture". Equal to KindOfUnit in ABCD! See also http://terms.tdwg.org/wiki/ggbn:materialSampleType (504 Gateway Time-out)  
+          * Examples: tissue, culture strain, specimen, DNA, RNA, Protein.  
+     dwc:preparations - https://dwc.tdwg.org/terms/#dwc:preparations  
+          * A list (concatenated and separated) of preparations and preservation methods for a specimen.  
+3. We should document our process and decision making for handoff to the next steps  
+     a. see https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#4-vocabulary-enhancements  
+     b. Started something here - https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing  
+4. catalogNumber does not belong as a property of MaterialSample because multiple samples may carry the same catalogNumber. However, catalogNumber definition needs a revision. - In scope?  
+5. Abby suggests that we need some educational materials - a paper, etc. to inform the community about the changes and how to use them.  
+6. What is the process for linking to other information (event, identification, etc.)? Will we need terms for that? For instance, would we need samplingEvent in order to link up with information about how/when/where the sample was obtained and samplePreservationEvent to link up with information about how/when/who preserved it? John W.? - see Audubon Core revision and addition of new column.  
+  
+The Baby Step
+
+* materialSampleType  
+    * Biological - 
+         * Preserved  
+         * Living  
+         * Fossil  
+         * Tissue  
+    * Geological  
+    * Anthropological  
+    * Atmospheric  
+    * Environmental Sample
+         * Terrestrial  
+         * Marine  
+         * Freshwater  
+
