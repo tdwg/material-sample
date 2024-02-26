@@ -1,0 +1,86 @@
+# 2024-02-20 TDWG Working Meeting Material Sample Task Group Meeting Notes
+## Participants
+Please add your name and affiliation.
+* Teresa J Mayfield-Meyer, Arctos Community Coordinator
+* Stan Blum, TDWG
+* Patricia Mergen
+* David Shorthouse, Agriculture & Agri-Food Canada
+* Steve Baskauf, Vanderbilt Heard Libraries
+* Jutta Buschbom, Statistical Genetics, DE & RECODE NHM London, UK
+* Christian Bolling
+## Agenda Items
+### Helpful links
+[Google Drive](https://drive.google.com/drive/folders/1iZDVzmA52lbwKFRdWwdQTtaP11I9awNH?usp=sharing)  
+### Items for discussion
+1. Accepted changes to the Darwin Core complete - [Current milestone](https://github.com/tdwg/material-sample/milestone/1)  
+2. [MaterialSample Task Group Summary Document](https://docs.google.com/document/d/1MT2YV-I97gX4LNJ5jI45FmxzSOdCWfz7OBu5Bz7bBMY/edit?usp=sharing)  
+## Meeting Chat
+13:29:24 From Teresa Mayfield-Meyer to Everyone:  
+	https://docs.google.com/document/d/1rrqfLetvniDNQJjrrUQVbQe0XBopMEqRs2Gwbz5usHY/edit  
+13:34:22 From David Shorthouse to Everyone:  
+	Q: What will/should happen to MaterialSample in DwC?  
+13:35:18 From David Shorthouse to Everyone:  
+	In particular, the lone term there, dwc:materialSampleID.  
+13:39:17 From Ben Norton to Everyone:  
+	https://ontology.buffalo.edu/smith/articles/Material_Entities.pdf  
+13:39:34 From Ben Norton to Everyone:  
+	https://www.ebi.ac.uk/ols4/ontologies/efo/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FBFO_0000040?lang=en  
+13:43:42 From David Shorthouse to Everyone:  
+	When are dwc:materialEntityID and dwc:materialSampleID not the same?  
+13:44:07 From TDWG Working Sessions to Everyone:  
+	Material entities don’t have to be samples  
+13:44:54 From David Shorthouse to Everyone:  
+	Example?  
+13:45:53 From David Shorthouse to Everyone:  
+	I note one of the example for MaterialEntity = “a specific water sample”  
+13:46:22 From Stan Blum to Everyone:  
+	Example:  how about a geological section?  
+13:46:55 From TDWG Working Sessions to Everyone:  
+	VMS section 4.4.2.3 https://github.com/tdwg/vocab/blob/master/sds/documentation-specification.md#44-vocabularies-term-lists-and-terms  
+13:46:55 From David Shorthouse to Everyone:  
+	Now this one makes it clear as example for MaterialEntity = “an instance of a printed photograph”. It’d not have a materialSampleID.  
+13:47:04 From Stan Blum to Everyone:  
+	Exists in the real world as something material and many samples may come from it.  
+13:56:02 From TDWG Working Sessions to Everyone:  
+	I think it is possible if not likely that the GBIF model will become a model (not necessarily THE model) that gets included as a structure built on top of the DwC bag of terms. It is heavily use-case driven, so it meets that requirement that you need to say what you are trying to accomplish. And it’s being tested, so it will have the required implementation experience as well.  
+13:56:06 From David Shorthouse to Everyone:  
+	Q: Any signals of impact / use in eg GBIF’s IPT?  
+13:57:42 From Stan Blum to Everyone:  
+	I saw that GBIF is preparing IPT3, based on frictionless data; will free us from the “star schema” and Darwin Core Archives.  
+13:59:08 From James to Everyone:  
+	Reacted to "I saw that GBIF is p..." with ❤️  
+13:59:13 From David Shorthouse to Everyone:  
+	Reacted to "I saw that GBIF is p..." with 👍  
+14:06:59 From David Shorthouse to Everyone:   
+	Replying to "Q: Any signals of im..."  
+	
+	Perhaps recommendations for what to do in the IPT / data mapping when there are materialEntityIDs, but challenged to additionally produce occurrenceIDs when sharing data.  
+14:07:08 From TDWG Working Sessions to Everyone:  
+	The classes into which Darwin Core terms are organized are basically a suggestion. Part of the problem depends on how normalized you want the model to be. Compare ABCD to DwC for example. https://1.bp.blogspot.com/-94IU0esQh-8/XP_Ymi1DSLI/AAAAAAAABzQ/LVQ1bDSzW84CzDsGObA2BHEUV0bzQk0HwCLcBGAs/s1600/abcd-graph-model.png  
+14:13:14 From Ben Norton to Everyone:  
+	BFO is a 'high level' ontology designed to be above any domain.  
+14:16:13 From David Shorthouse to Everyone:  
+	One use-case that comes to mind: BOLD stops sharing data to GBIF as occurrences, investing instead on resolution activities to source, parent materialEntities 😃. Would need barcoding project w/ Guelph.  
+14:19:07 From TDWG Working Sessions to Everyone:  
+	https://www.gbif.org/document/80862/report-of-the-tdwg-vocabulary-management-task-group-vomag  
+14:20:45 From TDWG Working Sessions to Everyone:  
+	BISS publication about the Views TG http://doi.org/10.3897/biss.7.94188  
+14:24:15 From David Shorthouse to Everyone:  
+	Recommendation: I see that materialEntityID is not a searchable term for “occurrences” on GBIF, not via its API. It should be.  
+14:26:19 From Christian Bölling to Everyone:  
+	Hat auf "Recommendation: I ..." mit 👍 reagiert  
+14:27:25 From James to Everyone:  
+	Reacted to "Recommendation: I se..." with 👍  
+14:29:00 From Christian Bölling to Everyone:  
+	Hat ein 👍 aus "Recommendation: I ..." entfernt  
+14:29:01 From Christian Bölling to Everyone:  
+	Hat auf "Recommendation: I ..." mit 👍 reagiert  
+14:29:21 From James to Everyone:  
+	ChatGPT r us ;-)  
+14:30:00 From David Shorthouse to Everyone:  
+	I’m doing it as we speak! (Just kidding…)  
+14:31:21 From Ben Norton to Everyone:  
+	https://chat.openai.com/  
+14:37:51 From James to Everyone:  
+	Lots of folks now under pressure to reduce travel footprints now though... Conferences do make a good target and we did used to do this quite regularly  
+  
