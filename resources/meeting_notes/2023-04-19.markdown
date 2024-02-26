@@ -1,0 +1,48 @@
+# 2023-04-19 Material Sample Task Group Meeting Notes
+## Participants
+### 10AM MDT
+Stan Blum, Jutta Buschbaum, Teresa Mayfield-Meyer, John Wieczorek, Christian Bölling (CB)
+### 4PM MDT
+Roger Burkhalter, Teresa Mayfield-Meyer, John Wieczorek, Stan Blum
+## Agenda Items
+### Helpful links
+[Google Drive](https://drive.google.com/drive/folders/1iZDVzmA52lbwKFRdWwdQTtaP11I9awNH?usp=sharing)  
+[Current milestone ](https://github.com/tdwg/material-sample/milestone/1)   
+[MS Working Session](https://docs.google.com/document/d/1EFCaPTuPAnc3oU0t-JAXQvjUsxmHotnHnWhweZxw8Es/edit?usp=share_link) 
+### Items for discussion
+#### 10AM MDT
+1. Existing terms in the milestone  
+     a. Other Deliverable - preparations review - organize it under MaterialEntity and leave the problems for the next task group.  
+          i. Examples - fossil, cast, photograph, DNA extract, skin | skull | skeleton, whole animal (ETOH) | tissue (EDTA)  
+               1. Commas separate individual examples, but this makes the examples appear to not follow the recommended best practice  
+               2. Should be viewed as  
+                    a. fossil  
+                    b. cast  
+                    c. photograph  
+                    d. DNA extract  
+                    e. skin | skull | skeleton  
+                    f. whole animal (ETOH) | tissue (EDTA)  
+               3. CB suggests that the term notes should be updated to clarify the syntax in which these lists of value pairs are recommended to be written, including cases in which one of the values is absent. This is a domestic / housekeeping improvement to the current term and doesn’t change any semantics or current use of the term (could be done as an independent term change request rather than part of TG recommendations)  
+          ii. Comments - Recommended best practice is to separate the values in a list with space vertical bar space ( | ).  
+               1. Suggest adding parentheses as part of the syntax in the comments - but this just encodes bad practices and requires review of all syntax.  
+     b. [Other Deliverable - associatedSequences review](https://github.com/tdwg/material-sample/issues/9) - belongs with MaterialEntity - change definition accordingly.  
+
+#### 4PM MDT
+## Next steps and assignments
+Teresa to put together package draft for Task Group review and comments.  
+## Meeting Chat 10AM MDT
+10:01:27 From  Teresa Mayfield-Meyer  to  Everyone: https://docs.google.com/document/d/1ThtJdPRr6046fNk-Duu8QMs_P0jJN4e_hnzhD2JgMF0/edit#   
+10:10:12 From  Jutta Buschbom  to  Everyone:  
+	MIDS mapping https://github.com/tdwg/mids/issues/65   
+10:11:26 From  Teresa Mayfield-Meyer  to  Everyone:  
+	https://github.com/tdwg/material-sample/issues/7#issuecomment-1515001172   
+10:40:51 From  John Wieczorek  to  Everyone:  
+	skin | skull | skeleton  
+10:41:03 From  John Wieczorek  to  Everyone:  
+	whole animal (ETOH) | tissue (EDTA)  
+10:42:16 From  Jutta Buschbom  to  Everyone:  
+	in md: `fossil`, `cast`  
+10:53:45 From  Jutta Buschbom  to  Everyone:  
+	see tab: “Registry_openDS_collection”: LtC terms, plus 2 iSamples terms https://docs.google.com/spreadsheets/d/12D6P4lt-zDAALJzod7sq475tWgqKiTbDrFjKEuSXVg4/edit?usp=sharing   
+## Meeting Chat 4PM MDT  
+  
